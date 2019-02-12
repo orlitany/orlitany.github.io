@@ -10,18 +10,8 @@
   <link rel="stylesheet" href="./OL_files/bootstrap.min.css">
   <link href="./OL_files/css" rel="stylesheet" type="text/css">
   <link href="./OL_files/style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" async="" src="./OL_files/ga.js.download"></script><script type="text/javascript" src="./OL_files/hidebib.js.download"></script>
-
-<!-- <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40545479-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script> -->
+  <script type="text/javascript" async="" src="./OL_files/ga.js.download"></script>
+  <script type="text/javascript" src="./OL_files/hidebib.js.download"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133713714-1"></script>
@@ -81,7 +71,66 @@
   </div>
   <br>
 
-  <!-- Publications. -->
+
+
+  <div class="container">
+    <h2> Publications </h2>
+  <!-- Auto publications -->
+  <div id="read_pub_record">
+    <div v-for="pub in data.publications" class="publication">
+
+      <table width="900" align="center" border="0" cellpadding="0">
+          <tbody><tr>
+            <td width="25%" valign="top">
+              <img :src="pub.image" alt="game" width="150" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="top">
+              <p><a :href="pub.paper">
+                <heading>{{ pub.name }}</heading></a><br>
+                <span v-html="pub.authors"></span><br>
+                <em>{{ pub.publication }}</em>
+              </p>
+              <div class="paper" :id="pub.name">
+                <a :href="pub.paper">paper</a> /
+                <span v-if="pub.code">
+                  <a :href="pub.code">code</a> /
+                </span>
+                <span v-if="pub.dataset">
+                  <a :href="pub.dataset">dataset</a> /
+                </span>
+
+                <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
+
+                <pre xml:space="preserve" style="display: none;">{{ pub.bibtex }}
+                </pre>
+              </div>
+            </td>
+
+          </tr></tbody></table>
+          <hr>
+    </div>
+
+
+  </div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+  </script>
+
+  <script src="./publications.js"></script>
+
+  <script>
+    new Vue({
+      el: "#read_pub_record",
+      data() {
+        return {
+          data: data,
+        }
+      }
+    });
+  </script>
+
+  <!-- Publications.
 
   <div class="container">
     <h2> Publications </h2>
@@ -415,9 +464,11 @@ Year      = {2018}}
     </div>
 
   </div><br>
+  -->
 
     <!-- Preprints (arxiv papers). -->
 
+    </td><td width="75%" valign="top">
     <div class="container">
     <h2> Preprints </h2>
 
@@ -496,6 +547,7 @@ Year      = {2018}}
 
 
   </div><br>
+
 
   <!-- Book chapters . -->
 

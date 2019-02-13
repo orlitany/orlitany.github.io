@@ -75,7 +75,7 @@
 
   <div class="container">
     <h2> Publications </h2>
-  <!-- Auto publications -->
+  <!-- Auto publications reader -->
   <div id="read_pub_record">
     <div v-for="pub in data.publications" class="publication">
 
@@ -89,6 +89,10 @@
                 <heading>{{ pub.name }}</heading></a><br>
                 <span v-html="pub.authors"></span><br>
                 <em>{{ pub.publication }}</em>
+                <span v-if="pub.misc">
+                  <br><span v-html="pub.misc"></span><br>
+                </span>
+
               </p>
               <div class="paper" :id="pub.name">
                 <a :href="pub.paper">paper</a> /

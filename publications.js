@@ -1,6 +1,18 @@
 data = {
     "publications": [
         {
+            "name": "Self-supervised Learning of Dense Shape Correspondence",
+            "authors": "Oshri Halimi, <strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Ron Kimmel",
+            "publication": "Computer Vision and Pattern Recognition (CVPR), 2019",
+            "image": "./OL_files/unsupervised_fmnet.png",
+            "paper": "https://arxiv.org/pdf/1812.02415.pdf",
+            "bibtex": `@article{halimi2018self,
+  title={Self-supervised Learning of Dense Shape Correspondence},
+  author={Halimi, Oshri and Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex and Kimmel, Ron},
+  journal={arXiv preprint arXiv:1812.02415},
+  year={2018}}`
+        },
+        {
             "name": "Deformable Shape Completion with Graph Convolutional Autoencoders",
             "authors": "<strong>Or Litany</strong>, Alex M. Bronstein, Michael M. Bronstein, Ameesh Makadia",
             "publication": "Computer Vision and Pattern Recognition (CVPR), 2018",

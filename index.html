@@ -23,64 +23,6 @@
   gtag('config', 'UA-133713714-1');
 </script>
 
-
-<script>
-function trackOutbounds() {
-
-        var hitCallbackHandler = function(url,win) {
-            if (win) {
-                    window.open(url, win);
-            } else {
-                window.location.href = url;
-        }
-    };
-
-    var addEvent = function(el, eventName, handler) {
-
-                if (el.addEventListener) {
-                        el.addEventListener(eventName, handler);
-                        } else {
-                        el.attachEvent('on' + eventName, function(){
-                                handler.call(el);
-                    });
-                }
-        }
-
-        if (document.getElementsByTagName) {
-                var el = document.getElementsByTagName('a');
-                var getDomain = document.domain.split('.').reverse()[1] + '.' + document.domain.split('.').reverse()[0];
-
-                // Look thru each a element
-                for (var i=0; i < el.length;i++) {
-
-                        // Extract it's href attribute
-                        var href = (typeof(el[i].getAttribute('href')) == 'string' ) ? el[i].getAttribute('href') : '';
-
-                        // Query the href for the top level domain (xxxxx.com)
-                        var myDomain = href.match(getDomain);
-
-                        // If link is outbound and is not to this domain
-                        if ((href.match(/^(https?:|\/\/)/i)  && !myDomain) || href.match(/^mailto\:/i)) {
-
-                                // Add an event to click
-                                addEvent(el[i],'click', function(e) {
-                                        var url = this.getAttribute('href'), win = (typeof(this.getAttribute('target')) == 'string') ? this.getAttribute('target') : '';
-
-                                                        console.log ("add event", url);
-                                        // Log even to Analytics, once done, go to the link
-                                        ga('send', 'event', 'outbound', 'click', url,
-                                                {'hitCallback': hitCallbackHandler(url,win)},
-                                                {'nonInteraction': 1}
-                                        );
-
-                                        e.preventDefault();
-                                });
-                        }
-                }
-        }
-})();
-</script>
-
 </head>
 
 <body>
@@ -103,9 +45,8 @@ function trackOutbounds() {
 
 
             <p> <a href="https://orlitany.github.io/OL_files/orlitany_CV_Dec18.pdf"><img src="./OL_files/cv.png" height="16"></a> /
-                <a href="https://www.linkedin.com/in/orlitany/main.html"
-                onclick="trackOutboundLink('https://www.linkedin.com/in/orlitany/main.html'); return true;">
-                <img src="./OL_files/linkedin.png" height="16"></a> /
+                <a href="https://www.linkedin.com/in/orlitany/main.html"><img src="./OL_files/linkedin.png" height="16"></a> /
+                <a href="https://twitter.com/orlitany"><img src="./OL_files/twitterlogo.png" height="16"></a> /
                 <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank"><img src="./OL_files/google_scholar.png" height="16"></a> /
                 <a href="https://github.com/orlitany/" target="_blank"><img src="./OL_files/github_alt.png" height="16"></a>
             </p>
@@ -209,30 +150,7 @@ function trackOutbounds() {
     <div class="container">
     <h2> Preprints </h2>
 
-    <div class="publication">
-      <table width="900" align="center" border="0" cellpadding="0">
-        <tbody><tr><td width="25%" valign="top"><img src="./OL_files/unsupervised_fmnet.png" alt="game" width="150" height="120" style="border-style: none">
-        </td><td width="75%" valign="top">
-          <p><a href="https://arxiv.org/abs/1812.02415"><heading>Self-supervised Learning of Dense Shape Correspondence</heading></a><br>
-          <em>arXiv</em>, 2018 <br>
-          Oshri Halimi, <strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Ron Kimmel<br>
-        </p><div class="paper" id="unsupervised_fmnet">
-          <a href="https://arxiv.org/abs/1812.02415">paper</a> /
-          <!-- <a href="coming up">code</a> / -->
-          <a shape="rect" href="javascript:togglebib(&#39;unsupervised_fmnet&#39;)" class="togglebib">bibtex</a>
-          <pre xml:space="preserve" style="display: none;">@article{litany2018soseleto,
-          Author    = {Oshri Halimi and Or Litany and Emanuele Rodol{\`a} and Alex Bronstein, and Ron Kimmel},
-          Title     = {Self-supervised Learning of Dense Shape Correspondence},
-          Journal   = {arXiv preprint arXiv:1812.02415},
-          Year      = {2018}}
-          </pre>
-        </div>
-      </td>
 
-      </tr></tbody></table>
-    </div>
-
-    <hr>
     <div class="publication">
       <table width="900" align="center" border="0" cellpadding="0">
         <tbody><tr><td width="25%" valign="top"><img src="./OL_files/soseleto.png" alt="game" width="150" height="120" style="border-style: none">

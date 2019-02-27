@@ -1,4 +1,5 @@
 data = {
+  // ------------ 2019 -----------------
     "publications": [
         {
             "name": "Self-supervised Learning of Dense Shape Correspondence",
@@ -12,6 +13,7 @@ data = {
   journal={arXiv preprint arXiv:1812.02415},
   year={2018}}`
         },
+  // ------------ 2018 -----------------
         {
             "name": "Deformable Shape Completion with Graph Convolutional Autoencoders",
             "authors": "<strong>Or Litany</strong>, Alex M. Bronstein, Michael M. Bronstein, Ameesh Makadia",
@@ -24,6 +26,61 @@ Title     = {Deformable Shape Completion with Graph Convolutional Autoencoders},
 Journal   = {CVPR},
 Year      = {2018}}`
         },
+        {
+            "name": "Partial Single-and Multishape Dense Correspondence Using Functional Maps",
+            "authors": "<strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
+            "publication": "Handbook of Numerical Analysis, Elsevier, 2018",
+            "image": "./OL_files/pfm_book.png",
+            "paper": "https://www.sciencedirect.com/science/article/pii/S1570865918300097",
+            "bibtex": `@article{litany2018partial,
+title={Partial Single-and Multishape Dense Correspondence Using Functional Maps},
+author={Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex and Bronstein, Michael and Cremers, Daniel},
+year={2018},
+publisher={Elsevier}}`
+        },
+        {
+            "name": "Class-Aware Fully Convolutional Gaussian and Poisson Denoising",
+            "authors": "Tal Remez, <strong>Or Litany</strong>, Raja Giryes, Alex M. Bronstein",
+            "publication": "IEEE Transactions on Image Processing, 2018",
+            "image": "./OL_files/class_aware_poiss.png",
+            "paper": "https://arxiv.org/pdf/1808.06562.pdf",
+            "code": "https://github.com/TalRemez/deep_class_aware_denoising",
+            "bibtex": `@article{remez2018class,
+title={Class-Aware Fully Convolutional Gaussian and Poisson Denoising},
+author={Remez, Tal and Litany, Or and Giryes, Raja and Bronstein, Alex M},
+journal={IEEE Transactions on Image Processing},
+volume={27},
+number={11},
+pages={5707--5722},
+year={2018},
+publisher={IEEE}}`
+        },
+        {
+            "name": "Dual-primal graph convolutional networks",
+            "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
+            "publication": "arXiv preprint, 2018",
+            "image": "./OL_files/dualprimal.png",
+            "paper": "https://arxiv.org/pdf/1806.00770.pdf",
+            "bibtex": `@article{monti2018dual,
+title={Dual-primal graph convolutional networks},
+author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Litany, Or and G{\"u}nnemann, Stephan and Bronstein, Michael M},
+journal={arXiv preprint arXiv:1806.00770},
+year={2018}}`
+        },
+        {
+            "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",
+            "authors": "<strong>Or Litany</strong>, Daniel Freedman",
+            "publication": "arXiv, 2018",
+            "image": "./OL_files/soseleto.png",
+            "paper": "https://arxiv.org/pdf/1805.09622",
+            "code": "https://github.com/orlitany/SOSELETO",
+            "bibtex": `@article{litany2018soseleto,
+  Author    = {Or Litany and Daniel Freedman},
+  Title     = {SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels},
+  Journal   = {arXiv preprint arXiv:1805.09622},
+  Year      = {2018}}`
+        },
+  // ------------ 2017 -----------------
         {
             "name": "Efficient Deformable Shape Correspondence via Kernel Matching",
             "authors": "Matthias Vestner, Zorah Lähner, Amit Boyarski, <strong>Or Litany</strong>, et. al.",
@@ -122,6 +179,7 @@ pages={284--299},
 volume={157},
 year={2017}`
         },
+    // ------------ 2016 -----------------
         {
             "name": "Non-Rigid Puzzles",
             "authors": "<strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
@@ -155,6 +213,19 @@ year={2016},
 organization={IEEE}`
         },
         {
+            "name": "FPGA system for real-time computational extended depth of field imaging using phase aperture coding",
+            "authors": "Tal Remez, <strong>Or Litany</strong>, Shachar Yoseff, Harel Haim, Alex Bronstein",
+            "publication": "arXiv preprint, 2016",
+            "image": "./OL_files/fpga.png",
+            "paper": "https://arxiv.org/abs/1608.01074",
+            "bibtex": `@article{remez2016fpga,
+      title={FPGA system for real-time computational extended depth of field imaging <br> using phase aperture coding},
+      author={Remez, Tal and Litany, Or and Yoseff, Shachar and Haim, Harel and Bronstein, Alex},
+      journal={arXiv preprint arXiv:1608.01074},
+      year={2016}`
+        },
+    // ------------ 2015 -----------------
+        {
             "name": "Image reconstruction from dense binary pixels",
             "authors": "<strong>Or Litany</strong>*, Tal Remez*, Alex Bronstein (*Equal contributors)",
             "publication": "Signal Processing with Adaptive Sparse Structured Representations (SPARS), 2015",
@@ -166,6 +237,7 @@ author={Litany, Or and Remez, Tal and Bronstein, Alex},
 journal={SPARS},
 year={2015}`
         },
+    // ------------ 2012 -----------------
         {
             "name": "Putting the pieces together: regularized multi-shape partial matching",
             "authors": "<strong>Or Litany</strong>, Alex Bronstein, Michael Bronstein",

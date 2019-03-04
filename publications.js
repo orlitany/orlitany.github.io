@@ -7,6 +7,8 @@ data = {
             "publication": "Computer Vision and Pattern Recognition (CVPR), 2019",
             "image": "./OL_files/unsupervised_fmnet.png",
             "paper": "https://arxiv.org/pdf/1812.02415.pdf",
+            "misc": "<mark>Oral presentation</mark>",
+            "code": "https://github.com/orlitany/SelfSupervisedFMNet",
             "bibtex": `@article{halimi2018self,
   title={Self-supervised Learning of Dense Shape Correspondence},
   author={Halimi, Oshri and Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex and Kimmel, Ron},

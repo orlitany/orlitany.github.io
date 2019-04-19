@@ -2,6 +2,19 @@ data = {
   // ------------ 2019 -----------------
     "publications": [
         {
+            "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",
+            "authors": "<strong>Or Litany</strong>, Daniel Freedman",
+            "publication": "ICLR workshop on Learning from Limited Labeled Data, 2019",
+            "image": "./OL_files/soseleto.png",
+            "paper": "https://arxiv.org/pdf/1805.09622",
+            "code": "https://github.com/orlitany/SOSELETO",
+            "bibtex": `@article{litany2018soseleto,
+  Author    = {Or Litany and Daniel Freedman},
+  Title     = {SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels},
+  Journal   = {arXiv preprint arXiv:1805.09622},
+  Year      = {2018}}`
+        },
+        {
             "name": "Self-supervised Learning of Dense Shape Correspondence",
             "authors": "Oshri Halimi, <strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Ron Kimmel",
             "publication": "Computer Vision and Pattern Recognition (CVPR), 2019",
@@ -69,19 +82,7 @@ author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Lit
 journal={arXiv preprint arXiv:1806.00770},
 year={2018}}`
         },
-        {
-            "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",
-            "authors": "<strong>Or Litany</strong>, Daniel Freedman",
-            "publication": "arXiv, 2018",
-            "image": "./OL_files/soseleto.png",
-            "paper": "https://arxiv.org/pdf/1805.09622",
-            "code": "https://github.com/orlitany/SOSELETO",
-            "bibtex": `@article{litany2018soseleto,
-  Author    = {Or Litany and Daniel Freedman},
-  Title     = {SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels},
-  Journal   = {arXiv preprint arXiv:1805.09622},
-  Year      = {2018}}`
-        },
+
   // ------------ 2017 -----------------
         {
             "name": "Efficient Deformable Shape Correspondence via Kernel Matching",

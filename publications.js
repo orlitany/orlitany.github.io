@@ -7,6 +7,7 @@ data = {
           "publication": "Arxiv preprint",
           "image": "./OL_files/DHV_teaser.png",
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
+          "slides": "./OL_files/talks/deep_hough_voting.pdf"
       },
         {
             "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",

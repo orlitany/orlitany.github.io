@@ -63,18 +63,31 @@
         <ul>
         <li><span> April 23: Our paper <a href=https://openreview.net/pdf?id=r1lqA-OSvV>SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels</a> just won <mark>Best paper award</mark> at ICLR workshop on <a href=https://lld-workshop.github.io/>Learning from Limited Labeled Data</a></span></li><p></p>
         <li><span> April 22: Check out our new paper on <a href=https://arxiv.org/pdf/1904.09664.pdf>Object detection in 3D point clouds</a> </span></li><p></p>
-        <li><span> Upcoming talks: Xerox Parc (April 10th), NYU (April 16th) and Cornell-Tech (April 17th) </span></li><p></p>
          <li><span> Our paper <a href=https://arxiv.org/pdf/1812.02415.pdf>"Self-supervised Learning of Dense Shape Correspondence"</a> was accepted as an <strong>oral presentation</strong> at CVPR 2019!
   		   </span></li><p></p>
-         <li><span> Added <a href="https://drive.google.com/open?id=1XDV4fcLXcQP72JYNzRRX6zXbEZLwM8ay">slides</a> and <a href="https://youtu.be/fY_BzTmU9io">video</a> of my talk at the San Francisco Deep Learning Meetup.
- 		     </span></li><p></p>
          <li><span> We are organizing a <a href="https://sites.google.com/view/eccv2018fmapstutorial/home">tutorial</a> on "Functional Maps: A Flexible Representation for Learning and Computing Correspondence" at ECCV 2018 in Munich. See you there! <p></p>
          </span></li>
-         <li><span> Our paper <a href="https://arxiv.org/pdf/1701.01687">"Class-Aware Fully-Convolutional Gaussian and Poisson Denoising"</a> has been accepted for publication at TIP.
-		     </span></li>
+         <!-- <li><span> Our paper <a href="https://arxiv.org/pdf/1701.01687">"Class-Aware Fully-Convolutional Gaussian and Poisson Denoising"</a> has been accepted for publication at TIP.
+		     </span></li> -->
 
 
 
+        </ul>
+      </div><table width="90%" border="0" align="center" cellpadding="20">
+    </table>
+  </div>
+  <br>
+
+<!-- Talks -->
+  <div class="container">
+    <h2>Invited talks</h2><div class="news">
+        <ul>
+        <li><span> Deep Learning for “Exotic” Data Like 3D Meshes and Point-Clouds <br>
+          <a href="https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/257153311/">San Francisco Deep Learning Meetup</a> <br>
+          <a href="https://drive.google.com/open?id=1XDV4fcLXcQP72JYNzRRX6zXbEZLwM8ay">slides / <a href="https://youtu.be/fY_BzTmU9io">video</a> </span></li><p></p>
+        <li><span> Deep Hough Voting for 3D object detection in point clouds <br>
+          Xerox PARC, NYU, Cornell-Tech <br>
+          <a href="./OL_files/talks/deep_hough_voting.pdf">slides</a>
         </ul>
       </div><table width="90%" border="0" align="center" cellpadding="20">
     </table>
@@ -111,6 +124,9 @@
                 </span>
                 <span v-if="pub.dataset">
                   <a :href="pub.dataset">dataset</a> /
+                </span>
+                <span v-if="pub.slides">
+                  <a :href="pub.slides">slides</a> /
                 </span>
 
                 <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>

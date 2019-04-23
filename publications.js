@@ -12,6 +12,7 @@ data = {
             "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",
             "authors": "<strong>Or Litany</strong>, Daniel Freedman",
             "publication": "ICLR workshop on Learning from Limited Labeled Data, 2019",
+            "misc": "<mark>Best Paper Award</mark>",
             "image": "./OL_files/soseleto.png",
             "paper": "https://arxiv.org/pdf/1805.09622",
             "code": "https://github.com/orlitany/SOSELETO",

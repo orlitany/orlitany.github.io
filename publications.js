@@ -18,6 +18,7 @@ data = {
             "paper": "https://openreview.net/forum?id=r1lqA-OSvV",
             "code": "https://github.com/orlitany/SOSELETO",
             "poster": "./OL_files/SOSELETO ICLR19_poster.pdf",
+            "slides": "./OL_files/SOSELETO ICLR19_presentation.pdf",
             "bibtex": `@article{litany2018soseleto,
   Author    = {Or Litany and Daniel Freedman},
   Title     = {SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels},

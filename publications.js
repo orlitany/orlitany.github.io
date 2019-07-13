@@ -2,6 +2,18 @@ data = {
   // ------------ 2019 -----------------
     "publications": [
       {
+          "name": "Dual-primal graph convolutional networks",
+          "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
+          "publication": "GEM workshop at ECML-PKDD, 2019",
+          "image": "./OL_files/dualprimal.png",
+          "paper": "https://arxiv.org/pdf/1806.00770.pdf",
+          "bibtex": `@article{monti2018dual,
+title={Dual-primal graph convolutional networks},
+author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Litany, Or and G{\"u}nnemann, Stephan and Bronstein, Michael M},
+journal={arXiv preprint arXiv:1806.00770},
+year={2018}}`
+      },
+      {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
           "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",
           "publication": "Arxiv preprint",
@@ -83,18 +95,7 @@ pages={5707--5722},
 year={2018},
 publisher={IEEE}}`
         },
-        {
-            "name": "Dual-primal graph convolutional networks",
-            "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
-            "publication": "arXiv preprint, 2018",
-            "image": "./OL_files/dualprimal.png",
-            "paper": "https://arxiv.org/pdf/1806.00770.pdf",
-            "bibtex": `@article{monti2018dual,
-title={Dual-primal graph convolutional networks},
-author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Litany, Or and G{\"u}nnemann, Stephan and Bronstein, Michael M},
-journal={arXiv preprint arXiv:1806.00770},
-year={2018}}`
-        },
+
 
   // ------------ 2017 -----------------
         {

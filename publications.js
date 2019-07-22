@@ -2,6 +2,14 @@ data = {
   // ------------ 2019 -----------------
     "publications": [
       {
+          "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
+          "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",
+          "publication": "International Conference on Computer Vision (ICCV), 2019",
+          "image": "./OL_files/DHV_teaser.png",
+          "paper": "https://arxiv.org/pdf/1904.09664.pdf",
+          "slides": "./OL_files/talks/deep_hough_voting.pdf"
+      },
+      {
           "name": "Dual-primal graph convolutional networks",
           "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
           "publication": "GEM workshop at ECML-PKDD, 2019",
@@ -12,14 +20,6 @@ title={Dual-primal graph convolutional networks},
 author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Litany, Or and G{\"u}nnemann, Stephan and Bronstein, Michael M},
 journal={arXiv preprint arXiv:1806.00770},
 year={2018}}`
-      },
-      {
-          "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
-          "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",
-          "publication": "Arxiv preprint",
-          "image": "./OL_files/DHV_teaser.png",
-          "paper": "https://arxiv.org/pdf/1904.09664.pdf",
-          "slides": "./OL_files/talks/deep_hough_voting.pdf"
       },
         {
             "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",

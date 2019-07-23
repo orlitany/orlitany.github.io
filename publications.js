@@ -7,7 +7,8 @@ data = {
           "publication": "International Conference on Computer Vision (ICCV), 2019",
           "image": "./OL_files/DHV_teaser.png",
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
-          "slides": "./OL_files/talks/deep_hough_voting.pdf"
+          "slides": "./OL_files/talks/deep_hough_voting.pdf",
+          "misc": "<mark>Oral presentation</mark>"
       },
       {
           "name": "Dual-primal graph convolutional networks",

@@ -8,12 +8,18 @@ data = {
           "image": "./OL_files/DHV_teaser.png",
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
           "slides": "./OL_files/talks/deep_hough_voting.pdf",
-          "misc": "<mark>Oral presentation</mark>"
+          "misc": "<mark>Oral presentation</mark>",
+          "bibtex":`@article{qi2019deep,
+  title={Deep Hough Voting for 3D Object Detection in Point Clouds},
+  author={Qi, Charles R and Litany, Or and He, Kaiming and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1904.09664},
+  year={2019}}`
       },
       {
           "name": "Dual-primal graph convolutional networks",
           "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
           "publication": "GEM workshop at ECML-PKDD, 2019",
+          "misc": "<mark>Oral presentation</mark>",
           "image": "./OL_files/dualprimal.png",
           "paper": "https://arxiv.org/pdf/1806.00770.pdf",
           "bibtex": `@article{monti2018dual,
@@ -46,7 +52,7 @@ year={2018}}`
             "image": "./OL_files/unsupervised_fmnet.png",
             "paper": "https://arxiv.org/pdf/1812.02415.pdf",
             "misc": "<mark>Oral presentation</mark>",
-            "code": "https://github.com/orlitany/SelfSupervisedFMNet",
+            "code": "https://github.com/OshriHalimi/unsupervised_learning_of_dense_shape_correspondence",
             "talk": "https://www.linkedin.com/feed/update/urn:li:activity:6547910607310598144",
             "bibtex": `@article{halimi2018self,
   title={Self-supervised Learning of Dense Shape Correspondence},

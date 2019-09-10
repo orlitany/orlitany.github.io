@@ -268,7 +268,7 @@ year={2015}`
             "authors": "<strong>Or Litany</strong>, Alex Bronstein, Michael Bronstein",
             "publication": "Workshop on Nonrigid Shape Analysis and Deformable Image Alignment (NORDIA), 2012",
             "image": "./OL_files/rigidpuzzles.png",
-            "paper": "http://vista.eng.tau.ac.il/publications/LitBroBroNORDIA12.pdf",
+            "paper": "https://vista.cs.technion.ac.il/wp-content/uploads/2018/10/LitBroBroNORDIA12.pdf",
             "bibtex": `@inproceedings{litany2012putting,
 title={Putting the pieces together: Regularized multi-part shape matching},
 author={Litany, Or and Bronstein, Alexander M and Bronstein, Michael M},

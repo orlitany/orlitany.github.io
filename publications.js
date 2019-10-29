@@ -9,7 +9,7 @@ data = {
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
           "code": "https://github.com/facebookresearch/votenet",
           "slides": "./OL_files/talks/deep_hough_voting.pdf",
-          "misc": "<mark>Oral presentation</mark>",
+          "misc": "<mark>Best Paper Nomination (oral)</mark>",
           "bibtex":`@article{qi2019deep,
   title={Deep Hough Voting for 3D Object Detection in Point Clouds},
   author={Qi, Charles R and Litany, Or and He, Kaiming and Guibas, Leonidas J},

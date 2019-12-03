@@ -9,6 +9,7 @@ data = {
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
           "code": "https://github.com/facebookresearch/votenet",
           "slides": "./OL_files/talks/deep_hough_voting.pdf",
+          "video": "https://youtu.be/2ntDYowHbZs?t=4585",
           "misc": "<mark>Best Paper Nomination (oral)</mark>",
           "bibtex":`@article{qi2019deep,
   title={Deep Hough Voting for 3D Object Detection in Point Clouds},

@@ -154,7 +154,7 @@ Year      = {2017}}`
             "paper": "https://arxiv.org/pdf/1612.04956v1",
             "bibtex": `@article{litany2016cloud,
 Author    = {Or Litany and Tal Remez and Tal and Alex Bronstein},
-Title     = {Deep Class Aware Denoising},
+Title     = {Cloud Dictionary: Sparse Coding and Modeling for Point Clouds},
 Journal   = {SPARS},
 Year      = {2017}}`
         },

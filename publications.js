@@ -3,7 +3,7 @@ data = {
     "publications": [
       {
           "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
-          "authors": " Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
+          "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
           "publication": "arXiv 2001.09650",
           "image": "./OL_files/theWhole.png",
           "paper": "https://arxiv.org/pdf/2001.09650",

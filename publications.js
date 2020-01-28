@@ -5,7 +5,7 @@ data = {
           "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
           "authors": " Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
           "publication": "arXiv",
-          "image": "./OL_files/DHV_teaser.png",
+          "image": "./OL_files/theWhole.png",
           "paper": "https://arxiv.org/pdf/2001.09650",
 //           "code": "",
 //           "slides": "./OL_files/talks/deep_hough_voting.pdf",

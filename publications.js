@@ -1,6 +1,25 @@
-data = {
-  // ------------ 2019 -----------------
+data = {  
+  // ------------ 2020 -----------------
     "publications": [
+      {
+          "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
+          "authors": " Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
+          "publication": "arXiv",
+          "image": "./OL_files/DHV_teaser.png",
+          "paper": "https://arxiv.org/pdf/2001.09650",
+//           "code": "",
+//           "slides": "./OL_files/talks/deep_hough_voting.pdf",
+//           "talk": "https://youtu.be/2ntDYowHbZs?t=4585",
+//           "misc": "<mark>Best Paper Nomination (oral)</mark>",
+          "bibtex":`@misc{halimi2020greater,
+    title={The Whole Is Greater Than the Sum of Its Nonrigid Parts},
+    author={Oshri Halimi and Ido Imanuel and Or Litany and Giovanni Trappolini and Emanuele Rodolà and Leonidas Guibas and Ron Kimmel},
+    year={2020},
+    eprint={2001.09650},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`
+      },
+  // ------------ 2019 -----------------  
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
           "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",

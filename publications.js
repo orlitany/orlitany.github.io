@@ -7,6 +7,7 @@ data = {
           "publication": "arXiv 2001.10692",
           "image": "./OL_files/imvote.png",
           "paper": "https://arxiv.org/abs/2001.10692",
+          "talk": "https://drive.google.com/open?id=1gLdZ4z1KSM0L1ElEseZMvKdmxycE49Tx",
           "bibtex":`@misc{qi2020imvotenet,
     title={ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes},
     author={Charles R. Qi and Xinlei Chen and Or Litany and Leonidas J. Guibas},

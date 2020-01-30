@@ -2,6 +2,20 @@ data = {
   // ------------ 2020 -----------------
     "publications": [
       {
+          "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",
+          "authors": "Charles R. Qi, Xinlei Chen, <strong>Or Litany</strong>, Leonidas J. Guibas",
+          "publication": "https://arxiv.org/abs/2001.10692",
+          "image": "./OL_files/imvote.png",
+          "paper": "https://arxiv.org/abs/2001.10692",
+          "bibtex":`@misc{qi2020imvotenet,
+    title={ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes},
+    author={Charles R. Qi and Xinlei Chen and Or Litany and Leonidas J. Guibas},
+    year={2020},
+    eprint={2001.10692},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`
+      },
+      {
           "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
           "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
           "publication": "arXiv 2001.09650",

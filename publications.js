@@ -1,6 +1,6 @@
 data = {  
   // ------------ 2020 -----------------
-    "publications": [
+    "publications": [        
       {
           "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",
           "authors": "Charles R. Qi, Xinlei Chen, <strong>Or Litany</strong>, Leonidas J. Guibas",
@@ -16,6 +16,20 @@ data = {
     archivePrefix={arXiv},
     primaryClass={cs.CV}}`
       },
+      {
+        "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
+        "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
+        "publication": "arXiv 2002.02506",
+        "image": "./OL_files/contConv.png",
+        "paper": "https://arxiv.org/abs/2002.02506",
+        "bibtex":`@misc{yang2020continuous,
+            title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
+            author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
+            year={2020},
+            eprint={2002.02506},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}}`
+    },
       {
           "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
           "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",

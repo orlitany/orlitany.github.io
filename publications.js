@@ -1,6 +1,14 @@
 data = {  
   // ------------ 2020 -----------------
-    "publications": [        
+    "publications": [
+      {
+          "name": "On Learning Sets of Symmetric Elements",
+          "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",
+          "publication": "TBD",
+          "image": "./OL_files/dss_layer.png",
+          "paper": "TBD",
+          "bibtex":`TBD`
+      },
       {
           "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",
           "authors": "Charles R. Qi, Xinlei Chen, <strong>Or Litany</strong>, Leonidas J. Guibas",

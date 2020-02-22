@@ -4,10 +4,16 @@ data = {
       {
           "name": "On Learning Sets of Symmetric Elements",
           "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",
-          "publication": "TBD",
+          "publication": "arXiv 2002.08599",
           "image": "./OL_files/dss_layer.png",
-          "paper": "TBD",
-          "bibtex":`TBD`
+          "paper": "https://arxiv.org/abs/2002.08599",
+          "bibtex":`@misc{maron2020learning,
+    title={On Learning Sets of Symmetric Elements},
+    author={Haggai Maron and Or Litany and Gal Chechik and Ethan Fetaya},
+    year={2020},
+    eprint={2002.08599},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}}`
       },
       {
           "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",

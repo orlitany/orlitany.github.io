@@ -18,7 +18,7 @@ data = {
       {
           "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",
           "authors": "Charles R. Qi, Xinlei Chen, <strong>Or Litany</strong>, Leonidas J. Guibas",
-          "publication": "arXiv 2001.10692",
+          "publication": "To appear at CVPR 2020",
           "image": "./OL_files/imvote.png",
           "paper": "https://arxiv.org/abs/2001.10692",
           "talk": "https://drive.google.com/open?id=1gLdZ4z1KSM0L1ElEseZMvKdmxycE49Tx",

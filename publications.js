@@ -1,6 +1,20 @@
 data = {  
   // ------------ 2020 -----------------
     "publications": [
+        {
+          "name": "Representation Learning Through Latent Canonicalizations",
+          "authors": "<strong>Or Litany</strong>, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
+          "publication": "arXiv 2002.11829",
+          "image": "./OL_files/canonicalizers.png",
+          "paper": "https://arxiv.org/abs/2002.11829",
+          "bibtex":`@misc{litany2020representation,
+    title={Representation Learning Through Latent Canonicalizations},
+    author={Or Litany and Ari Morcos and Srinath Sridhar and Leonidas Guibas and Judy Hoffman},
+    year={2020},
+    eprint={2002.11829},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}}`
+      },
       {
           "name": "On Learning Sets of Symmetric Elements",
           "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",
@@ -37,12 +51,12 @@ data = {
         "image": "./OL_files/contConv.png",
         "paper": "https://arxiv.org/abs/2002.02506",
         "bibtex":`@misc{yang2020continuous,
-            title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
-            author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
-            year={2020},
-            eprint={2002.02506},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV}}`
+    title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
+    author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
+    year={2020},
+    eprint={2002.02506},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`
     },
       {
           "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",

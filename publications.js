@@ -18,7 +18,7 @@ data = {
       {
           "name": "On Learning Sets of Symmetric Elements",
           "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",
-          "publication": "arXiv 2002.08599",
+          "publication": "To appear at ICML 2020",
           "image": "./OL_files/dss_layer.png",
           "paper": "https://arxiv.org/abs/2002.08599",
           "bibtex":`@misc{maron2020learning,

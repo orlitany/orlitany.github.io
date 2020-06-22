@@ -5,7 +5,7 @@ data = {
           "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
           "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",
-          "image": "./OL_files/canonicalizers.png",
+          "image": "./OL_files/relmogen_teaser.png",
           "paper": "TBD",
           "bibtex":`TBD`
       },

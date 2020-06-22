@@ -12,7 +12,7 @@ data = {
         {
           "name": "Representation Learning Through Latent Canonicalizations",
           "authors": "<strong>Or Litany</strong>, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
-          "publication": "arXiv 2002.11829",
+          "publication": "ICML 2020 Workshop on Object-Oriented Learning",
           "image": "./OL_files/canonicalizers.png",
           "paper": "https://arxiv.org/abs/2002.11829",
           "bibtex":`@misc{litany2020representation,

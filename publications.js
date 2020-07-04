@@ -7,7 +7,7 @@ data = {
           "publication": "ECCV 2020",
           "image": "./OL_files/pointContrast.png",
           "paper": "http://orlitany.github.io/",
-          "bibtex":`TBD`
+          "bibtex":`TBD`,
           "misc": "<mark>Spotlight</mark>"
       },
       {

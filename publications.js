@@ -2,6 +2,14 @@ data = {
   // ------------ 2020 -----------------
     "publications": [
       {
+          "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
+          "authors": "Saining Xie, Jiatao Gu, Demi Guo, <strong>Or Litany</strong>, Charles R. Qi, Leonidas Guibas",
+          "publication": "ECCV 2020",
+//           "image": "./OL_files/relmogen_teaser.png",
+//           "paper": "http://orlitany.github.io/",
+          "bibtex":`TBD`
+      },
+      {
           "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
           "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",

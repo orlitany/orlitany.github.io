@@ -5,10 +5,25 @@ data = {
           "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
           "authors": "Saining Xie, Jiatao Gu, Demi Guo, <strong>Or Litany</strong>, Charles R. Qi, Leonidas Guibas",
           "publication": "ECCV 2020",
-//           "image": "./OL_files/relmogen_teaser.png",
-//           "paper": "http://orlitany.github.io/",
+          "image": "./OL_files/pointContrast.png",
+          "paper": "http://orlitany.github.io/",
           "bibtex":`TBD`
+          "misc": "<mark>Spotlight</mark>"
       },
+      {
+        "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
+        "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
+        "publication": "ECCV 2020",
+        "image": "./OL_files/theWhole.png",
+        "paper": "https://arxiv.org/pdf/2001.09650",
+        "bibtex":`@misc{halimi2020greater,
+  title={The Whole Is Greater Than the Sum of Its Nonrigid Parts},
+  author={Oshri Halimi and Ido Imanuel and Or Litany and Giovanni Trappolini and Emanuele Rodolà and Leonidas Guibas and Ron Kimmel},
+  year={2020},
+  eprint={2001.09650},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}}`
+    },
       {
           "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
@@ -74,20 +89,6 @@ data = {
     archivePrefix={arXiv},
     primaryClass={cs.CV}}`
     },
-      {
-          "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
-          "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
-          "publication": "arXiv 2001.09650",
-          "image": "./OL_files/theWhole.png",
-          "paper": "https://arxiv.org/pdf/2001.09650",
-          "bibtex":`@misc{halimi2020greater,
-    title={The Whole Is Greater Than the Sum of Its Nonrigid Parts},
-    author={Oshri Halimi and Ido Imanuel and Or Litany and Giovanni Trappolini and Emanuele Rodolà and Leonidas Guibas and Ron Kimmel},
-    year={2020},
-    eprint={2001.09650},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`
-      },
   // ------------ 2019 -----------------  
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",

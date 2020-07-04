@@ -11,7 +11,7 @@ data = {
           "misc": "<mark>Spotlight</mark>"
       },
       {
-        "name": "The Whole Is Greater Than the Sum of Its Nonrigid Parts",
+        "name": "Towards Precise Completion of Deformable Shape",
         "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
         "publication": "ECCV 2020",
         "image": "./OL_files/theWhole.png",

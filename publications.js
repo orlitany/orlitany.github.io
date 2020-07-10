@@ -3,7 +3,7 @@ data = {
     "publications": [
       {
           "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
-          "authors": "Saining Xie, Jiatao Gu, Demi Guo, <strong>Or Litany</strong>, Charles R. Qi, Leonidas Guibas",
+          "authors": "Saining Xie, Jiatao Gu, Demi Guo, Charles R. Qi, Leonidas Guibas, <strong>Or Litany</strong>",
           "publication": "ECCV 2020",
           "image": "./OL_files/pointContrast.png",
           "paper": "http://orlitany.github.io/",

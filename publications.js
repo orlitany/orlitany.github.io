@@ -29,7 +29,7 @@ data = {
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
           "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",
           "image": "./OL_files/relmogen_teaser.png",
-          "paper": "http://orlitany.github.io/",
+          "paper": "https://drive.google.com/file/d/1yYQ8-JtOf7ve4XBYqURokoyPeqJwwbnl/view",
           "bibtex":`TBD`
       },
         {

@@ -30,6 +30,7 @@ data = {
           "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",
           "image": "./OL_files/relmogen_teaser.png",
           "paper": "https://drive.google.com/file/d/1yYQ8-JtOf7ve4XBYqURokoyPeqJwwbnl/view",
+          "talk": "https://youtu.be/mTaJ9xQMiD0?t=2083",
           "bibtex":`TBD`
       },
         {

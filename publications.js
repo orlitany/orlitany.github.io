@@ -1,6 +1,14 @@
 data = {  
   // ------------ 2020 -----------------
     "publications": [
+        {
+            "name": "Object-Centric Multi-View Aggregation",
+            "authors": "Shubham Tulsiani, <strong>Or Litany</strong>, Charles R. Qi, He Wang, Leonidas Guibas",
+            // "publication": "Arxiv",
+            "image": "./OL_files/mva_teaser.png",
+            // "paper": "TBD",
+            "bibtex":`Coming up...`
+        },
       {
           "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
           "authors": "Saining Xie, Jiatao Gu, Demi Guo, Charles R. Qi, Leonidas Guibas, <strong>Or Litany</strong>",

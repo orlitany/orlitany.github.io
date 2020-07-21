@@ -4,9 +4,9 @@ data = {
         {
             "name": "Object-Centric Multi-View Aggregation",
             "authors": "Shubham Tulsiani, <strong>Or Litany</strong>, Charles R. Qi, He Wang, Leonidas Guibas",
-            // "publication": "Arxiv",
+            "publication": "Arxiv 2007.10300",
             "image": "./OL_files/mva_teaser.png",
-            // "paper": "TBD",
+            "paper": "http://arxiv.org/abs/2007.10300",
             "bibtex":`Coming up...`
         },
       {

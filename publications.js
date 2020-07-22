@@ -7,15 +7,27 @@ data = {
             "publication": "Arxiv 2007.10300",
             "image": "./OL_files/mva_teaser.png",
             "paper": "http://arxiv.org/abs/2007.10300",
-            "bibtex":`Coming up...`
+            "bibtex":`@misc{tulsiani2020objectcentric,
+    title={Object-Centric Multi-View Aggregation},
+    author={Shubham Tulsiani and Or Litany and Charles R. Qi and He Wang and Leonidas J. Guibas},
+    year={2020},
+    eprint={2007.10300},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`
         },
       {
           "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
           "authors": "Saining Xie, Jiatao Gu, Demi Guo, Charles R. Qi, Leonidas Guibas, <strong>Or Litany</strong>",
           "publication": "ECCV 2020",
           "image": "./OL_files/pointContrast.png",
-          "paper": "http://orlitany.github.io/",
-          "bibtex":`TBD`,
+          "paper": "https://arxiv.org/abs/2007.10985",
+          "bibtex":`@misc{xie2020pointcontrast,
+    title={PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding},
+    author={Saining Xie and Jiatao Gu and Demi Guo and Charles R. Qi and Leonidas J. Guibas and Or Litany},
+    year={2020},
+    eprint={2007.10985},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`,
           "misc": "<mark>Spotlight</mark>"
       },
       {

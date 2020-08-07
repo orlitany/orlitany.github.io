@@ -2,6 +2,20 @@ data = {
   // ------------ 2020 -----------------
     "publications": [
         {
+            "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
+            "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
+            "publication": "WACV 2021",
+            "image": "./OL_files/contConv.png",
+            "paper": "https://arxiv.org/abs/2002.02506",
+            "bibtex":`@misc{yang2020continuous,
+        title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
+        author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
+        year={2020},
+        eprint={2002.02506},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}}`
+        },
+        {
             "name": "Object-Centric Multi-View Aggregation",
             "authors": "Shubham Tulsiani, <strong>Or Litany</strong>, Charles R. Qi, He Wang, Leonidas Guibas",
             "publication": "Arxiv 2007.10300",
@@ -97,21 +111,7 @@ data = {
     eprint={2001.10692},
     archivePrefix={arXiv},
     primaryClass={cs.CV}}`
-      },
-      {
-        "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
-        "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
-        "publication": "arXiv 2002.02506",
-        "image": "./OL_files/contConv.png",
-        "paper": "https://arxiv.org/abs/2002.02506",
-        "bibtex":`@misc{yang2020continuous,
-    title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
-    author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
-    year={2020},
-    eprint={2002.02506},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`
-    },
+      },      
   // ------------ 2019 -----------------  
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",

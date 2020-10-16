@@ -1,4 +1,4 @@
-data = {  
+data = {
   // ------------ 2020 -----------------
     "publications": [
         {
@@ -49,7 +49,7 @@ data = {
         "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
         "publication": "ECCV 2020",
         "image": "./OL_files/theWhole.png",
-        "paper": "https://arxiv.org/pdf/2001.09650",
+        "paper": "https://arxiv.org/abs/2001.09650",
         "bibtex":`@misc{halimi2020greater,
   title={The Whole Is Greater Than the Sum of Its Nonrigid Parts},
   author={Oshri Halimi and Ido Imanuel and Or Litany and Giovanni Trappolini and Emanuele Rodolà and Leonidas Guibas and Ron Kimmel},
@@ -63,9 +63,14 @@ data = {
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
           "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",
           "image": "./OL_files/relmogen_teaser.png",
-          "paper": "https://drive.google.com/file/d/1yYQ8-JtOf7ve4XBYqURokoyPeqJwwbnl/view",
+          "paper": "https://arxiv.org/abs/2008.07792",
           "talk": "https://youtu.be/mTaJ9xQMiD0?t=2083",
-          "bibtex":`TBD`
+          "bibtex":`@article{xia2020relmogen,
+  title={ReLMoGen: Leveraging Motion Generation in Reinforcement Learning for Mobile Manipulation},
+  author={Xia, Fei and Li, Chengshu and Mart{\'\i}n-Mart{\'\i}n, Roberto and Litany, Or and Toshev, Alexander and Savarese, Silvio},
+  journal={arXiv preprint arXiv:2008.07792},
+  year={2020}
+}`
       },
         {
           "name": "Representation Learning Through Latent Canonicalizations",
@@ -111,8 +116,8 @@ data = {
     eprint={2001.10692},
     archivePrefix={arXiv},
     primaryClass={cs.CV}}`
-      },      
-  // ------------ 2019 -----------------  
+      },
+  // ------------ 2019 -----------------
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
           "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",

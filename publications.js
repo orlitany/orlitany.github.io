@@ -1,6 +1,20 @@
 data = {
   // ------------ 2020 -----------------
     "publications": [
+      {
+          "name": "Learned Equivariant Rendering without Transformation Supervision",
+          "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
+          "publication": "Neurips 2020 DiffCVGP workshop",
+          "image": "./OL_files/equi_render.png"
+          // "paper": "https://arxiv.org/abs/2002.02506",
+          // "bibtex":`@misc{yang2020continuous,
+      // title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
+      // author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
+      // year={2020},
+      // eprint={2002.02506},
+      // archivePrefix={arXiv},
+      // primaryClass={cs.CV}}`
+      },
         {
             "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
             "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",

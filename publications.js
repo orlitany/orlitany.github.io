@@ -15,6 +15,21 @@ data = {
       // archivePrefix={arXiv},
       // primaryClass={cs.CV}}`
       },
+      {
+        "name": "Representation Learning Through Latent Canonicalizations",
+        "authors": "<strong>Or Litany</strong>, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
+        "publication": "WACV 2021",
+        "image": "./OL_files/canonicalizers.png",
+        "paper": "https://arxiv.org/abs/2002.11829",
+        "talk":"https://youtu.be/l1Dh4vHuYQ4",
+        "bibtex":`@misc{litany2020representation,
+  title={Representation Learning Through Latent Canonicalizations},
+  author={Or Litany and Ari Morcos and Srinath Sridhar and Leonidas Guibas and Judy Hoffman},
+  year={2020},
+  eprint={2002.11829},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}}`
+    },
         {
             "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
             "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
@@ -85,21 +100,6 @@ data = {
   journal={arXiv preprint arXiv:2008.07792},
   year={2020}
 }`
-      },
-        {
-          "name": "Representation Learning Through Latent Canonicalizations",
-          "authors": "<strong>Or Litany</strong>, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
-          "publication": "ICML 2020 Workshop on Object-Oriented Learning",
-          "image": "./OL_files/canonicalizers.png",
-          "paper": "https://arxiv.org/abs/2002.11829",
-          "talk":"https://youtu.be/l1Dh4vHuYQ4",
-          "bibtex":`@misc{litany2020representation,
-    title={Representation Learning Through Latent Canonicalizations},
-    author={Or Litany and Ari Morcos and Srinath Sridhar and Leonidas Guibas and Judy Hoffman},
-    year={2020},
-    eprint={2002.11829},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}}`
       },
       {
           "name": "On Learning Sets of Symmetric Elements",

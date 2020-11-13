@@ -5,15 +5,15 @@ data = {
           "name": "Learned Equivariant Rendering without Transformation Supervision",
           "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
           "publication": "Neurips 2020 DiffCVGP workshop",
-          "image": "./OL_files/equi_render.png"
-          // "paper": "https://arxiv.org/abs/2002.02506",
-          // "bibtex":`@misc{yang2020continuous,
-      // title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
-      // author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
-      // year={2020},
-      // eprint={2002.02506},
-      // archivePrefix={arXiv},
-      // primaryClass={cs.CV}}`
+          "image": "./OL_files/equi_render.png",
+          "paper": "https://arxiv.org/abs/2011.05787v1",
+          "bibtex":`@misc{resnick2020learned,
+  title={Learned Equivariant Rendering without Transformation Supervision},
+  author={Cinjon Resnick and Or Litany and Hugo Larochelle and Joan Bruna and Kyunghyun Cho},
+  year={2020},
+  eprint={2011.05787},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}}`
       },
       {
         "name": "Representation Learning Through Latent Canonicalizations",
@@ -141,7 +141,7 @@ data = {
           "code": "https://github.com/facebookresearch/votenet",
           "slides": "./OL_files/talks/deep_hough_voting.pdf",
           "talk": "https://youtu.be/2ntDYowHbZs?t=4585",
-          "misc": "<mark>Best Paper Nomination (oral)</mark>",
+          "misc": "<mark>Best Paper Nomination</mark>",
           "bibtex":`@article{qi2019deep,
   title={Deep Hough Voting for 3D Object Detection in Point Clouds},
   author={Qi, Charles R and Litany, Or and He, Kaiming and Guibas, Leonidas J},

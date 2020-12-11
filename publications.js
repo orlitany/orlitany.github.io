@@ -2,6 +2,20 @@ data = {
   // ------------ 2020 -----------------
     "publications": [
       {
+          "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
+          "authors": "He Wang, Yezhen Cong, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",
+          "publication": "arXiv 2012.04355",
+          "image": "./OL_files/3dioumatch.png",
+          "paper": "https://arxiv.org/abs/2012.04355",
+          "bibtex":`@misc{wang20203dioumatch,
+      title={3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection},
+      author={He Wang and Yezhen Cong and Or Litany and Yue Gao and Leonidas J. Guibas},
+      year={2020},
+      eprint={2012.04355},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}`
+      },
+      {
           "name": "Learned Equivariant Rendering without Transformation Supervision",
           "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
           "publication": "Neurips 2020 DiffCVGP workshop",

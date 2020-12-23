@@ -1,6 +1,6 @@
 /* CSS Document */
 
- 
+
 body {
 	/*background: #f7f7f7;*/
 	background: #e3e5e8;
@@ -200,25 +200,30 @@ table.psets {
 }
 
 
-.acknowledgement 
-{ 
-	font-size: .875em; 
+.acknowledgement
+{
+	font-size: .875em;
 }
 
-.code { 
-	font-family: "Courier New", Courier, monospace 
+.code {
+	font-family: "Courier New", Courier, monospace
 }
 
 .instructorphoto img {
   width: 220px;
   border-radius: 220px;
   margin-bottom: 10px;
+  max-width: 100%;
+  display: block;
+}
 }
 
 .instructorphotosmall img {
   width: 60px;
   border-radius: 60px;
   margin-bottom: 10px;
+  max-width: 100%;
+  display: block;
 }
 
 .instructor {

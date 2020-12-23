@@ -7,6 +7,7 @@ data = {
           "publication": "arXiv 2012.04355",
           "image": "./OL_files/3dioumatch.png",
           "paper": "https://arxiv.org/abs/2012.04355",
+          "page": "https://thu17cyz.github.io/3DIoUMatch/",
           "bibtex":`@misc{wang20203dioumatch,
       title={3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection},
       author={He Wang and Yezhen Cong and Or Litany and Yue Gao and Leonidas J. Guibas},

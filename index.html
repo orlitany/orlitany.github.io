@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Research scientist at NVIDIA." />
   <meta name="twitter:card" content="summary" />
@@ -296,6 +296,9 @@
                 <a :href="pub.paper">paper</a> /
                 <span v-if="pub.code">
                   <a :href="pub.code">code</a> /
+                </span>
+                <span v-if="pub.page">
+                  <a :href="pub.page">page</a> /
                 </span>
                 <span v-if="pub.dataset">
                   <a :href="pub.dataset">dataset</a> /

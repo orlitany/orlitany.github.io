@@ -2,6 +2,20 @@ data = {
   // ------------ 2020 -----------------
     "publications": [
       {
+          "name": "Human 3D keypoints via spatial uncertainty modeling",
+          "authors": "Francis Williams, <strong>Or Litany</strong>, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
+          "publication": "arXiv 2012.10518",
+          "image": "./OL_files/3d_keypoint_estimation.png",
+          "paper": "https://arxiv.org/abs/2012.10518",
+          "bibtex":`@misc{williams2020human,
+      title={Human 3D keypoints via spatial uncertainty modeling},
+      author={Francis Williams and Or Litany and Avneesh Sud and Kevin Swersky and Andrea Tagliasacchi},
+      year={2020},
+      eprint={2012.10518},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}`
+      },
+      {
           "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
           "authors": "He Wang, Yezhen Cong, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",
           "publication": "arXiv 2012.04355",

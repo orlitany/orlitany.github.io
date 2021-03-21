@@ -47,18 +47,18 @@ data = {
       primaryClass={cs.CV}}`
       },      
       {
-          "name": "Learned Equivariant Rendering without Transformation Supervision",
-          "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
+          "name": "Self-Supervised Equivariant Scene Synthesis from Video",
+          "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Cosmas Heiß, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
           "publication": "Neurips 2020 DiffCVGP workshop",
           "image": "./OL_files/equi_render.png",
           "paper": "https://arxiv.org/abs/2011.05787v1",
-          "bibtex":`@misc{resnick2020learned,
-  title={Learned Equivariant Rendering without Transformation Supervision},
-  author={Cinjon Resnick and Or Litany and Hugo Larochelle and Joan Bruna and Kyunghyun Cho},
-  year={2020},
-  eprint={2011.05787},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}}`
+          "bibtex":`@misc{resnick2021selfsupervised,
+            title={Self-Supervised Equivariant Scene Synthesis from Video}, 
+            author={Cinjon Resnick and Or Litany and Cosmas Heiß and Hugo Larochelle and Joan Bruna and Kyunghyun Cho},
+            year={2021},
+            eprint={2102.00863},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}}`
       },
       {
         "name": "Representation Learning Through Latent Canonicalizations",

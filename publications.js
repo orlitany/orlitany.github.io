@@ -1,6 +1,37 @@
-data = {
-  // ------------ 2020 -----------------
+data = {  
     "publications": [
+        // ------------ 2021 -----------------
+      {
+          "name": "Weakly Supervised Learning of Rigid 3D Scene Flow",
+          "authors": "Zan Gojcic, <strong>Or Litany</strong>, Andreas Wieser, Leonidas J Guibas, Tolga Birdal",
+          "publication": "CVPR 2021",
+          "image": "./OL_files/weakly_cvpr21.png",
+          "paper": "https://arxiv.org/abs/2102.08945",
+          "page": "https://3dsceneflow.github.io/",
+          "bibtex":`@misc{gojcic2021weakly,
+            title={Weakly Supervised Learning of Rigid 3D Scene Flow}, 
+            author={Zan Gojcic and Or Litany and Andreas Wieser and Leonidas J. Guibas and Tolga Birdal},
+            year={2021},
+            eprint={2102.08945},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}}`
+      },
+      {
+        "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
+        "authors": "He Wang*, Yezhen Cong*, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",
+        "publication": "CVPR 2021",
+        "image": "./OL_files/3dioumatch.png",
+        "paper": "https://arxiv.org/abs/2012.04355",
+        "page": "https://thu17cyz.github.io/3DIoUMatch/",
+        "bibtex":`@misc{wang20203dioumatch,
+    title={3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection},
+    author={He Wang and Yezhen Cong and Or Litany and Yue Gao and Leonidas J. Guibas},
+    year={2020},
+    eprint={2012.04355},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}}`
+      },
+      // ------------ 2020 -----------------
       {
           "name": "Human 3D keypoints via spatial uncertainty modeling",
           "authors": "Francis Williams, <strong>Or Litany</strong>, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
@@ -14,22 +45,7 @@ data = {
       eprint={2012.10518},
       archivePrefix={arXiv},
       primaryClass={cs.CV}}`
-      },
-      {
-          "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
-          "authors": "He Wang, Yezhen Cong, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",
-          "publication": "arXiv 2012.04355",
-          "image": "./OL_files/3dioumatch.png",
-          "paper": "https://arxiv.org/abs/2012.04355",
-          "page": "https://thu17cyz.github.io/3DIoUMatch/",
-          "bibtex":`@misc{wang20203dioumatch,
-      title={3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection},
-      author={He Wang and Yezhen Cong and Or Litany and Yue Gao and Leonidas J. Guibas},
-      year={2020},
-      eprint={2012.04355},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
-      },
+      },      
       {
           "name": "Learned Equivariant Rendering without Transformation Supervision",
           "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",

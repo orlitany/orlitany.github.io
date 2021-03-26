@@ -2,6 +2,19 @@ data = {
     "publications": [
         // ------------ 2021 -----------------
       {
+          "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
+          "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
+          "publication": "ICRA 2021",
+          "image": "./OL_files/relmogen_teaser.png",
+          "paper": "https://arxiv.org/abs/2008.07792",
+          "talk": "https://youtu.be/mTaJ9xQMiD0?t=2083",
+          "bibtex":`@article{xia2020relmogen,
+              title={ReLMoGen: Leveraging Motion Generation in Reinforcement Learning for Mobile Manipulation},
+              author={Xia, Fei and Li, Chengshu and Mart{\'\i}n-Mart{\'\i}n, Roberto and Litany, Or and Toshev, Alexander and Savarese, Silvio},
+              journal={arXiv preprint arXiv:2008.07792},
+              year={2020}}`
+      },
+      {
           "name": "Weakly Supervised Learning of Rigid 3D Scene Flow",
           "authors": "Zan Gojcic, <strong>Or Litany</strong>, Andreas Wieser, Leonidas J Guibas, Tolga Birdal",
           "publication": "CVPR 2021",
@@ -131,21 +144,7 @@ data = {
   eprint={2001.09650},
   archivePrefix={arXiv},
   primaryClass={cs.CV}}`
-    },
-      {
-          "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
-          "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
-          "publication": "RSS 2020 Workshop on Action Representations for Learning in Continuous Control",
-          "image": "./OL_files/relmogen_teaser.png",
-          "paper": "https://arxiv.org/abs/2008.07792",
-          "talk": "https://youtu.be/mTaJ9xQMiD0?t=2083",
-          "bibtex":`@article{xia2020relmogen,
-  title={ReLMoGen: Leveraging Motion Generation in Reinforcement Learning for Mobile Manipulation},
-  author={Xia, Fei and Li, Chengshu and Mart{\'\i}n-Mart{\'\i}n, Roberto and Litany, Or and Toshev, Alexander and Savarese, Silvio},
-  journal={arXiv preprint arXiv:2008.07792},
-  year={2020}
-}`
-      },
+    },      
       {
           "name": "On Learning Sets of Symmetric Elements",
           "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",

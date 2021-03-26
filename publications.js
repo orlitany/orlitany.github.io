@@ -1,6 +1,20 @@
 data = {  
     "publications": [
         // ------------ 2021 -----------------
+       {
+          "name": "Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels",
+          "authors": "Evgenii Zheltonozhskii, Chaim Baskin, Avi Mendelson, Alex M. Bronstein, <strong>Or Litany</strong>",
+          "publication": "arXiv",
+          "image": "./OL_files/C2D_teaser.png",
+          "paper": "https://arxiv.org/abs/2103.13646",          
+          "bibtex":`@misc{zheltonozhskii2021contrast,
+              title={Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels}, 
+              author={Evgenii Zheltonozhskii and Chaim Baskin and Avi Mendelson and Alex M. Bronstein and Or Litany},
+              year={2021},
+              eprint={2103.13646},
+              archivePrefix={arXiv},
+              primaryClass={cs.CV}}`
+      },
       {
           "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
           "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",

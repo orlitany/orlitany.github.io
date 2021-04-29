@@ -1,6 +1,20 @@
 data = {  
     "publications": [
         // ------------ 2021 -----------------
+        {
+          "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
+          "authors": "Congyue Deng, <strong>Or Litany</strong>, Yueqi Duan, Adrien Poulenard, Andrea Tagliasacchi, Leonidas Guibas",
+          "publication": "arXiv",
+          "image": "./OL_files/VNN_teaser.png",
+          "paper": "https://arxiv.org/abs/2104.12229",          
+          "bibtex":`@misc{deng2021vector,
+                    title={Vector Neurons: A General Framework for SO(3)-Equivariant Networks}, 
+                    author={Congyue Deng and Or Litany and Yueqi Duan and Adrien Poulenard and Andrea Tagliasacchi and Leonidas Guibas},
+                    year={2021},
+                    eprint={2104.12229},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.CV}}`
+      },
        {
           "name": "Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels",
           "authors": "Evgenii Zheltonozhskii, Chaim Baskin, Avi Mendelson, Alex M. Bronstein, <strong>Or Litany</strong>",

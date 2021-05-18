@@ -3,6 +3,20 @@ data = {
         // ------------ 2021 -----------------
         {
           "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
+          "authors": "Ge Zhang, <strong>Or Litany</strong>, Srinath Sridhar, Leonidas Guibas",
+          "publication": "arXiv",
+          "image": "./OL_files/strobenet.png",
+          "paper": "https://arxiv.org/abs/2105.08016",          
+          "bibtex":`@misc{zhang2021strobenet,
+      title={StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects}, 
+      author={Ge Zhang and Or Litany and Srinath Sridhar and Leonidas Guibas},
+      year={2021},
+      eprint={2105.08016},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}`
+      },
+        {
+          "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
           "authors": "Congyue Deng, <strong>Or Litany</strong>, Yueqi Duan, Adrien Poulenard, Andrea Tagliasacchi, Leonidas Guibas",
           "publication": "arXiv",
           "image": "./OL_files/VNN_teaser.png",

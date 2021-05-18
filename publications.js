@@ -7,6 +7,7 @@ data = {
           "publication": "arXiv",
           "image": "./OL_files/strobenet.png",
           "paper": "https://arxiv.org/abs/2105.08016",          
+          "page": "https://dzhange.github.io/StrobeNet/",
           "bibtex":`@misc{zhang2021strobenet,
       title={StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects}, 
       author={Ge Zhang and Or Litany and Srinath Sridhar and Leonidas Guibas},

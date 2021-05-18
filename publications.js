@@ -2,7 +2,7 @@ data = {
     "publications": [
         // ------------ 2021 -----------------
         {
-          "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
+          "name": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
           "authors": "Ge Zhang, <strong>Or Litany</strong>, Srinath Sridhar, Leonidas Guibas",
           "publication": "arXiv",
           "image": "./OL_files/strobenet.png",

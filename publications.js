@@ -19,7 +19,7 @@ data = {
         {
           "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
           "authors": "Congyue Deng, <strong>Or Litany</strong>, Yueqi Duan, Adrien Poulenard, Andrea Tagliasacchi, Leonidas Guibas",
-          "publication": "arXiv",
+          "publication": "ICCV 2021",
           "image": "./OL_files/VNN_teaser.png",
           "paper": "https://arxiv.org/abs/2104.12229",          
           "bibtex":`@misc{deng2021vector,

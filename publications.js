@@ -33,7 +33,7 @@ data = {
        {
           "name": "Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels",
           "authors": "Evgenii Zheltonozhskii, Chaim Baskin, Avi Mendelson, Alex M. Bronstein, <strong>Or Litany</strong>",
-          "publication": "arXiv",
+          "publication": "WACV 2022",
           "image": "./OL_files/C2D_teaser.png",
           "paper": "https://arxiv.org/abs/2103.13646",          
           "bibtex":`@misc{zheltonozhskii2021contrast,

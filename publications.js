@@ -1,6 +1,21 @@
 data = {  
     "publications": [
-        // ------------ 2021 -----------------
+        // ------------ 2021 -----------------                
+        {
+          "name": "Mix3D: Out-of-Context Data Augmentation for 3D Scenes",
+          "authors": "Alexey Nekrasov, Jonas Schult, <strong>Or Litany</strong>, Bastian Leibe, Francis Engelmann",
+          "publication": "3DV 2021",
+          "image": "./OL_files/mix3d_teaser.jpg",
+          "paper": "https://arxiv.org/abs/2110.02210",          
+          "page": "https://kumuji.github.io/mix3d/",
+          "bibtex":`@misc{nekrasov2021mix3d,
+      title={Mix3D: Out-of-Context Data Augmentation for 3D Scenes}, 
+      author={Alexey Nekrasov and Jonas Schult and Or Litany and Bastian Leibe and Francis Engelmann},
+      year={2021},
+      eprint={2110.02210},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}`
+      },
         {
           "name": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
           "authors": "Ge Zhang, <strong>Or Litany</strong>, Srinath Sridhar, Leonidas Guibas",

@@ -5,7 +5,7 @@ data = {
           "name": "Mix3D: Out-of-Context Data Augmentation for 3D Scenes",
           "authors": "Alexey Nekrasov, Jonas Schult, <strong>Or Litany</strong>, Bastian Leibe, Francis Engelmann",
           "publication": "3DV 2021",
-          "image": "./OL_files/mix3d_teaser.jpg",
+          "image": "./OL_files/mix3d_teaser.png",
           "paper": "https://arxiv.org/abs/2110.02210",          
           "page": "https://kumuji.github.io/mix3d/",
           "bibtex":`@misc{nekrasov2021mix3d,

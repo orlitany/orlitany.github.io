@@ -2,6 +2,19 @@ data = {
     "publications": [
         // ------------ 2021 -----------------                
         {
+          "name": "DIB-R++: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer",
+          "authors": "Wenzheng Chen, Joey Litalien, Jun Gao, Zian Wang, Clement Fuji Tsang, Sameh Khamis, <strong>Or Litany</strong>, Sanja Fidler",
+          "publication": "NeurIPS 2021",
+          "image": "./OL_files/dibrplus_teaser.png",
+          "paper": "https://arxiv.org/abs/2111.00140",          
+          "page": "https://nv-tlabs.github.io/DIBRPlus/",
+          "bibtex":`@inproceedings{chen2021dibrpp,
+      title = {{DIB-R++}: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer},
+      author = {Wenzheng Chen and Joey Litalien and Jun Gao and Zian Wang and Clement Fuji Tsang and Sameh Khalis and Or Litany and Sanja Fidler},
+      year = {2021},
+      booktitle = {Advances in Neural Information Processing Systems (NeurIPS)}}`
+      },
+        {
           "name": "Mix3D: Out-of-Context Data Augmentation for 3D Scenes",
           "authors": "Alexey Nekrasov, Jonas Schult, <strong>Or Litany</strong>, Bastian Leibe, Francis Engelmann",
           "publication": "3DV 2021",

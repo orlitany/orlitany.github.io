@@ -2,6 +2,34 @@ data = {
     "publications": [
         // ------------ 2021 -----------------                
         {
+          "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",
+          "authors": "Francis Williams*, Zan Gojcic*, Sameh Khamis, Denis Zorin, Joan Bruna, Sanja Fidler, <strong>Or Litany</strong>",
+          "publication": "arXiv",
+          "image": "./OL_files/NKF_teaser.png",
+          "paper": "https://arxiv.org/abs/2111.13674",          
+          "page": "https://nv-tlabs.github.io/nkf/",
+          "bibtex":`@misc{williams2021neural,
+      title={Neural Fields as Learnable Kernels for 3D Reconstruction}, 
+      author={Francis Williams and Zan Gojcic and Sameh Khamis and Denis Zorin and Joan Bruna and Sanja Fidler and Or Litany},
+      year={2021},
+      eprint={2111.13674},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}}`
+      },
+        {
+          "name": "Neural Fields in Visual Computing and Beyond",
+          "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, <strong>Or Litany</strong>, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann, Srinath Sridhar",
+          "publication": "arXiv",
+          "image": "./OL_files/neural_fields_review_teaser.png",
+          "paper": "https://arxiv.org/abs/2111.11426",          
+          "page": "https://neuralfields.cs.brown.edu/",
+          "bibtex":`@article{xie2021neuralfield,
+    title = {Neural Fields in Visual Computing and Beyond},
+    author = {Yiheng Xie and Towaki Takikawa and Shunsuke Saito and Or Litany and Shiqin Yan and Numair Khan and Federico Tombari and James Tompkin and Vincent Sitzmann and Srinath Sridhar},
+    booktitle = {ArXiv Pre-print},
+    year = {2021}}`
+      },
+        {
           "name": "DIB-R++: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer",
           "authors": "Wenzheng Chen, Joey Litalien, Jun Gao, Zian Wang, Clement Fuji Tsang, Sameh Khamis, <strong>Or Litany</strong>, Sanja Fidler",
           "publication": "NeurIPS 2021",

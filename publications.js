@@ -1,6 +1,20 @@
 data = {  
     "publications": [
-        // ------------ 2021 -----------------                
+        // ------------ 2021 -----------------      
+        {
+          "name": "Spectral Unions of Partial Deformable 3D Shapes",
+          "authors": " <strong>Or Litany</strong>",
+          "publication": "Eurographics 2022",
+          "image": "./OL_files/spectral_unions_teaser.png",
+          "paper": "https://arxiv.org/abs/2104.00514",          
+          "bibtex":`@misc{moschella2021spectral,
+      title={Spectral Unions of Partial Deformable 3D Shapes}, 
+      author={Luca Moschella and Simone Melzi and Luca Cosmo and Filippo Maggioli and Or Litany and Maks Ovsjanikov and Leonidas Guibas and Emanuele Rodolà},
+      year={2021},
+      eprint={2104.00514},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR}}`
+      },
         {
           "name": "Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior",
           "authors": "Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, and <strong>Or Litany</strong>",

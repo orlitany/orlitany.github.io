@@ -3,7 +3,7 @@ data = {
         // ------------ 2021 -----------------      
         {
           "name": "Spectral Unions of Partial Deformable 3D Shapes",
-          "authors": " <strong>Or Litany</strong>",
+          "authors": "Luca Moschella, Simone Melzi, Luca Cosmo, Filippo Maggioli, <strong>Or Litany</strong>, Maks Ovsjanikov, Leonidas Guibas, Emanuele Rodolà",
           "publication": "Eurographics 2022",
           "image": "./OL_files/spectral_unions_teaser.png",
           "paper": "https://arxiv.org/abs/2104.00514",          

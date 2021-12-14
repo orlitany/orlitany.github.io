@@ -2,6 +2,19 @@ data = {
     "publications": [
         // ------------ 2021 -----------------                
         {
+          "name": "Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior",
+          "authors": "Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, and <strong>Or Litany</strong>",
+          "publication": "arXiv",
+          "image": "./OL_files/strive_teaser.png",
+          "paper": "https://arxiv.org/abs/2112.05077",          
+          "page": "https://nv-tlabs.github.io/STRIVE/",
+          "bibtex":`@inproceedings{rempe2021strive,
+    author={Rempe, Davis and Philion, Jonah and Guibas, Leonidas J. and Fidler, Sanja and Litany, Or},
+    title={Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior},
+    booktitle={arXiv:2112.05077},
+    year={2021}}`
+      },
+        {
           "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",
           "authors": "Francis Williams*, Zan Gojcic*, Sameh Khamis, Denis Zorin, Joan Bruna, Sanja Fidler, <strong>Or Litany</strong>",
           "publication": "arXiv",

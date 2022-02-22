@@ -2,6 +2,21 @@ data = {
     "publications": [
         // ------------ 2021 -----------------      
         {
+          "name": "Learning Smooth Neural Functions via Lipschitz Regularization",
+          "authors": "Derek Liu, Franics Williams, Alec Jacobson, Sanja Fidler, <strong>Or Litany</strong>",
+          "publication": "arxiv",
+          "image": "./OL_files/lipschitz_teaser.png",
+          "paper": "https://arxiv.org/abs/2202.08345",          
+          "bibtex":`@misc{liu2022learning,
+      title={Learning Smooth Neural Functions via Lipschitz Regularization}, 
+      author={Hsueh-Ti Derek Liu and Francis Williams and Alec Jacobson and Sanja Fidler and Or Litany},
+      year={2022},
+      eprint={2202.08345},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}`
+      },
+        {
           "name": "Spectral Unions of Partial Deformable 3D Shapes",
           "authors": "Luca Moschella, Simone Melzi, Luca Cosmo, Filippo Maggioli, <strong>Or Litany</strong>, Maks Ovsjanikov, Leonidas Guibas, Emanuele Rodolà",
           "publication": "Eurographics 2022",

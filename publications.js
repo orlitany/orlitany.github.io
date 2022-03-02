@@ -33,7 +33,7 @@ data = {
         {
           "name": "Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior",
           "authors": "Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, and <strong>Or Litany</strong>",
-          "publication": "arXiv",
+          "publication": "CVPR 2022",
           "image": "./OL_files/strive_teaser.png",
           "paper": "https://arxiv.org/abs/2112.05077",          
           "page": "https://nv-tlabs.github.io/STRIVE/",
@@ -46,7 +46,7 @@ data = {
         {
           "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",
           "authors": "Francis Williams*, Zan Gojcic*, Sameh Khamis, Denis Zorin, Joan Bruna, Sanja Fidler, <strong>Or Litany</strong>",
-          "publication": "arXiv",
+          "publication": "CVPR 2022",
           "image": "./OL_files/NKF_teaser.png",
           "paper": "https://arxiv.org/abs/2111.13674",          
           "page": "https://nv-tlabs.github.io/nkf/",

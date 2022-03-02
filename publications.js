@@ -17,6 +17,21 @@ data = {
 // }`
 //       },
         {
+          "name": "Federated Learning with Heterogeneous Architectures using Graph HyperNetworks",
+          "authors": "<strong>Or Litany</strong>, Haggai Maron, David Acuna, Jan Kautz, Gal Chechik, Sanja Fidler",
+          "publication": "arxiv",
+          "image": "./OL_files/heterofl.png",
+          "paper": "https://arxiv.org/abs/2201.08459",          
+          "bibtex":`@misc{litany2022federated,
+      title={Federated Learning with Heterogeneous Architectures using Graph HyperNetworks}, 
+      author={Or Litany and Haggai Maron and David Acuna and Jan Kautz and Gal Chechik and Sanja Fidler},
+      year={2022},
+      eprint={2201.08459},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}`
+      },
+        {
           "name": "Spectral Unions of Partial Deformable 3D Shapes",
           "authors": "Luca Moschella, Simone Melzi, Luca Cosmo, Filippo Maggioli, <strong>Or Litany</strong>, Maks Ovsjanikov, Leonidas Guibas, Emanuele Rodolà",
           "publication": "Eurographics 2022",

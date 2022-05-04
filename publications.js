@@ -1,27 +1,28 @@
 data = {  
     "publications": [
         // ------------ 2022 -----------------      
-//         {
-//           "name": "Learning Smooth Neural Functions via Lipschitz Regularization",
-//           "authors": "Derek Liu, Franics Williams, Alec Jacobson, Sanja Fidler, <strong>Or Litany</strong>",
-//           "publication": "arxiv",
-//           "image": "./OL_files/lipschitz_teaser.png",
-//           "paper": "https://arxiv.org/abs/2202.08345",          
-//           "bibtex":`@misc{liu2022learning,
-//       title={Learning Smooth Neural Functions via Lipschitz Regularization}, 
-//       author={Hsueh-Ti Derek Liu and Francis Williams and Alec Jacobson and Sanja Fidler and Or Litany},
-//       year={2022},
-//       eprint={2202.08345},
-//       archivePrefix={arXiv},
-//       primaryClass={cs.CV}
-// }`
-//       },
+        {
+          "name": "Learning Smooth Neural Functions via Lipschitz Regularization",
+          "authors": "Derek Liu, Francis Williams, Alec Jacobson, <br> Sanja Fidler, <strong>Or Litany</strong>",
+          "publication": "SIGGRAPH 2022",
+          "image": "./OL_files/lipschitz_teaser.png",
+          "paper": "https://arxiv.org/abs/2202.08345",
+          "page": "https://nv-tlabs.github.io/lip-mlp/",          
+          "bibtex":`@misc{liu2022learning,
+      title={Learning Smooth Neural Functions via Lipschitz Regularization}, 
+      author={Hsueh-Ti Derek Liu and Francis Williams and Alec Jacobson and Sanja Fidler and Or Litany},
+      year={2022},
+      eprint={2202.08345},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}`
+      },
         {
           "name": "Federated Learning with Heterogeneous Architectures using Graph HyperNetworks",
-          "authors": "<strong>Or Litany</strong>, Haggai Maron, David Acuna, Jan Kautz, Gal Chechik, Sanja Fidler",
+          "authors": "<strong>Or Litany</strong>, Haggai Maron, David Acuna, Jan Kautz, <br> Gal Chechik, Sanja Fidler",
           "publication": "arxiv",
           "image": "./OL_files/heterofl.png",
-          "paper": "https://arxiv.org/abs/2201.08459",          
+          "paper": "https://arxiv.org/abs/2201.08459",                    
           "bibtex":`@misc{litany2022federated,
       title={Federated Learning with Heterogeneous Architectures using Graph HyperNetworks}, 
       author={Or Litany and Haggai Maron and David Acuna and Jan Kautz and Gal Chechik and Sanja Fidler},

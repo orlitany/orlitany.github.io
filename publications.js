@@ -2,6 +2,20 @@ data = {
     "publications": [
         // ------------ 2022 -----------------      
         {
+          "name": "Language-Grounded Indoor 3D Semantic Segmentation in the Wild",
+          "authors": "David Rozenberszki, <strong>Or Litany</strong>, Angela Dai",
+          "publication": "arXiv",
+          "image": "./OL_files/scannet200_teaser.jpeg",
+          "paper": "https://arxiv.org/abs/2204.07761",
+          "page": "https://rozdavid.github.io/scannet200",          
+          "bibtex":`@inproceedings{rozenberszki2022scannet200,
+            title     = {Language-Grounded Indoor 3D Semantic Segmentation in the Wild},
+            author    = {David Rozenberszki and Or Litany and Angela Dai},
+            booktitle = {arXiv},
+            month     = {April},
+            year      = {2022}}}`
+      },
+        {
           "name": "Learning Smooth Neural Functions via Lipschitz Regularization",
           "authors": "Derek Liu, Francis Williams, Alec Jacobson, <br> Sanja Fidler, <strong>Or Litany</strong>",
           "publication": "SIGGRAPH 2022",
@@ -14,8 +28,7 @@ data = {
       year={2022},
       eprint={2202.08345},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}`
+      primaryClass={cs.CV}}`
       },
         {
           "name": "Federated Learning with Heterogeneous Architectures using Graph HyperNetworks",

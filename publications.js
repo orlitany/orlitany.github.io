@@ -4,7 +4,7 @@ data = {
         {
           "name": "Language-Grounded Indoor 3D Semantic Segmentation in the Wild",
           "authors": "David Rozenberszki, <strong>Or Litany</strong>, Angela Dai",
-          "publication": "arXiv",
+          "publication": "ECCV 2022",
           "image": "./OL_files/scannet200_teaser.jpeg",
           "paper": "https://arxiv.org/abs/2204.07761",
           "page": "https://rozdavid.github.io/scannet200",          
@@ -14,6 +14,12 @@ data = {
             booktitle = {arXiv},
             month     = {April},
             year      = {2022}}}`
+      },
+      {
+        "name": "MVDECOR: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation",
+        "authors": "Gopal Sharma, Kangxue Yin, Subhransu Maji, Evangelos Kalogerakis, <strong>Or Litany</strong>, Sanja Fidler ",
+        "publication": "ECCV 2022",
+        "image": "./OL_files/mvdecor_teaser.png"
       },
         {
           "name": "Learning Smooth Neural Functions via Lipschitz Regularization",

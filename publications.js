@@ -19,7 +19,14 @@ data = {
         "name": "MVDECOR: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation",
         "authors": "Gopal Sharma, Kangxue Yin, Subhransu Maji, Evangelos Kalogerakis, <strong>Or Litany</strong>, Sanja Fidler ",
         "publication": "ECCV 2022",
-        "image": "./OL_files/mvdecor_teaser.png"
+        "image": "./OL_files/mvdecor_teaser.png",
+        "paper": "https://arxiv.org/abs/2208.08580",
+        "page": "https://nv-tlabs.github.io/MvDeCor/",
+        "bibtex": `@inproceedings{MvDeCor2022,
+    title = {MvDeCor: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation}, 
+    author = {Gopal Sharma and Kangxue Yin and Subhransu Maji and Evangelos Kalogerakis and Or Litany and Sanja Fidler},        
+    booktitle = {ECCV},
+    year = {2022}}}`      
       },
         {
           "name": "Learning Smooth Neural Functions via Lipschitz Regularization",

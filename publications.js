@@ -92,13 +92,12 @@ data = {
           "image": "./OL_files/NKF_teaser.png",
           "paper": "https://arxiv.org/abs/2111.13674",          
           "page": "https://nv-tlabs.github.io/nkf/",
-          "bibtex":`@misc{williams2021neural,
-      title={Neural Fields as Learnable Kernels for 3D Reconstruction}, 
-      author={Francis Williams and Zan Gojcic and Sameh Khamis and Denis Zorin and Joan Bruna and Sanja Fidler and Or Litany},
-      year={2021},
-      eprint={2111.13674},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
+          "bibtex":`@inproceedings{williams2022neural,
+    title={Neural fields as learnable kernels for 3d reconstruction},
+    author={Williams, Francis and Gojcic, Zan and Khamis, Sameh and Zorin, Denis and Bruna, Joan and Fidler, Sanja and Litany, Or},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages={18500--18510},
+    year={2022}}`
       },
         {
           "name": "Neural Fields in Visual Computing and Beyond",

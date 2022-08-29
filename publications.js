@@ -79,11 +79,13 @@ data = {
           "image": "./OL_files/strive_teaser.png",
           "paper": "https://arxiv.org/abs/2112.05077",          
           "page": "https://nv-tlabs.github.io/STRIVE/",
-          "bibtex":`@inproceedings{rempe2021strive,
-    author={Rempe, Davis and Philion, Jonah and Guibas, Leonidas J. and Fidler, Sanja and Litany, Or},
-    title={Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior},
-    booktitle={arXiv:2112.05077},
-    year={2021}}`
+          "bibtex":`@InProceedings{Rempe_2022_CVPR,
+    author    = {Rempe, Davis and Philion, Jonah and Guibas, Leonidas J. and Fidler, Sanja and Litany, Or},
+    title     = {Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {17305-17315}}`
       },
         {
           "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",

@@ -2,6 +2,36 @@ data = {
     "publications": [
         // ------------ 2022 -----------------      
         {
+          "name": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
+          "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, <strong>Or Litany</strong>, Zan Gojcic, Sanja Fidler",
+          "publication": "NeurIPS 2022",
+          "image": "./OL_files/comingsoon.jpeg",
+          // "paper": "https://arxiv.org/abs/2204.07761",
+          // "page": "https://rozdavid.github.io/scannet200",          
+          // "code": "https://github.com/RozDavid/LanguageGroundedSemseg",
+          // "bibtex":`@inproceedings{rozenberszki2022scannet200,
+          //   title     = {Language-Grounded Indoor 3D Semantic Segmentation in the Wild},
+          //   author    = {David Rozenberszki and Or Litany and Angela Dai},
+          //   booktitle = {arXiv},
+          //   month     = {April},
+          //   year      = {2022}}}`
+      },
+      {
+        "name": "LION: Latent Point Diffusion Models for 3D Shape Generation",
+        "authors": "Xiaohui Zeng, Arash Vahdat, Francis Williams, Zan Gojcic, </br> <strong>Or Litany</strong>, Sanja Fidler, Karsten Kreis",
+        "publication": "NeurIPS 2022",
+        "image": "./OL_files/comingsoon.jpeg",
+        // "paper": "https://arxiv.org/abs/2204.07761",
+        // "page": "https://rozdavid.github.io/scannet200",          
+        // "code": "https://github.com/RozDavid/LanguageGroundedSemseg",
+        // "bibtex":`@inproceedings{rozenberszki2022scannet200,
+        //   title     = {Language-Grounded Indoor 3D Semantic Segmentation in the Wild},
+        //   author    = {David Rozenberszki and Or Litany and Angela Dai},
+        //   booktitle = {arXiv},
+        //   month     = {April},
+        //   year      = {2022}}}`
+    },
+        {
           "name": "Language-Grounded Indoor 3D Semantic Segmentation in the Wild",
           "authors": "David Rozenberszki, <strong>Or Litany</strong>, Angela Dai",
           "publication": "ECCV 2022",

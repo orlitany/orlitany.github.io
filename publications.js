@@ -2,6 +2,20 @@ data = {
     "publications": [
         // ------------ 2022 -----------------      
         {
+          "name": "Mask3D for 3D Semantic Instance Segmentation",
+          "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> <strong>Or Litany</strong>, Siyu Tang, Bastian Leibe",
+          "publication": "arXiv",
+          "image": "./OL_files/mask3D.png",
+          "paper": "https://arxiv.org/abs/2210.03105",
+          // "page": "https://rozdavid.github.io/scannet200",          
+          // "code": "https://github.com/RozDavid/LanguageGroundedSemseg",
+          "bibtex":`@article{schult2022mask3d,
+        title={Mask3D for 3D Semantic Instance Segmentation},
+        author={Schult, Jonas and Engelmann, Francis and Hermans, Alexander and Litany, Or and Tang, Siyu and Leibe, Bastian},
+        journal={arXiv preprint arXiv:2210.03105},
+        year={2022}}`
+      },
+        {
           "name": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
           "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, <strong>Or Litany</strong>, Zan Gojcic, Sanja Fidler",
           "publication": "NeurIPS 2022",

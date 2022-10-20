@@ -6,8 +6,7 @@ data = {
           "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> <strong>Or Litany</strong>, Siyu Tang, Bastian Leibe",
           "publication": "arXiv",
           "image": "./OL_files/mask3D.png",
-          "paper": "https://arxiv.org/abs/2210.03105",
-          
+          "paper": "https://arxiv.org/abs/2210.03105",          
           "code": "https://github.com/JonasSchult/Mask3D",
           "bibtex":`@article{schult2022mask3d,
         title={Mask3D for 3D Semantic Instance Segmentation},
@@ -152,15 +151,20 @@ data = {
         {
           "name": "Neural Fields in Visual Computing and Beyond",
           "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, <strong>Or Litany</strong>, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann, Srinath Sridhar",
-          "publication": "arXiv",
+          "publication": "Eurographics 2022 STAR",
           "image": "./OL_files/neural_fields_review_teaser.png",
           "paper": "https://arxiv.org/abs/2111.11426",          
-          "page": "https://neuralfields.cs.brown.edu/",
-          "bibtex":`@article{xie2021neuralfield,
-    title = {Neural Fields in Visual Computing and Beyond},
-    author = {Yiheng Xie and Towaki Takikawa and Shunsuke Saito and Or Litany and Shiqin Yan and Numair Khan and Federico Tombari and James Tompkin and Vincent Sitzmann and Srinath Sridhar},
-    booktitle = {ArXiv Pre-print},
-    year = {2021}}`
+          "page": "https://neuralfields.cs.brown.edu/",          
+          "bibtex":`@inproceedings{xie2022neural,
+            title={Neural fields in visual computing and beyond},
+            author={Xie, Yiheng and Takikawa, Towaki and Saito, Shunsuke and Litany, Or and Yan, Shiqin and Khan, Numair and Tombari, Federico and Tompkin, James and Sitzmann, Vincent and Sridhar, Srinath},
+            booktitle={Computer Graphics Forum},
+            volume={41},
+            number={2},
+            pages={641--676},
+            year={2022},
+            organization={Wiley Online Library}
+          }`
       },
         {
           "name": "DIB-R++: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer",
@@ -253,14 +257,29 @@ data = {
           "image": "./OL_files/weakly_cvpr21.png",
           "paper": "https://arxiv.org/abs/2102.08945",
           "page": "https://3dsceneflow.github.io/",
-          "bibtex":`@misc{gojcic2021weakly,
-            title={Weakly Supervised Learning of Rigid 3D Scene Flow}, 
-            author={Zan Gojcic and Or Litany and Andreas Wieser and Leonidas J. Guibas and Tolga Birdal},
-            year={2021},
-            eprint={2102.08945},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV}}`
+          "bibtex":`@inproceedings{gojcic2021weakly,
+            title={Weakly supervised learning of rigid 3D scene flow},
+            author={Gojcic, Zan and Litany, Or and Wieser, Andreas and Guibas, Leonidas J and Birdal, Tolga},
+            booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+            pages={5692--5703},
+            year={2021}
+          }`
       },
+      {
+        "name": "Causal Scene Bert: Improving object detection by searching for challenging groups",
+        "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Amlan Kar, Karsten Kreis, James Lucas, Kyunghyun Cho, Sanja Fidler",
+        "publication": "ICCV workshop",
+        "image": "./OL_files/causal_scene_bert.jpeg",
+        "paper": "https://arxiv.org/abs/2202.03651",        
+        "bibtex":`@InProceedings{Resnick_2021_ICCV,
+          author    = {Resnick, Cinjon and Litany, Or and Kar, Amlan and Kreis, Karsten and Lucas, James and Cho, Kyunghyun and Fidler, Sanja},
+          title     = {Causal BERT: Improving Object Detection by Searching for Challenging Groups},
+          booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+          month     = {October},
+          year      = {2021},
+          pages     = {2972-2981}
+      }`
+    },
       {
         "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
         "authors": "He Wang*, Yezhen Cong*, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",

@@ -7,8 +7,8 @@ data = {
           "publication": "arXiv",
           "image": "./OL_files/mask3D.png",
           "paper": "https://arxiv.org/abs/2210.03105",
-          // "page": "https://rozdavid.github.io/scannet200",          
-          // "code": "https://github.com/RozDavid/LanguageGroundedSemseg",
+          
+          "code": "https://github.com/JonasSchult/Mask3D",
           "bibtex":`@article{schult2022mask3d,
         title={Mask3D for 3D Semantic Instance Segmentation},
         author={Schult, Jonas and Engelmann, Francis and Hermans, Alexander and Litany, Or and Tang, Siyu and Leibe, Bastian},

@@ -7,6 +7,7 @@ data = {
           "publication": "arXiv",
           "image": "./OL_files/mask3D.png",
           "paper": "https://arxiv.org/abs/2210.03105",          
+          "page": "https://jonasschult.github.io/Mask3D/",
           "code": "https://github.com/JonasSchult/Mask3D",
           "bibtex":`@article{schult2022mask3d,
         title={Mask3D for 3D Semantic Instance Segmentation},

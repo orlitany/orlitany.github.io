@@ -4,7 +4,7 @@ data = {
         {
           "name": "Mask3D for 3D Semantic Instance Segmentation",
           "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> <strong>Or Litany</strong>, Siyu Tang, Bastian Leibe",
-          "publication": "arXiv",
+          "publication": "ICRA 2023",
           "image": "./OL_files/mask3D.png",
           "paper": "https://arxiv.org/abs/2210.03105",          
           "page": "https://jonasschult.github.io/Mask3D/",

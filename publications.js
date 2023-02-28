@@ -1,6 +1,36 @@
 data = {  
     "publications": [
-        // ------------ 2022 -----------------      
+        // ------------ 2023 -----------------                      
+        {
+          "name": "Neural Kernel Surface Reconstruction",
+          "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, <strong>Or Litany</strong>, <br> Sanja Fidler, Francis Williams",
+          "publication": "CVPR 2023",
+          "image": "./OL_files/comingsoon.jpeg",
+          "paper": "",          
+          "page": "",
+          "code": "",
+          "bibtex":``
+        },
+        {
+          "name": "Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion",
+          "authors":"Davis Rempe, Zhengyi Luo, Xue Bin Peng, Ye Yuan, Kris M. Kitani, Karsten Kreis, Sanja Fidler, <strong>Or Litany</strong>",
+          "publication": "CVPR 2023",
+          "image": "./OL_files/comingsoon.jpeg",
+          "paper": "",          
+          "page": "",
+          "code": "",
+          "bibtex":``
+        },
+        {
+          "name": "Fast Monocular Scene Reconstruction with Global-Sparse Local-Dense Grids",
+          "authors":"Wei Dong, Chris Choy, Charles T. Loop, Yuke Zhu, <strong>Or Litany</strong>, Anima Anandkumar",
+          "publication": "CVPR 2023",
+          "image": "./OL_files/comingsoon.jpeg",
+          "paper": "",          
+          "page": "",
+          "code": "",
+          "bibtex":``
+        },
         {
           "name": "Mask3D for 3D Semantic Instance Segmentation",
           "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> <strong>Or Litany</strong>, Siyu Tang, Bastian Leibe",
@@ -15,6 +45,7 @@ data = {
         journal={arXiv preprint arXiv:2210.03105},
         year={2022}}`
       },
+      // ------------ 2022 -----------------      
         {
           "name": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
           "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, <strong>Or Litany</strong>, Zan Gojcic, Sanja Fidler",

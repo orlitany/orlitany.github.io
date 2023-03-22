@@ -272,7 +272,8 @@
             <td width="75%" valign="top">
               <p><a :href="pub.paper">
                 <heading>{{ pub.name }}</heading></a><br>
-                <span v-html="pub.authors"></span><br>
+                <!-- <span v-html="pub.authors"></span><br> -->                
+                <span v-html=boldMyName(pub.authors)></span><br>
                 <em>{{ pub.publication }}</em>
                 <span v-if="pub.misc">
                   <br><span v-html="pub.misc"></span><br>
@@ -302,7 +303,7 @@
 
                 <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
 
-                <pre xml:space="preserve" style="display: none;">{{ pub.bibtex }}                  
+                <pre xml:space="preserve" style="display: none;"><span v-text=breakbib2(pub)></span>
                 </pre>                                
                 
               </div>
@@ -316,23 +317,51 @@
   </div>
 
 
-
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
   </script>
 
-  <script src="./publications.js"></script>
-
+  <!-- <script type="module" src="let data; $.getJSON('./data2.json', function(json) { data = json; });"></script> -->
+  <script src="publications.js"></script>
+  <script src="bibs.js"></script>
+  
+  
   <script>
     new Vue({
       el: "#read_pub_record",
-      data() {
+      data() {              
         return {
           data: data,
+          bibs: bibs
+        }
+      },
+      methods: {
+        breakbib2(x) {    
+          if (x.bibtex in bibs){return bibs[x.bibtex]} else {
+            return "Coming soon"
+          }
+        },
+        breakbib(x) {            
+          bib_split = x.split(",")
+          if (bib_split.length == 1) {return bib_split[0]}
+          bib_first = bib_split[0]+",\n "
+          bib_rest = bib_split.slice(1).join(",").split("},").join("},\n ")
+          // breakline for final }
+          bib_rest = bib_rest.slice(0,-1) + "\n" + bib_rest.slice(-1)
+          return bib_first + bib_rest
+        },
+        boldMyName(x) {
+          let phrase = "Or Litany"
+          let pos = x.search(phrase)
+          let length = phrase.length;
+          x = x.slice(0,pos) + "<strong>" + x.slice(pos,pos+length) + 
+            "</strong>" + x.slice(pos+length)
+          return x
         }
       }
     });
   </script>
+
 
   <!-- Publications.-->
 

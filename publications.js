@@ -3,465 +3,299 @@ data = {
         // ------------ 2023 -----------------                      
         {
           "name": "Neural Kernel Surface Reconstruction",
-          "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, <strong>Or Litany</strong>, <br> Sanja Fidler, Francis Williams",
+          "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, Or Litany, Sanja Fidler, Francis Williams",
           "publication": "CVPR 2023",
           "image": "./OL_files/comingsoon.jpeg",
           "paper": "",          
           "page": "",
           "code": "",
-          "bibtex":``
+          "bibtex":"",
+          "misc": "<mark>Highlight (top 10% of accepted papers)</mark>"
         },
         {
           "name": "Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion",
-          "authors":"Davis Rempe, Zhengyi Luo, Xue Bin Peng, Ye Yuan, Kris M. Kitani, Karsten Kreis, Sanja Fidler, <strong>Or Litany</strong>",
+          "authors":"Davis Rempe, Zhengyi Luo, Xue Bin Peng, Ye Yuan, Kris M. Kitani, Karsten Kreis, Sanja Fidler, Or Litany",
           "publication": "CVPR 2023",
           "image": "./OL_files/comingsoon.jpeg",
           "paper": "",          
           "page": "",
           "code": "",
-          "bibtex":``
+          "bibtex":""
         },
         {
           "name": "Fast Monocular Scene Reconstruction with Global-Sparse Local-Dense Grids",
-          "authors":"Wei Dong, Chris Choy, Charles T. Loop, Yuke Zhu, <strong>Or Litany</strong>, Anima Anandkumar",
+          "authors":"Wei Dong, Chris Choy, Charles T. Loop, Yuke Zhu, Or Litany, Anima Anandkumar",
           "publication": "CVPR 2023",
           "image": "./OL_files/comingsoon.jpeg",
           "paper": "",          
           "page": "",
           "code": "",
-          "bibtex":``
+          "bibtex":""
         },
         {
           "name": "Mask3D for 3D Semantic Instance Segmentation",
-          "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> <strong>Or Litany</strong>, Siyu Tang, Bastian Leibe",
+          "authors":"Jonas Schult, Francis Engelmann, Alexander Hermans, <br> Or Litany, Siyu Tang, Bastian Leibe",
           "publication": "ICRA 2023",
           "image": "./OL_files/mask3D.png",
           "paper": "https://arxiv.org/abs/2210.03105",          
           "page": "https://jonasschult.github.io/Mask3D/",
           "code": "https://github.com/JonasSchult/Mask3D",
-          "bibtex":`@article{schult2022mask3d,
-        title={Mask3D for 3D Semantic Instance Segmentation},
-        author={Schult, Jonas and Engelmann, Francis and Hermans, Alexander and Litany, Or and Tang, Siyu and Leibe, Bastian},
-        journal={arXiv preprint arXiv:2210.03105},
-        year={2022}}`
-      },
+          "bibtex":"schult2022mask3d"
+        },
       // ------------ 2022 -----------------      
         {
           "name": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
-          "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, <strong>Or Litany</strong>, Zan Gojcic, Sanja Fidler",
+          "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, Or Litany, Zan Gojcic, Sanja Fidler",
           "publication": "NeurIPS 2022",
           "image": "./OL_files/get3D_model.png",
           "paper": "https://arxiv.org/abs/2209.11163",
           "page": "https://nv-tlabs.github.io/GET3D/",          
           "code": "https://github.com/nv-tlabs/GET3D",
-          "bibtex":`@inproceedings{gao2022get3d,
-            title={GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images},
-            author={Jun Gao and Tianchang Shen and Zian Wang and Wenzheng Chen and Kangxue Yin and Daiqing Li and Or Litany and Zan Gojcic and Sanja Fidler},
-            booktitle={Advances In Neural Information Processing Systems},
-            year={2022}
-            }`
-      },
-      {
+          "bibtex":"gao2022get3d"
+        },
+        {
         "name": "LION: Latent Point Diffusion Models for 3D Shape Generation",
-        "authors": "Xiaohui Zeng, Arash Vahdat, Francis Williams, Zan Gojcic, </br> <strong>Or Litany</strong>, Sanja Fidler, Karsten Kreis",
+        "authors": "Xiaohui Zeng, Arash Vahdat, Francis Williams, Zan Gojcic, </br> Or Litany, Sanja Fidler, Karsten Kreis",
         "publication": "NeurIPS 2022",
         "image": "./OL_files/lion_pipeline.jpeg",
         "paper": "https://arxiv.org/abs/2210.06978",
         "page": "https://nv-tlabs.github.io/LION/",          
         "code": "https://github.com/nv-tlabs/LION",
-        "bibtex":`@inproceedings{zeng2022lion,
-          title={LION: Latent Point Diffusion Models for 3D Shape Generation},
-          author={Xiaohui Zeng and Arash Vahdat and Francis Williams and Zan Gojcic and Or Litany and Sanja Fidler and Karsten Kreis},
-          booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-          year={2022}}
-      }`
-    },
-        {
+        "bibtex":"zeng2022lion"
+      },
+      {
           "name": "Language-Grounded Indoor 3D Semantic Segmentation in the Wild",
-          "authors": "David Rozenberszki, <strong>Or Litany</strong>, Angela Dai",
+          "authors": "David Rozenberszki, Or Litany, Angela Dai",
           "publication": "ECCV 2022",
           "image": "./OL_files/scannet200_teaser.jpeg",
           "paper": "https://arxiv.org/abs/2204.07761",
           "page": "https://rozdavid.github.io/scannet200",          
           "code": "https://github.com/RozDavid/LanguageGroundedSemseg",
-          "bibtex":`@inproceedings{rozenberszki2022scannet200,
-            title     = {Language-Grounded Indoor 3D Semantic Segmentation in the Wild},
-            author    = {David Rozenberszki and Or Litany and Angela Dai},
-            booktitle = {arXiv},
-            month     = {April},
-            year      = {2022}}}`
+          "bibtex":"rozenberszki2022language"
       },
       {
         "name": "MVDECOR: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation",
-        "authors": "Gopal Sharma, Kangxue Yin, Subhransu Maji, Evangelos Kalogerakis, <strong>Or Litany</strong>, Sanja Fidler ",
+        "authors": "Gopal Sharma, Kangxue Yin, Subhransu Maji, Evangelos Kalogerakis, Or Litany, Sanja Fidler ",
         "publication": "ECCV 2022",
         "image": "./OL_files/mvdecor_teaser.png",
         "paper": "https://arxiv.org/abs/2208.08580",
         "page": "https://nv-tlabs.github.io/MvDeCor/",
         "code": "https://github.com/nv-tlabs/MvDeCor",
-        "bibtex": `@inproceedings{MvDeCor2022,
-    title = {MvDeCor: Multi-view Dense Correspondence Learning for Fine-grained 3D Segmentation}, 
-    author = {Gopal Sharma and Kangxue Yin and Subhransu Maji and Evangelos Kalogerakis and Or Litany and Sanja Fidler},        
-    booktitle = {ECCV},
-    year = {2022}}}`      
+        "bibtex": "sharma2022mvdecor"      
       },
         {
           "name": "Learning Smooth Neural Functions via Lipschitz Regularization",
-          "authors": "Derek Liu, Francis Williams, Alec Jacobson, <br> Sanja Fidler, <strong>Or Litany</strong>",
+          "authors": "Derek Liu, Francis Williams, Alec Jacobson, <br> Sanja Fidler, Or Litany",
           "publication": "SIGGRAPH 2022",
           "image": "./OL_files/lipschitz_teaser.png",
           "paper": "https://arxiv.org/abs/2202.08345",
           "page": "https://nv-tlabs.github.io/lip-mlp/",          
           "code": "https://github.com/ml-for-gp/jaxgptoolbox/tree/main/demos/lipschitz_mlp",
-          "bibtex":`@misc{liu2022learning,
-      title={Learning Smooth Neural Functions via Lipschitz Regularization}, 
-      author={Hsueh-Ti Derek Liu and Francis Williams and Alec Jacobson and Sanja Fidler and Or Litany},
-      year={2022},
-      eprint={2202.08345},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
+          "bibtex":"liu2022learning"
       },
         {
           "name": "Federated Learning with Heterogeneous Architectures using Graph HyperNetworks",
-          "authors": "<strong>Or Litany</strong>, Haggai Maron, David Acuna, Jan Kautz, <br> Gal Chechik, Sanja Fidler",
+          "authors": "Or Litany, Haggai Maron, David Acuna, Jan Kautz, <br> Gal Chechik, Sanja Fidler",
           "publication": "arxiv",
           "image": "./OL_files/heterofl.png",
           "paper": "https://arxiv.org/abs/2201.08459",                    
-          "bibtex":`@misc{litany2022federated,
-      title={Federated Learning with Heterogeneous Architectures using Graph HyperNetworks}, 
-      author={Or Litany and Haggai Maron and David Acuna and Jan Kautz and Gal Chechik and Sanja Fidler},
-      year={2022},
-      eprint={2201.08459},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}`
+          "bibtex":"litany2022federated"
       },
         {
           "name": "Spectral Unions of Partial Deformable 3D Shapes",
-          "authors": "Luca Moschella, Simone Melzi, Luca Cosmo, Filippo Maggioli, <strong>Or Litany</strong>, Maks Ovsjanikov, Leonidas Guibas, Emanuele Rodolà",
+          "authors": "Luca Moschella, Simone Melzi, Luca Cosmo, Filippo Maggioli, Or Litany, Maks Ovsjanikov, Leonidas Guibas, Emanuele Rodolà",
           "publication": "Eurographics 2022",
           "image": "./OL_files/spectral_unions_teaser.png",
           "paper": "https://arxiv.org/abs/2104.00514",          
-          "bibtex":`@misc{moschella2021spectral,
-      title={Spectral Unions of Partial Deformable 3D Shapes}, 
-      author={Luca Moschella and Simone Melzi and Luca Cosmo and Filippo Maggioli and Or Litany and Maks Ovsjanikov and Leonidas Guibas and Emanuele Rodolà},
-      year={2021},
-      eprint={2104.00514},
-      archivePrefix={arXiv},
-      primaryClass={cs.GR}}`
+          "bibtex": "moschella2022learning"
       },
         {
           "name": "Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior",
-          "authors": "Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, and <strong>Or Litany</strong>",
+          "authors": "Davis Rempe, Jonah Philion, Leonidas Guibas, Sanja Fidler, and Or Litany",
           "publication": "CVPR 2022",
           "image": "./OL_files/strive_teaser.png",
           "paper": "https://arxiv.org/abs/2112.05077",          
           "page": "https://nv-tlabs.github.io/STRIVE/",
           "code": "https://github.com/nv-tlabs/STRIVE",
-          "bibtex":`@InProceedings{Rempe_2022_CVPR,
-    author    = {Rempe, Davis and Philion, Jonah and Guibas, Leonidas J. and Fidler, Sanja and Litany, Or},
-    title     = {Generating Useful Accident-Prone Driving Scenarios via a Learned Traffic Prior},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2022},
-    pages     = {17305-17315}}`
+          "bibtex":"rempe2021generating"
       },
         {
           "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",
-          "authors": "Francis Williams*, Zan Gojcic*, Sameh Khamis, Denis Zorin, Joan Bruna, Sanja Fidler, <strong>Or Litany</strong>",
+          "authors": "Francis Williams*, Zan Gojcic*, Sameh Khamis, Denis Zorin, Joan Bruna, Sanja Fidler, Or Litany",
           "publication": "CVPR 2022",
           "image": "./OL_files/NKF_teaser.png",
           "paper": "https://arxiv.org/abs/2111.13674",          
           "page": "https://nv-tlabs.github.io/nkf/",
-          "bibtex":`@inproceedings{williams2022neural,
-    title={Neural fields as learnable kernels for 3d reconstruction},
-    author={Williams, Francis and Gojcic, Zan and Khamis, Sameh and Zorin, Denis and Bruna, Joan and Fidler, Sanja and Litany, Or},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-    pages={18500--18510},
-    year={2022}}`
+          "bibtex":"williams2021neural"
       },
         {
           "name": "Neural Fields in Visual Computing and Beyond",
-          "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, <strong>Or Litany</strong>, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann, Srinath Sridhar",
+          "authors": "Yiheng Xie, Towaki Takikawa, Shunsuke Saito, Or Litany, Shiqin Yan, Numair Khan, Federico Tombari, James Tompkin, Vincent Sitzmann, Srinath Sridhar",
           "publication": "Eurographics 2022 STAR",
           "image": "./OL_files/neural_fields_review_teaser.png",
           "paper": "https://arxiv.org/abs/2111.11426",          
           "page": "https://neuralfields.cs.brown.edu/",          
-          "bibtex":`@inproceedings{xie2022neural,
-            title={Neural fields in visual computing and beyond},
-            author={Xie, Yiheng and Takikawa, Towaki and Saito, Shunsuke and Litany, Or and Yan, Shiqin and Khan, Numair and Tombari, Federico and Tompkin, James and Sitzmann, Vincent and Sridhar, Srinath},
-            booktitle={Computer Graphics Forum},
-            volume={41},
-            number={2},
-            pages={641--676},
-            year={2022},
-            organization={Wiley Online Library}
-          }`
+          "bibtex":"xie2022neural"
       },
         {
           "name": "DIB-R++: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer",
-          "authors": "Wenzheng Chen, Joey Litalien, Jun Gao, Zian Wang, Clement Fuji Tsang, Sameh Khamis, <strong>Or Litany</strong>, Sanja Fidler",
+          "authors": "Wenzheng Chen, Joey Litalien, Jun Gao, Zian Wang, Clement Fuji Tsang, Sameh Khamis, Or Litany, Sanja Fidler",
           "publication": "NeurIPS 2021",
           "image": "./OL_files/dibrplus_teaser.png",
           "paper": "https://arxiv.org/abs/2111.00140",          
           "page": "https://nv-tlabs.github.io/DIBRPlus/",
-          "bibtex":`@inproceedings{chen2021dibrpp,
-      title = {{DIB-R++}: Learning to Predict Lighting and Material with a Hybrid Differentiable Renderer},
-      author = {Wenzheng Chen and Joey Litalien and Jun Gao and Zian Wang and Clement Fuji Tsang and Sameh Khalis and Or Litany and Sanja Fidler},
-      year = {2021},
-      booktitle = {Advances in Neural Information Processing Systems (NeurIPS)}}`
+          "bibtex":"chen2021dib"
       },
         {
           "name": "Mix3D: Out-of-Context Data Augmentation for 3D Scenes",
-          "authors": "Alexey Nekrasov, Jonas Schult, <strong>Or Litany</strong>, Bastian Leibe, Francis Engelmann",
+          "authors": "Alexey Nekrasov, Jonas Schult, Or Litany, Bastian Leibe, Francis Engelmann",
           "publication": "3DV 2021",
           "image": "./OL_files/mix3d_teaser.png",
           "paper": "https://arxiv.org/abs/2110.02210",          
           "page": "https://kumuji.github.io/mix3d/",
-          "bibtex":`@misc{nekrasov2021mix3d,
-      title={Mix3D: Out-of-Context Data Augmentation for 3D Scenes}, 
-      author={Alexey Nekrasov and Jonas Schult and Or Litany and Bastian Leibe and Francis Engelmann},
-      year={2021},
-      eprint={2110.02210},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
+          "bibtex":"nekrasov2021mix3d"
       },
         {
           "name": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
-          "authors": "Ge Zhang, <strong>Or Litany</strong>, Srinath Sridhar, Leonidas Guibas",
+          "authors": "Ge Zhang, Or Litany, Srinath Sridhar, Leonidas Guibas",
           "publication": "arXiv",
           "image": "./OL_files/strobenet.png",
           "paper": "https://arxiv.org/abs/2105.08016",          
           "page": "https://dzhange.github.io/StrobeNet/",
-          "bibtex":`@misc{zhang2021strobenet,
-      title={StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects}, 
-      author={Ge Zhang and Or Litany and Srinath Sridhar and Leonidas Guibas},
-      year={2021},
-      eprint={2105.08016},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
+          "bibtex":"zhang2021strobenet"
       },
         {
           "name": "Vector Neurons: A General Framework for SO(3)-Equivariant Networks",
-          "authors": "Congyue Deng, <strong>Or Litany</strong>, Yueqi Duan, Adrien Poulenard, Andrea Tagliasacchi, Leonidas Guibas",
+          "authors": "Congyue Deng, Or Litany, Yueqi Duan, Adrien Poulenard, Andrea Tagliasacchi, Leonidas Guibas",
           "publication": "ICCV 2021",
           "image": "./OL_files/VNN_teaser.png",
           "paper": "https://arxiv.org/abs/2104.12229",          
-          "bibtex":`@misc{deng2021vector,
-                    title={Vector Neurons: A General Framework for SO(3)-Equivariant Networks}, 
-                    author={Congyue Deng and Or Litany and Yueqi Duan and Adrien Poulenard and Andrea Tagliasacchi and Leonidas Guibas},
-                    year={2021},
-                    eprint={2104.12229},
-                    archivePrefix={arXiv},
-                    primaryClass={cs.CV}}`
+          "bibtex":"deng2021vector"
       },
        {
           "name": "Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels",
-          "authors": "Evgenii Zheltonozhskii, Chaim Baskin, Avi Mendelson, Alex M. Bronstein, <strong>Or Litany</strong>",
+          "authors": "Evgenii Zheltonozhskii, Chaim Baskin, Avi Mendelson, Alex M. Bronstein, Or Litany",
           "publication": "WACV 2022",
           "image": "./OL_files/C2D_teaser.png",
           "paper": "https://arxiv.org/abs/2103.13646",          
-          "bibtex":`@misc{zheltonozhskii2021contrast,
-              title={Contrast to Divide: Self-Supervised Pre-Training for Learning with Noisy Labels}, 
-              author={Evgenii Zheltonozhskii and Chaim Baskin and Avi Mendelson and Alex M. Bronstein and Or Litany},
-              year={2021},
-              eprint={2103.13646},
-              archivePrefix={arXiv},
-              primaryClass={cs.CV}}`
+          "bibtex":"zheltonozhskii2021contrast"
       },
       {
           "name": "ReLMoGen: Integrating Reinforcement Learning and Motion Generation for Interactive Navigation",
-          "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, <strong>Or Litany</strong>, Silvio Savarese",
+          "authors": "Fei Xia, Chengshu Li, Roberto Martin-Martin, Alexander Toshev, Or Litany, Silvio Savarese",
           "publication": "ICRA 2021",
           "image": "./OL_files/relmogen_teaser.png",
           "paper": "https://arxiv.org/abs/2008.07792",
           "talk": "https://youtu.be/mTaJ9xQMiD0?t=2083",
-          "bibtex":`@article{xia2020relmogen,
-              title={ReLMoGen: Leveraging Motion Generation in Reinforcement Learning for Mobile Manipulation},
-              author={Xia, Fei and Li, Chengshu and Mart{\'\i}n-Mart{\'\i}n, Roberto and Litany, Or and Toshev, Alexander and Savarese, Silvio},
-              journal={arXiv preprint arXiv:2008.07792},
-              year={2020}}`
+          "bibtex":"xia2021relmogen"
       },
       {
           "name": "Weakly Supervised Learning of Rigid 3D Scene Flow",
-          "authors": "Zan Gojcic, <strong>Or Litany</strong>, Andreas Wieser, Leonidas J Guibas, Tolga Birdal",
+          "authors": "Zan Gojcic, Or Litany, Andreas Wieser, Leonidas J Guibas, Tolga Birdal",
           "publication": "CVPR 2021",
           "image": "./OL_files/weakly_cvpr21.png",
           "paper": "https://arxiv.org/abs/2102.08945",
           "page": "https://3dsceneflow.github.io/",
-          "bibtex":`@inproceedings{gojcic2021weakly,
-            title={Weakly supervised learning of rigid 3D scene flow},
-            author={Gojcic, Zan and Litany, Or and Wieser, Andreas and Guibas, Leonidas J and Birdal, Tolga},
-            booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-            pages={5692--5703},
-            year={2021}
-          }`
+          "bibtex":"gojcic2021weakly"
       },
       {
         "name": "Causal Scene Bert: Improving object detection by searching for challenging groups",
-        "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Amlan Kar, Karsten Kreis, James Lucas, Kyunghyun Cho, Sanja Fidler",
+        "authors": "Cinjon Resnick, Or Litany, Amlan Kar, Karsten Kreis, James Lucas, Kyunghyun Cho, Sanja Fidler",
         "publication": "ICCV workshop",
         "image": "./OL_files/causal_scene_bert.jpeg",
         "paper": "https://arxiv.org/abs/2202.03651",        
-        "bibtex":`@InProceedings{Resnick_2021_ICCV,
-          author    = {Resnick, Cinjon and Litany, Or and Kar, Amlan and Kreis, Karsten and Lucas, James and Cho, Kyunghyun and Fidler, Sanja},
-          title     = {Causal BERT: Improving Object Detection by Searching for Challenging Groups},
-          booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
-          month     = {October},
-          year      = {2021},
-          pages     = {2972-2981}
-      }`
+        "bibtex":"resnick2021causal"
     },
       {
         "name": "3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection",
-        "authors": "He Wang*, Yezhen Cong*, <strong>Or Litany</strong>, Yue Gao, Leonidas J. Guibas",
+        "authors": "He Wang*, Yezhen Cong*, Or Litany, Yue Gao, Leonidas J. Guibas",
         "publication": "CVPR 2021",
         "image": "./OL_files/3dioumatch.png",
         "paper": "https://arxiv.org/abs/2012.04355",
         "page": "https://thu17cyz.github.io/3DIoUMatch/",
-        "bibtex":`@misc{wang20203dioumatch,
-    title={3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D Object Detection},
-    author={He Wang and Yezhen Cong and Or Litany and Yue Gao and Leonidas J. Guibas},
-    year={2020},
-    eprint={2012.04355},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`
+        "bibtex":"wang20203dioumatch"
       },
       // ------------ 2020 -----------------
       {
           "name": "Human 3D keypoints via spatial uncertainty modeling",
-          "authors": "Francis Williams, <strong>Or Litany</strong>, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
+          "authors": "Francis Williams, Or Litany, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
           "publication": "arXiv 2012.10518",
           "image": "./OL_files/3d_keypoint_estimation.png",
           "paper": "https://arxiv.org/abs/2012.10518",
-          "bibtex":`@misc{williams2020human,
-      title={Human 3D keypoints via spatial uncertainty modeling},
-      author={Francis Williams and Or Litany and Avneesh Sud and Kevin Swersky and Andrea Tagliasacchi},
-      year={2020},
-      eprint={2012.10518},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}`
+          "bibtex":"williams2020human"
       },      
       {
           "name": "Self-Supervised Equivariant Scene Synthesis from Video",
-          "authors": "Cinjon Resnick, <strong>Or Litany</strong>, Cosmas Heiß, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
+          "authors": "Cinjon Resnick, Or Litany, Cosmas Heiß, Hugo Larochelle, Joan Bruna, Kyunghyun Cho",
           "publication": "Neurips 2020 DiffCVGP workshop",
           "image": "./OL_files/equi_render.png",
           "paper": "https://arxiv.org/abs/2011.05787v1",
-          "bibtex":`@misc{resnick2021selfsupervised,
-            title={Self-Supervised Equivariant Scene Synthesis from Video}, 
-            author={Cinjon Resnick and Or Litany and Cosmas Heiß and Hugo Larochelle and Joan Bruna and Kyunghyun Cho},
-            year={2021},
-            eprint={2102.00863},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV}}`
+          "bibtex":"resnick2020learned"
       },
       {
         "name": "Representation Learning Through Latent Canonicalizations",
-        "authors": "<strong>Or Litany</strong>, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
+        "authors": "Or Litany, Ari Morcos, Srinath Sridhar, Leonidas Guibas, Judy Hoffman",
         "publication": "WACV 2021",
         "image": "./OL_files/canonicalizers.png",
         "paper": "https://arxiv.org/abs/2002.11829",
         "talk":"https://youtu.be/l1Dh4vHuYQ4",
-        "bibtex":`@misc{litany2020representation,
-  title={Representation Learning Through Latent Canonicalizations},
-  author={Or Litany and Ari Morcos and Srinath Sridhar and Leonidas Guibas and Judy Hoffman},
-  year={2020},
-  eprint={2002.11829},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}}`
+        "bibtex":"litany2020representation"
+    },
+    {
+        "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
+        "authors": "Zhangsihao Yang, Or Litany, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
+        "publication": "WACV 2021",
+        "image": "./OL_files/contConv.png",
+        "paper": "https://arxiv.org/abs/2002.02506",
+        "bibtex":"yang2020continuous"
     },
         {
-            "name": "Continuous Geodesic Convolutions for Learning on 3D Shapes",
-            "authors": "Zhangsihao Yang, <strong>Or Litany</strong>, Tolga Birdal, Srinath Sridhar, Leonidas Guibas",
-            "publication": "WACV 2021",
-            "image": "./OL_files/contConv.png",
-            "paper": "https://arxiv.org/abs/2002.02506",
-            "bibtex":`@misc{yang2020continuous,
-        title={Continuous Geodesic Convolutions for Learning on 3D Shapes},
-        author={Zhangsihao Yang and Or Litany and Tolga Birdal and Srinath Sridhar and Leonidas Guibas},
-        year={2020},
-        eprint={2002.02506},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}}`
-        },
-        {
             "name": "Object-Centric Multi-View Aggregation",
-            "authors": "Shubham Tulsiani, <strong>Or Litany</strong>, Charles R. Qi, He Wang, Leonidas Guibas",
+            "authors": "Shubham Tulsiani, Or Litany, Charles R. Qi, He Wang, Leonidas Guibas",
             "publication": "Arxiv 2007.10300",
             "image": "./OL_files/mva_teaser.png",
             "paper": "http://arxiv.org/abs/2007.10300",
-            "bibtex":`@misc{tulsiani2020objectcentric,
-    title={Object-Centric Multi-View Aggregation},
-    author={Shubham Tulsiani and Or Litany and Charles R. Qi and He Wang and Leonidas J. Guibas},
-    year={2020},
-    eprint={2007.10300},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`
+            "bibtex":"tulsiani2020object"
         },
       {
           "name": "PointContrast: Unsupervised Pretraining for 3D Point Cloud Understanding",
-          "authors": "Saining Xie, Jiatao Gu, Demi Guo, Charles R. Qi, Leonidas Guibas, <strong>Or Litany</strong>",
+          "authors": "Saining Xie, Jiatao Gu, Demi Guo, Charles R. Qi, Leonidas Guibas, Or Litany",
           "publication": "ECCV 2020",
           "image": "./OL_files/pointContrast.png",
           "paper": "https://arxiv.org/abs/2007.10985",
-          "bibtex":`@misc{xie2020pointcontrast,
-    title={PointContrast: Unsupervised Pre-training for 3D Point Cloud Understanding},
-    author={Saining Xie and Jiatao Gu and Demi Guo and Charles R. Qi and Leonidas J. Guibas and Or Litany},
-    year={2020},
-    eprint={2007.10985},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`,
+          "bibtex":"xie2020pointcontrast",
           "misc": "<mark>Spotlight</mark>"
       },
       {
-        "name": "Towards Precise Completion of Deformable Shape",
-        "authors": "Oshri Halimi, Ido Imanuel, <strong>Or Litany</strong>, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
+        "name": "Towards Precise Completion of Deformable Shapes",
+        "authors": "Oshri Halimi, Ido Imanuel, Or Litany, Giovanni Trappolini, Emanuele Rodolà, Leonidas Guibas, Ron Kimmel",
         "publication": "ECCV 2020",
         "image": "./OL_files/theWhole.png",
         "paper": "https://arxiv.org/abs/2001.09650",
-        "bibtex":`@misc{halimi2020greater,
-  title={The Whole Is Greater Than the Sum of Its Nonrigid Parts},
-  author={Oshri Halimi and Ido Imanuel and Or Litany and Giovanni Trappolini and Emanuele Rodolà and Leonidas Guibas and Ron Kimmel},
-  year={2020},
-  eprint={2001.09650},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}}`
+        "bibtex":"halimi2020towards"
     },      
       {
           "name": "On Learning Sets of Symmetric Elements",
-          "authors": "Haggai Maron, <strong>Or Litany</strong>, Gal Chechik, Ethan Fetaya",
+          "authors": "Haggai Maron, Or Litany, Gal Chechik, Ethan Fetaya",
           "publication": "ICML 2020",
           "image": "./OL_files/dss_layer.png",
           "paper": "https://arxiv.org/abs/2002.08599",
           "misc": "<mark>Outstanding Paper Award</mark>",
-          "bibtex":`@misc{maron2020learning,
-    title={On Learning Sets of Symmetric Elements},
-    author={Haggai Maron and Or Litany and Gal Chechik and Ethan Fetaya},
-    year={2020},
-    eprint={2002.08599},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}}`
+          "bibtex":"maron2020learning"
       },
       {
           "name": "ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes",
-          "authors": "Charles R. Qi, Xinlei Chen, <strong>Or Litany</strong>, Leonidas J. Guibas",
+          "authors": "Charles R. Qi, Xinlei Chen, Or Litany, Leonidas J. Guibas",
           "publication": "CVPR 2020",
           "image": "./OL_files/imvote.png",
           "paper": "https://arxiv.org/abs/2001.10692",
           "talk": "https://www.youtube.com/watch?v=xCnbvgMAg-Y",
-          "bibtex":`@misc{qi2020imvotenet,
-    title={ImVoteNet: Boosting 3D Object Detection in Point Clouds with Image Votes},
-    author={Charles R. Qi and Xinlei Chen and Or Litany and Leonidas J. Guibas},
-    year={2020},
-    eprint={2001.10692},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}}`
+          "bibtex":"qi2020imvotenet"
       },
   // ------------ 2019 -----------------
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
-          "authors": "Charles R. Qi, <strong>Or Litany</strong>, Kaiming He, Leonidas J. Guibas",
+          "authors": "Charles R. Qi, Or Litany, Kaiming He, Leonidas J. Guibas",
           "publication": "International Conference on Computer Vision (ICCV), 2019",
           "image": "./OL_files/DHV_teaser.png",
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
@@ -469,28 +303,20 @@ data = {
           "slides": "./OL_files/talks/deep_hough_voting.pdf",
           "talk": "https://youtu.be/2ntDYowHbZs?t=4585",
           "misc": "<mark>Best Paper Nomination</mark>",
-          "bibtex":`@article{qi2019deep,
-  title={Deep Hough Voting for 3D Object Detection in Point Clouds},
-  author={Qi, Charles R and Litany, Or and He, Kaiming and Guibas, Leonidas J},
-  journal={arXiv preprint arXiv:1904.09664},
-  year={2019}}`
+          "bibtex":"qi2019deep"
       },
       {
           "name": "Dual-primal graph convolutional networks",
-          "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, <strong>Or Litany</strong>, Stephan Günnemann, Michael M Bronstein",
+          "authors": "Federico Monti, Oleksandr Shchur, Aleksandar Bojchevski, Or Litany, Stephan Günnemann, Michael M Bronstein",
           "publication": "GEM workshop at ECML-PKDD, 2019",
           "misc": "<mark>Oral presentation</mark>",
           "image": "./OL_files/dualprimal.png",
           "paper": "https://arxiv.org/pdf/1806.00770.pdf",
-          "bibtex": `@article{monti2018dual,
-title={Dual-primal graph convolutional networks},
-author={Monti, Federico and Shchur, Oleksandr and Bojchevski, Aleksandar and Litany, Or and G{\"u}nnemann, Stephan and Bronstein, Michael M},
-journal={arXiv preprint arXiv:1806.00770},
-year={2018}}`
+          "bibtex": "monti2018dual"
       },
         {
             "name": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels",
-            "authors": "<strong>Or Litany</strong>, Daniel Freedman",
+            "authors": "Or Litany, Daniel Freedman",
             "publication": "ICLR workshop on Learning from Limited Labeled Data, 2019",
             "misc": "<mark>Best Paper Award</mark>",
             "image": "./OL_files/soseleto.png",
@@ -499,242 +325,155 @@ year={2018}}`
             "poster": "./OL_files/SOSELETO_ICLR19_poster.pdf",
             "slides": "./OL_files/SOSELETO_presentation.pdf",
             "talk": "https://slideslive.com/38915746",
-            "bibtex": `@article{litany2018soseleto,
-  Author    = {Or Litany and Daniel Freedman},
-  Title     = {SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels},
-  Journal   = {arXiv preprint arXiv:1805.09622},
-  Year      = {2018}}`
+            "bibtex": "litany2019soseleto"
         },
         {
             "name": "Self-supervised Learning of Dense Shape Correspondence",
-            "authors": "Oshri Halimi, <strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Ron Kimmel",
+            "authors": "Oshri Halimi, Or Litany, Emanuele Rodolà, Alex Bronstein, Ron Kimmel",
             "publication": "Computer Vision and Pattern Recognition (CVPR), 2019",
             "image": "./OL_files/unsupervised_fmnet.png",
             "paper": "https://arxiv.org/pdf/1812.02415.pdf",
             "misc": "<mark>Oral presentation</mark>",
             "code": "https://github.com/OshriHalimi/unsupervised_learning_of_dense_shape_correspondence",
             "talk": "https://www.linkedin.com/feed/update/urn:li:activity:6547910607310598144",
-            "bibtex": `@article{halimi2018self,
-  title={Self-supervised Learning of Dense Shape Correspondence},
-  author={Halimi, Oshri and Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex and Kimmel, Ron},
-  journal={arXiv preprint arXiv:1812.02415},
-  year={2018}}`
+            "bibtex": "halimi2019unsupervised"
         },
   // ------------ 2018 -----------------
         {
             "name": "Deformable Shape Completion with Graph Convolutional Autoencoders",
-            "authors": "<strong>Or Litany</strong>, Alex M. Bronstein, Michael M. Bronstein, Ameesh Makadia",
+            "authors": "Or Litany, Alex M. Bronstein, Michael M. Bronstein, Ameesh Makadia",
             "publication": "Computer Vision and Pattern Recognition (CVPR), 2018",
             "image": "./OL_files/shapeComp.png",
             "paper": "https://arxiv.org/pdf/1712.00268v1.pdf",
-            "bibtex": `@article{litany2017deformable,
-Author    = {Or Litany and Alex Bronstein and Michael Bronstein and Ameesh Makadia},
-Title     = {Deformable Shape Completion with Graph Convolutional Autoencoders},
-Journal   = {CVPR},
-Year      = {2018}}`
+            "bibtex": "litany2018deformable"
         },
         {
             "name": "Partial Single-and Multishape Dense Correspondence Using Functional Maps",
-            "authors": "<strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
+            "authors": "Or Litany, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
             "publication": "Handbook of Numerical Analysis, Elsevier, 2018",
             "image": "./OL_files/pfm_book.png",
             "paper": "https://www.sciencedirect.com/science/article/pii/S1570865918300097",
-            "bibtex": `@article{litany2018partial,
-title={Partial Single-and Multishape Dense Correspondence Using Functional Maps},
-author={Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex and Bronstein, Michael and Cremers, Daniel},
-year={2018},
-publisher={Elsevier}}`
+            "bibtex": "litany2018partial"
         },
         {
             "name": "Class-Aware Fully Convolutional Gaussian and Poisson Denoising",
-            "authors": "Tal Remez, <strong>Or Litany</strong>, Raja Giryes, Alex M. Bronstein",
+            "authors": "Tal Remez, Or Litany, Raja Giryes, Alex M. Bronstein",
             "publication": "IEEE Transactions on Image Processing, 2018",
             "image": "./OL_files/class_aware_poiss.png",
             "paper": "https://arxiv.org/pdf/1808.06562.pdf",
             "code": "https://github.com/TalRemez/deep_class_aware_denoising",
-            "bibtex": `@article{remez2018class,
-title={Class-Aware Fully Convolutional Gaussian and Poisson Denoising},
-author={Remez, Tal and Litany, Or and Giryes, Raja and Bronstein, Alex M},
-journal={IEEE Transactions on Image Processing},
-volume={27},
-number={11},
-pages={5707--5722},
-year={2018},
-publisher={IEEE}}`
+            "bibtex": "remez2018class"
         },
 
 
   // ------------ 2017 -----------------
         {
             "name": "Efficient Deformable Shape Correspondence via Kernel Matching",
-            "authors": "Matthias Vestner, Zorah Lähner, Amit Boyarski, <strong>Or Litany</strong>, et. al.",
+            "authors": "Zorah Lähner, Matthias Vestner, Amit Boyarski, Or Litany, et. al.",
             "publication": "Intl. Conference on 3D Vision (3DV), 2017",
             "image": "./OL_files/vestner-3dv17.png",
             "paper": "https://arxiv.org/pdf/1707.08991.pdf",
             "code": "https://github.com/zorah/KernelMatching",
-            "bibtex": `@article{vestner2017efficient,
-Author    = {Matthias Vestner and Zorah Lähner and Amit Boyarski and Or Litany and others},
-Title     = {Efficient Deformable Shape Correspondence via Kernel Matching},
-Journal   = {3DV},
-Year      = {2017}}`
+            "bibtex": "lahner2017efficient"
         },
         {
             "name": "Deep Functional Maps: Structured Prediction for Dense Shape Correspondence",
-            "authors": "<strong>Or Litany</strong>, Tal Remez, Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein",
+            "authors": "Or Litany, Tal Remez, Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein",
             "publication": "International Conference on Computer Vision (ICCV), 2017",
             "image": "./OL_files/FMNet.png",
             "paper": "http://vision.in.tum.de/_media/spezial/bib/litany-iccv17.pdf",
             "code": "https://github.com/orlitany/DeepFunctionalMaps",
-            "bibtex": `@article{litany2017fmnet,
-Author    = {Or Litany and Tal Remez and Emanuele Rodol{\`a} and Alex Bronstein and Michael Bronstein},
-Title     = {Deep Functional Maps: Structured Prediction for Dense Shape Correspondence},
-Journal   = {ICCV},
-Year      = {2017}}`
+            "bibtex": "litany2017deep"
         },
         {
             "name": "Deep Class Aware Image Denoising",
-            "authors": "Tal Remez, <strong>Or Litany</strong>, Raja Giryes, Alex M. Bronstein",
+            "authors": "Tal Remez, Or Litany, Raja Giryes, Alex M. Bronstein",
             "publication": "IEEE International Conference on Image Processing (ICIP), 2017",
             "image": "./OL_files/clsawrden.png",
             "paper": "https://arxiv.org/abs/1701.01698",
             "code": "https://github.com/TalRemez/deep_class_aware_denoising",
-            "bibtex": `@article{remez2017classaware,
-Author    = {Tal Remez and Or Litany and Raja Giryes and Alex Bronstein},
-Title     = {Deep Class Aware Denoising},
-Journal   = {ICIP},
-Year      = {2017}}`
+            "bibtex": "remez2017deep"
         },
         {
             "name": "Cloud Dictionary: Sparse Coding and Modeling for Point Clouds",
-            "authors": "<strong>Or Litany</strong>*, Tal Remez*, Alex M. Bronstein (*Equal contributors)",
+            "authors": "Or Litany*, Tal Remez*, Alex M. Bronstein (*Equal contributors)",
             "publication": "Signal Processing with Adaptive Sparse Structured Representations (SPARS), 2017",
             "image": "./OL_files/clouddict.png",
             "paper": "https://arxiv.org/pdf/1612.04956v1",
-            "bibtex": `@article{litany2016cloud,
-Author    = {Or Litany and Tal Remez and Tal and Alex Bronstein},
-Title     = {Cloud Dictionary: Sparse Coding and Modeling for Point Clouds},
-Journal   = {SPARS},
-Year      = {2017}}`
+            "bibtex": "litany2017cloud"
         },
         {
             "name": "Fully Spectral Partial Shape Matching",
-            "authors": "<strong>Or Litany</strong>,  Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein",
+            "authors": "Or Litany,  Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein",
             "publication": "Computer Graphics Forum, Vol. 36(2), 2017",
             "image": "./OL_files/fullyspectral.png",
             "paper": "http://vision.in.tum.de/_media/spezial/bib/litany-eg17.pdf",
             "code": "https://github.com/orlitany/FSPM",
             "misc": "Presented at <em>Eurographics</em>, 2017",
-            "bibtex": `@inproceedings{litany2017fully,
-title={Fully spectral partial shape matching},
-author={Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alex M and Bronstein, Michael M},
-booktitle={Computer Graphics Forum},
-volume={36},
-number={2},
-pages={247--258},
-year={2017},
-organization={Wiley Online Library}`
+            "bibtex": "litany2017fully"
         },
         {
             "name": "SHREC`17: Deformable Shape Retrieval with Missing Parts",
-            "authors": "Emanuele Rodolà, Luca Cosmo, <strong>Or Litany</strong>, Michael M. Bronstein, <br> Alex M. Bronstein et al.",
+            "authors": "Emanuele Rodolà, Luca Cosmo, Or Litany, Michael M. Bronstein, <br> Alex M. Bronstein et al.",
             "publication": "EUROGRAPHICS Workshop on 3D Object Retrieval (3DOR), 2017",
             "image": "./OL_files/shrec17.png",
             "paper": "http://vision.in.tum.de/_media/spezial/bib/shrec17partial.pdf",
             "code": "http://vision.in.tum.de/_media/spezial/bib/shrec17-baseline.zip",
             "dataset": "https://sites.google.com/view/shrec17/",
-            "bibtex": `@inproceedings{rodola2017shrec,
-title={SHREC\'17: Deformable shape retrieval with missing parts},
-author={Rodol{\`a}, E and Cosmo, L and Litany, O and Bronstein, MM and Bronstein, AM and Audebert, N and Hamza, A Ben and Boulch, A and Castellani, U and Do, MN and others},
-booktitle={Proceedings of the Eurographics Workshop on 3D Object Retrieval, Lisbon, Portugal},
-pages={23--24},
-year={2017}`
+            "bibtex": "rodola2017shrec"
         },
         {
             "name": "ASIST: Automatic Semantically Invariant Scene Transformation",
-            "authors": "<strong>Or Litany</strong>, Tal Remez, Daniel Freedman, Lior Shapira, Alex Bronstein, Ran Gal",
+            "authors": "Or Litany, Tal Remez, Daniel Freedman, Lior Shapira, Alex Bronstein, Ran Gal",
             "publication": "Computer Vision and Image Understanding (CVIU), 2017",
             "image": "./OL_files/asist.png",
             "paper": "http://arxiv.org/abs/1512.01515",
-            "bibtex": `@article{litany2015asist,
-title={ASIST: automatic semantically invariant scene transformation},
-author={Litany, Or and Remez, Tal and Freedman, Daniel and Shapira, Lior and Bronstein, Alex and Gal, Ran},
-journal={CVIU},
-pages={284--299},
-volume={157},
-year={2017}`
+            "bibtex": "litany2017asist"
         },
     // ------------ 2016 -----------------
         {
             "name": "Non-Rigid Puzzles",
-            "authors": "<strong>Or Litany</strong>, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
+            "authors": "Or Litany, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
             "publication": "Computer Graphics Forum, Wiley, volume 35, 2016",
             "image": "./OL_files/puzzles.png",
             "misc": "<mark>SGP Best Paper Award</mark>",
             "paper": "http://vision.in.tum.de/_media/spezial/bib/litany16.pdf",
             "code": "https://github.com/orlitany/NonRigidPuzzles",
-            "bibtex": `@inproceedings{litany2016non,
-title={Non-rigid puzzles},
-author={Litany, Or and Rodol{\`a}, Emanuele and Bronstein, Alexander M and Bronstein, Michael M and Cremers, Daniel},
-booktitle={Computer Graphics Forum},
-volume={35},
-number={5},
-pages={135--143},
-year={2016},
-organization={Wiley Online Library}`
+            "bibtex": "litany2016non"
         },
         {
             "name": "A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels",
-            "authors": "Tal Remez*, <strong>Or Litany</strong>*, Alex Bronstein (*Equal contributors)",
+            "authors": "Tal Remez*, Or Litany*, Alex Bronstein (*Equal contributors)",
             "publication": "International Conference on Computational Photography (ICCP), 2016",
             "image": "./OL_files/binarycam.png",
             "paper": "https://arxiv.org/pdf/1510.04601.pdf",
-            "bibtex": `@inproceedings{remez2016picture,
-title={A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels},
-author={Remez, Tal and Litany, Or and Bronstein, Alex},
-booktitle={Computational Photography (ICCP), 2016 IEEE International Conference on},
-pages={1--9},
-year={2016},
-organization={IEEE}`
+            "bibtex": "remez2016picture"
         },
         {
             "name": "FPGA system for real-time computational extended depth of field imaging using phase aperture coding",
-            "authors": "Tal Remez, <strong>Or Litany</strong>, Shachar Yoseff, Harel Haim, Alex Bronstein",
+            "authors": "Tal Remez, Or Litany, Shachar Yoseff, Harel Haim, Alex Bronstein",
             "publication": "arXiv preprint, 2016",
             "image": "./OL_files/fpga.png",
             "paper": "https://arxiv.org/abs/1608.01074",
-            "bibtex": `@article{remez2016fpga,
-      title={FPGA system for real-time computational extended depth of field imaging <br> using phase aperture coding},
-      author={Remez, Tal and Litany, Or and Yoseff, Shachar and Haim, Harel and Bronstein, Alex},
-      journal={arXiv preprint arXiv:1608.01074},
-      year={2016}`
+            "bibtex": "remez2016fpga"
         },
     // ------------ 2015 -----------------
         {
             "name": "Image reconstruction from dense binary pixels",
-            "authors": "<strong>Or Litany</strong>*, Tal Remez*, Alex Bronstein (*Equal contributors)",
+            "authors": "Or Litany*, Tal Remez*, Alex Bronstein (*Equal contributors)",
             "publication": "Signal Processing with Adaptive Sparse Structured Representations (SPARS), 2015",
             "image": "./OL_files/binarycamspars.png",
             "paper": "http://arxiv.org/abs/1512.01774",
-            "bibtex": `@article{litany2015image,
-title={Image reconstruction from dense binary pixels},
-author={Litany, Or and Remez, Tal and Bronstein, Alex},
-journal={SPARS},
-year={2015}`
+            "bibtex": "litany2015image"
         },
     // ------------ 2012 -----------------
         {
             "name": "Putting the pieces together: regularized multi-shape partial matching",
-            "authors": "<strong>Or Litany</strong>, Alex Bronstein, Michael Bronstein",
+            "authors": "Or Litany, Alex Bronstein, Michael Bronstein",
             "publication": "Workshop on Nonrigid Shape Analysis and Deformable Image Alignment (NORDIA), 2012",
             "image": "./OL_files/rigidpuzzles.png",
             "paper": "https://vista.cs.technion.ac.il/wp-content/uploads/2018/10/LitBroBroNORDIA12.pdf",
-            "bibtex": `@inproceedings{litany2012putting,
-title={Putting the pieces together: Regularized multi-part shape matching},
-author={Litany, Or and Bronstein, Alexander M and Bronstein, Michael M},
-booktitle={European Conference on Computer Vision},
-pages={1--11},
-year={2012},
-organization={Springer}`
+            "bibtex": "litany2012putting"
         },
     ]
 };

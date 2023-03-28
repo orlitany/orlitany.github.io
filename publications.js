@@ -40,7 +40,7 @@ data = {
           "paper": "https://arxiv.org/abs/2210.03105",          
           "page": "https://jonasschult.github.io/Mask3D/",
           "code": "https://github.com/JonasSchult/Mask3D",
-          "bibtex":"schult2022mask3d"
+          "bibtex":"schult2023mask3d"
         },
       // ------------ 2022 -----------------      
         {

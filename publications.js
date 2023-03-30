@@ -2,6 +2,15 @@ data = {
     "publications": [
         // ------------ 2023 -----------------                      
         {
+          "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
+          "authors":"David Rozenberszki, Or Litany, Angela Dai",
+          "publication": "",
+          "image": "./OL_files/unscene3d_teaser.jpeg",
+          "paper": "https://arxiv.org/abs/2303.14541",          
+          "page": "https://rozdavid.github.io/unscene3d",
+          "bibtex":"rozenberszki2023unscene3d"
+        },
+        {
           "name": "Neural Kernel Surface Reconstruction",
           "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, Or Litany, Sanja Fidler, Francis Williams",
           "publication": "CVPR 2023",

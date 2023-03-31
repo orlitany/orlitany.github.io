@@ -1,0 +1,67 @@
+{
+    "events": [
+        {
+            "name": "3DOVScene: Open-Vocabulary 3D Scene Understanding", 
+            "venue": "ICCV",
+            "year": "2023",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Neural Fields in Computer Vision", 
+            "venue": "CVPR",
+            "year": "2022",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Learning 3D Representations for Shape and Appearance", 
+            "venue": "ICCV",
+            "year": "2021",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "iGDL: Israeli Geometric Deep Learning workshop (First)", 
+            "venue": "",
+            "year": "2020",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "iGDL: Israeli Geometric Deep Learning workshop (Second)", 
+            "venue": "",
+            "year": "2021",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Deep Learning and Geometry", 
+            "venue": "EUSIPCO",
+            "year": "2017",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Learning 3D Representations for Shape and Appearance", 
+            "venue": "ECCV",
+            "year": "2020",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Deep Learning for Computer Graphics and Geometry Processing", 
+            "venue": "Eurographics",
+            "year": "2019",
+            "type": "workshop",
+            "link": ""
+        },
+        {
+            "name": "Deep Learning meets Geometry", 
+            "venue": "ECCV",
+            "year": "2018",
+            "type": "tutorial",
+            "link": ""
+        }
+    ]
+}

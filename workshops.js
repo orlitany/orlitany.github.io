@@ -1,11 +1,12 @@
-{
+events = {
     "events": [
         {
             "name": "3DOVScene: Open-Vocabulary 3D Scene Understanding", 
             "venue": "ICCV",
             "year": "2023",
             "type": "workshop",
-            "link": ""
+            "link": "",
+            "upcoming": true
         },
         {
             "name": "Neural Fields in Computer Vision", 
@@ -20,6 +21,13 @@
             "year": "2021",
             "type": "workshop",
             "link": "https://ivl.cs.brown.edu/3DReps/"
+        },        
+        {
+            "name": "iGDL: Israeli Geometric Deep Learning workshop (Second)", 
+            "venue": "",
+            "year": "2021",
+            "type": "workshop",
+            "link": "https://gdl-israel.github.io/"
         },
         {
             "name": "iGDL: Israeli Geometric Deep Learning workshop (First)", 
@@ -29,26 +37,12 @@
             "link": "https://gdl-israel.github.io/iGDL2020.html"
         },
         {
-            "name": "iGDL: Israeli Geometric Deep Learning workshop (Second)", 
-            "venue": "",
-            "year": "2021",
-            "type": "workshop",
-            "link": "https://gdl-israel.github.io/"
-        },
-        {
-            "name": "Deep Learning and Geometry", 
-            "venue": "EUSIPCO",
-            "year": "2017",
-            "type": "workshop",
-            "link": "https://sites.google.com/view/dlgeometry/home"
-        },
-        {
             "name": "Learning 3D Representations for Shape and Appearance", 
             "venue": "ECCV",
             "year": "2020",
             "type": "workshop",
             "link": "https://geometry.stanford.edu/3DReps/index.html"
-        },
+        },                
         {
             "name": "Deep Learning for Computer Graphics and Geometry Processing", 
             "venue": "Eurographics",
@@ -62,6 +56,13 @@
             "year": "2018",
             "type": "tutorial",
             "link": "https://sites.google.com/view/eccv2018fmapstutorial/home"
+        },
+        {
+            "name": "Deep Learning and Geometry", 
+            "venue": "EUSIPCO",
+            "year": "2017",
+            "type": "workshop",
+            "link": "https://sites.google.com/view/dlgeometry/home"
         }
     ]
 }

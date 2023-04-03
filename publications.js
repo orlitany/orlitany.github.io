@@ -25,11 +25,10 @@ data = {
           "name": "Trace and Pace: Controllable Pedestrian Animation via Guided Trajectory Diffusion",
           "authors":"Davis Rempe, Zhengyi Luo, Xue Bin Peng, Ye Yuan, Kris M. Kitani, Karsten Kreis, Sanja Fidler, Or Litany",
           "publication": "CVPR 2023",
-          "image": "./OL_files/comingsoon.jpeg",
-          "paper": "",          
-          "page": "",
-          "code": "",
-          "bibtex":""
+          "image": "./OL_files/trace_pace_teaser.png",
+          "paper": "https://nv-tlabs.github.io/trace-pace/docs/trace_and_pace.pdf",          
+          "page": "https://nv-tlabs.github.io/trace-pace/",
+          "bibtex":"rempeluo2023tracepace"
         },
         {
           "name": "Fast Monocular Scene Reconstruction with Global-Sparse Local-Dense Grids",
@@ -126,7 +125,7 @@ data = {
           "paper": "https://arxiv.org/abs/2112.05077",          
           "page": "https://nv-tlabs.github.io/STRIVE/",
           "code": "https://github.com/nv-tlabs/STRIVE",
-          "bibtex":"rempe2021generating"
+          "bibtex":"rempe2022generating"
       },
         {
           "name": "Neural Fields as Learnable Kernels for 3D Reconstruction",

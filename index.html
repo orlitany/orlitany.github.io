@@ -223,9 +223,12 @@
   <!-- Workshops / Tutorials -->
     <div class="container">
       <h2>Workshops / Tutorials</h2><div class="news">        
-      <!-- Past: -->
-      <!-- <h3>Past</h3> -->
-      <ul>
+    <div id="read_workshop_record">
+      <div v-for="event in events.events" class="workshops">
+        <a :href="event.link"><span v-html=concat(event)></span></a>.
+      </div>
+    </div>
+      <!-- <ul>
         <li><span> <a href=https://neuralfields.cs.brown.edu/>Neural Fields in Computer Vision</a><br>
         <li><span> <a href=https://gdl-israel.github.io/>iGDL 2021: Israeli Geometric Deep Learning Workshop</a><br>
         <li><span> <a href=https://ivl.cs.brown.edu/3DReps/>ICCV 2021 workshop: Learning 3D Representations for Shape and Appearance</a><br>
@@ -234,10 +237,10 @@
         <li><span> <a href="=https://geometry.cs.ucl.ac.uk/creativeai_eg19/">Eurographics 2019 tutorial -- Deep Learning for Computer Graphics and Geometry Processing</a> <br>            
         <li><span><a href=https://sites.google.com/view/eccv2018fmapstutorial/home>ECCV 2018 tutorial on Functional Maps: A Flexible Representation for Learning and Computing Correspondence</a> <br>            
         <li><span><a href=https://www.eusipco2017.org/workshops/#collapse3>EUSIPCO 2017 workshop: Deep Learning and Geometry</a><br>
-      </ul>
-        </div><table width="90%" border="0" align="center" cellpadding="20">
-      </table>
-    </div>
+      </ul> -->        
+      <table width="90%" border="0" align="center" cellpadding="20"></table>
+      </div>
+      </div>
     <br>
 
 
@@ -324,8 +327,8 @@
   <!-- <script type="module" src="let data; $.getJSON('./data2.json', function(json) { data = json; });"></script> -->
   <script src="publications.js"></script>
   <script src="bibs.js"></script>
-  
-  
+  <script src="workshops.js"></script>
+    
   <script>
     new Vue({
       el: "#read_pub_record",
@@ -362,10 +365,32 @@
     });
   </script>
 
+  <script>
+    new Vue({
+      el: "#read_workshop_record",
+      data() {              
+        return {
+          events: events,
+        }
+      },
+      methods: {
+        concat(x) {          
+          let txt
+          txt = x.name + ", "+x.venue + " " + x.year            
+          if ("upcoming" in x){
+            txt = "<mark>[UPCOMING]</mark> " + txt
+          }
+          return txt
+        }
+      }
+    });
+  </script>
 
   <!-- Publications.-->
 
   </div><br>
+
+  
 
 
 <script xml:space="preserve" language="JavaScript">

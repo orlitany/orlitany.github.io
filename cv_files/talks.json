@@ -52,6 +52,12 @@
             "venue": "Xerox PARC, NYU, Cornell-Tech, ICCV",                                
             "slides": "./OL_files/talks/deep_hough_voting.pdf",
             "video": "https://youtu.be/2ntDYowHbZs?t=4585"            
+        },
+        {
+            "title": "SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels", 
+            "venue": "ICLR LLD workshop, New Orleans",                                
+            "slides": "https://orlitany.github.io/OL_files/SOSELETO_presentation.pdf",
+            "video": "https://slideslive.com/38915746"            
         }
     ]
 }

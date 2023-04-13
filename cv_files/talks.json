@@ -1,0 +1,57 @@
+{
+    "talks": [
+        {
+            "title": "Data-driven simulation for AV", 
+            "venue": "ECCV workshop on 3D Perception for Autonomous Driving",
+            "year": "2022",            
+            "slides": "https://docs.google.com/presentation/d/1rd_W_3amrpOBGyFu5gSu7yEuH4FvTgqf/edit?usp=share_link&ouid=117600662291196930244&rtpof=true&sd=true"
+        },
+        {
+            "title": "Manipulating neural fields", 
+            "venue": "CVPR",
+            "year": "2022",            
+            "slides": "https://drive.google.com/file/d/1iPkdzSEpdlqQ568TTGoC43PrBmvaf1bQ/view?usp=sharing",
+            "video": "https://youtu.be/PeRRp1cFuH4?t=8454"
+        },
+        {
+            "title": "3D scene understanding from pointclouds", 
+            "venue": "MIT and UT Austin",                                
+            "video": "https://drive.google.com/file/d/1KDgXOsQ6m5JDWPBBxnkJ6GRTL-X17RK7/view?usp=sharing"
+        },
+        {
+            "title": "PointContrast", 
+            "venue": "Google research",                                
+            "slides": "https://drive.google.com/file/d/13VeEMoVlJTWObaG7DsVCrNS6A1X-jeqt/view?usp=sharing"            
+        },
+        {
+            "title": "Latent Canonicalizers", 
+            "venue": "ICML OOL workshop",                                
+            "slides": "https://drive.google.com/file/d/1yxb4fiVIv5YpbuD4vkgv_WA6Kiro02QX/view?usp=sharing",
+            "video": "https://youtu.be/l1Dh4vHuYQ4"            
+        },
+        {
+            "title": "VoteNet and ImVoteNet", 
+            "venue": "Stanford GCafe Seminar",                                
+            "slides": "https://drive.google.com/open?id=1pA2jaCd1Il0FCIVKzDAHpZVr_3Ukjfji",
+            "video": "https://drive.google.com/open?id=1gLdZ4z1KSM0L1ElEseZMvKdmxycE49Tx"            
+        },
+        {
+            "title": "Geometric Deep Learning: Introduction", 
+            "venue": "Deep Learning for Science School",                                
+            "slides": "https://drive.google.com/file/d/1EL98pDXvzXAnTB4ivL2hGm3zO21GWGjm/view?usp=sharing",
+            "video": "https://www.youtube.com/watch?v=PHEcJsg9zYo&list=PL20S5EeApOSvfvEyhCPOUzU7zkBcR5-eL&index=21&t=0s"            
+        },
+        {
+            "title": "Deep Learning for “Exotic” Data Like 3D Meshes and Point-Clouds", 
+            "venue": "San Francisco Deep Learning Meetup",                                
+            "slides": "https://drive.google.com/open?id=1XDV4fcLXcQP72JYNzRRX6zXbEZLwM8ay",
+            "video": "https://youtu.be/fY_BzTmU9io"            
+        },
+        {
+            "title": "Deep Hough Voting for 3D object detection in point clouds", 
+            "venue": "Xerox PARC, NYU, Cornell-Tech, ICCV",                                
+            "slides": "./OL_files/talks/deep_hough_voting.pdf",
+            "video": "https://youtu.be/2ntDYowHbZs?t=4585"            
+        }
+    ]
+}

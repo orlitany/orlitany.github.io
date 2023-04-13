@@ -2,7 +2,16 @@
 <html>
 
 <head>  
-  <!-- <meta name=”viewport” content=”width=device-width, initial-scale=1″> -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM4LVVKPRS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GM4LVVKPRS');
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Research scientist at NVIDIA." />
@@ -78,7 +87,6 @@
 }
 </script>
 
-
 <title>Or Litany</title>
 
   <link rel="stylesheet" href="./OL_files/bootstrap.min.css">
@@ -86,180 +94,83 @@
   <link href="./OL_files/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" async="" src="./OL_files/ga.js.download"></script>
   <script type="text/javascript" src="./OL_files/hidebib.js.download"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133713714-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-133713714-1');
-</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="helper_functions/load_dicts_from_json.js"></script>
 
 </head>
 
 <body>
 
-
 <!-- Start main content -->
-<!-- Hiding the hiring link -->
-<!-- (<a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.gle%2F4LKbdiPPU6Zb67cw8&data=04%7C01%7Colitany%40nvidia.com%7C82b9cf6101aa44725e8c08d9c4e178ed%7C43083d15727340c1b7db39efd9ccc17a%7C0%7C0%7C637757294934183163%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=ofNj0lgGNOz5WWTZc2e7IFhSMrbXvK20g0Fp4Fb66E0%3D&reserved=0" style="color: red"> we're hiring interns</a>) -->
+<div class="container">
+  <!-- <table width="900" border="0" align="center" cellpadding="20"></table> -->
+  <table width="90%" align="center" border="0" cellpadding="10">
+    <tbody><tr>
+      <td width="70%" valign="top">
+      <p align="center">&nbsp;</p>
+      
+      <!-- BIO -->
+      <p align="center"><font size="6px">Or Litany</font><br></p>
+      <p style="font-family: 'Roboto', sans-serif;">orlitany at gmail dot com</p>            
+      <p>I am a senior research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA</a> and an incoming assistant professor at the
+      <a href="https://www.cs.technion.ac.il/">Technion</a>. Before that I was a postdoc at <a href="https://geometry.stanford.edu/member/orlitany/">Stanford University</a> working under <a href="https://geometry.stanford.edu/member/guibas/">Prof. Leonidas Guibas</a>, and <a href="https://research.facebook.com/ai/">FAIR</a> hosted by <a href="https://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a>. I received my PhD from Tel-Aviv University, where I was advised by <a href="http://www.cs.technion.ac.il/~bron/">Prof. Alex Bronstein</a>. I received my B.Sc. in Physics and Mathematics from the Hebrew University under the auspices of <a href="https://en.wikipedia.org/wiki/Talpiot_program">“Talpiot”</a>. <br><br> My research interests include: Deep learning for 3D vision and geometry, and learning with reduced supervision. </p>
 
-  <div class="container">
-    <table width="900" border="0" align="center" cellpadding="20">
-      </table><table width="90%" align="center" border="0" cellpadding="10">
-        <tbody><tr>
-          <td width="70%" valign="top">
-            <p align="center">&nbsp;</p>
+      <!-- Links -->
+      <p><a href="./OL_files/orlitany_cv.pdf"><img src="./OL_files/cv.png" height="16"></a> /
+      <a href="https://www.linkedin.com/in/orlitany/main.html"><img src="./OL_files/linkedin.png" height="16"></a> /
+      <a href="https://twitter.com/orlitany"><img src="./OL_files/twitterlogo.png" height="16"></a> /
+      <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank"><img src="./OL_files/google_scholar.png" height="16"></a> /
+      <a href="https://github.com/orlitany/" target="_blank"><img src="./OL_files/github_alt.png" height="16"></a></p>
+      </td>
+      <td width="30%"><div class="instructorphoto"><img typeof="foaf:Image" src="./OL_files/or_yosemite_small_jpg.jpg" id="orlitany" alt="Or Litany profile picture"></div></td>
 
-            <p align="center"><font size="6px">Or Litany</font><br>
-            orlitany at gmail dot com</p>
-
-            <p>I am a senior research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA</a> and an incoming assistant professor at the
-<a href="https://www.cs.technion.ac.il/">Technion</a>.
-              Before that I was a postdoc at <a href="https://geometry.stanford.edu/member/orlitany/">Stanford University</a> working under <a href=https://geometry.stanford.edu/member/guibas/>Prof. Leonidas Guibas</a>, and <a href="https://research.facebook.com/ai/">FAIR</a> working under <a href=https://people.eecs.berkeley.edu/~malik/>Prof. Jitendra Malik</a>. I received my PhD from Tel-Aviv University, where I was advised by <a href=http://www.cs.technion.ac.il/~bron/>Prof. Alex Bronstein</a>. I received my B.Sc. in Physics and Mathematics from the Hebrew University under the auspices of <a href=https://en.wikipedia.org/wiki/Talpiot_program>“Talpiot”</a>. <br><br>
-			My research interests include: Deep learning for 3D vision and geometry, and learning with reduced supervision. </p>
-
+    </tr></tbody>
+  </table>
+</div>
+<br> 
 
 
-
-
-            <p> <a href="./OL_files/orlitany_cv.pdf"><img src="./OL_files/cv.png" height="16"></a> /
-                <a href="https://www.linkedin.com/in/orlitany/main.html"><img src="./OL_files/linkedin.png" height="16"></a> /
-                <a href="https://twitter.com/orlitany"><img src="./OL_files/twitterlogo.png" height="16"></a> /
-                <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank"><img src="./OL_files/google_scholar.png" height="16"></a> /
-                <a href="https://github.com/orlitany/" target="_blank"><img src="./OL_files/github_alt.png" height="16"></a>
-            </p>
-          </td>
-          <td width="30%"><div class="instructorphoto"><img typeof="foaf:Image" src="./OL_files/or_yosemite_small_jpg.jpg" id="orlitany" alt="Or Litany profile picture"></div></td>
-        </tr>
-      </tbody></table>
-
+<!-- Invited talks -->
+<div class="container">
+  <h2>Invited talks</h2><div class="news">        
+<div id="read_talks_record">
+  <div v-for="talk in talks.talks" class="workshops">        
+    <li>{{talk.title}}. 
+      <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
+      <span v-if="talk.video"><a :href="talk.video">Video</a></span>
+    </li>    
   </div>
-  <!-- <br> -->
+</div>            
+</div>
+</div>
+<br>
 
-
-  <!-- <div class="container">
-    <h2>News</h2><div class="news">
-        <ul>
-	<li><span> Oct 29: <a href=https://arxiv.org/pdf/1904.09664.pdf>VoteNet</a> Was <strong>nominated to best paper</strong> at ICCV 2019.</a></span></li><p></p>
-        <li><span> July 22: Our paper <a href=https://arxiv.org/pdf/1904.09664.pdf>Deep Hough Voting for 3D Object Detection in Point Clouds</a> Was accepted as an <strong>oral presentation</strong> at ICCV 2019.</a></span></li><p></p>
-        <li><span> July 12: Our paper <a href=https://arxiv.org/pdf/1806.00770.pdf>Dual-primal graph convolutional networks</a> Was accepted to <a href=https://gem-ecmlpkdd.github.io/>GEM workshop</a></span></li><p></p>
-        <li><span> April 25: I was invited as a speaker at the <a href=https://dl4sci-school.lbl.gov/home>Deep Learning for Science Summer School</a> </span></li><p></p>
-        <li><span> April 23: Our paper <a href=https://arxiv.org/pdf/1805.09622.pdf>SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels</a> just won <mark>Best paper award</mark> at ICLR workshop on <a href=https://lld-workshop.github.io/>Learning from Limited Labeled Data</a></span></li><p></p>
-        <li><span> April 22: Check out our new paper on <a href=https://arxiv.org/pdf/1904.09664.pdf>Object detection in 3D point clouds</a> </span></li><p></p>
-         <li><span> Our paper <a href=https://arxiv.org/pdf/1812.02415.pdf>"Self-supervised Learning of Dense Shape Correspondence"</a> was accepted as an <strong>oral presentation</strong> at CVPR 2019!
-  		   </span></li><p></p>
-         <li><span> We are organizing a <a href="https://sites.google.com/view/eccv2018fmapstutorial/home">tutorial</a> on "Functional Maps: A Flexible Representation for Learning and Computing Correspondence" at ECCV 2018 in Munich. See you there! <p></p>
-         </span></li>
-         <!-- <li><span> Our paper <a href="https://arxiv.org/pdf/1701.01687">"Class-Aware Fully-Convolutional Gaussian and Poisson Denoising"</a> has been accepted for publication at TIP.
-		     </span></li> -->
-
-
-
-        </ul>
-      </div><table width="90%" border="0" align="center" cellpadding="20">
-    </table>
-  </div>
-  <br> -->
-
-
-<!-- Talks -->
-  <div class="container">
-    <h2>Invited talks</h2><div class="news">
-        <ul>
-          <li><span><mark>NEW</mark> Data-driven simulation for AV <br>
-            ECCV 2022 workshop on 3D Perception for Autonomous Driving<br>            
-            <a href="https://docs.google.com/presentation/d/1rd_W_3amrpOBGyFu5gSu7yEuH4FvTgqf/edit?usp=share_link&ouid=117600662291196930244&rtpof=true&sd=true">slides</a>            
-          </span></li>
-          <p></p>
-          <li><span> Manipulating neural fields <br>
-            CVPR 2022 <br>            
-            <a href="https://drive.google.com/file/d/1iPkdzSEpdlqQ568TTGoC43PrBmvaf1bQ/view?usp=sharing">slides</a>            
-            / <a href="https://youtu.be/PeRRp1cFuH4?t=8454">video</a>
-          </span></li>
-          <p></p>
-          <li><span> 3D scene understanding from pointclouds <br>
-            MIT and UT Austin <br>
-            <a href="https://drive.google.com/file/d/1KDgXOsQ6m5JDWPBBxnkJ6GRTL-X17RK7/view?usp=sharing">video</a>
-          </span></li>
-          <p></p>
-          <li><span> PointContrast <br>
-            Google <br>
-            <a href="https://drive.google.com/file/d/13VeEMoVlJTWObaG7DsVCrNS6A1X-jeqt/view?usp=sharing">slides</a>
-          </span></li>
-          <p></p>
-          <li><span> Latent Canonicalizers <br>
-            ICML OOL workshop <br>
-            <a href="https://drive.google.com/file/d/1yxb4fiVIv5YpbuD4vkgv_WA6Kiro02QX/view?usp=sharing">slides</a>
-            / <a href="https://youtu.be/l1Dh4vHuYQ4">video</a> </span></li><p></p>
-	<li><span> VoteNet and ImVoteNet <br>
-	  Stanford GCafe Seminar</a> <br>
-	  <a href="https://drive.google.com/open?id=1pA2jaCd1Il0FCIVKzDAHpZVr_3Ukjfji">slides</a>
-	  / <a href="https://drive.google.com/open?id=1gLdZ4z1KSM0L1ElEseZMvKdmxycE49Tx">video</a> </span></li><p></p>
-        <li><span> Geometric Deep Learning: Introduction <br>
-          <a href="https://dl4sci-school.lbl.gov/home">Deep Learning for Science School</a> <br>
-          <a href="https://drive.google.com/file/d/1EL98pDXvzXAnTB4ivL2hGm3zO21GWGjm/view?usp=sharing">slides</a>
-          / <a href="https://www.youtube.com/watch?v=PHEcJsg9zYo&list=PL20S5EeApOSvfvEyhCPOUzU7zkBcR5-eL&index=21&t=0s">video</a> </span></li><p></p>
-        <li><span> Deep Learning for “Exotic” Data Like 3D Meshes and Point-Clouds <br>
-          <a href="https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/257153311/">San Francisco Deep Learning Meetup</a> <br>
-          <a href="https://drive.google.com/open?id=1XDV4fcLXcQP72JYNzRRX6zXbEZLwM8ay">slides</a> / <a href="https://youtu.be/fY_BzTmU9io">video</a> </span></li><p></p>
-        <li><span> Deep Hough Voting for 3D object detection in point clouds <br>
-          Xerox PARC, NYU, Cornell-Tech, ICCV <br>
-          <a href="./OL_files/talks/deep_hough_voting.pdf">slides</a>
-		/ <a href="https://youtu.be/2ntDYowHbZs?t=4585">video</a>
-        <li><span> SOSELETO: A Unified Approach to Transfer Learning and Training with Noisy Labels <br>
-          ICLR LLD workshop, New Orleans <br>
-          <a href="./OL_files/SOSELETO_presentation.pdf">slides</a> / <a href="https://slideslive.com/38915746">talk</a>
-
-        </ul>
-
-      </div><table width="90%" border="0" align="center" cellpadding="20">
-    </table>
-  </div>
-  <br>
-
-  <!-- Workshops / Tutorials -->
-    <div class="container">
-      <h2>Workshops / Tutorials</h2><div class="news">        
-    <div id="read_workshop_record">
-      <div v-for="event in events.events" class="workshops">
-        <a :href="event.link"><span v-html=concat(event)></span></a>.
-      </div>
+<!-- Workshops / Tutorials -->
+<div class="container">
+  <h2>Workshops / Tutorials</h2><div class="news">        
+  <div id="read_workshop_record">
+    <div v-for="event in events.events" class="workshops">
+      <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
     </div>
-      <!-- <ul>
-        <li><span> <a href=https://neuralfields.cs.brown.edu/>Neural Fields in Computer Vision</a><br>
-        <li><span> <a href=https://gdl-israel.github.io/>iGDL 2021: Israeli Geometric Deep Learning Workshop</a><br>
-        <li><span> <a href=https://ivl.cs.brown.edu/3DReps/>ICCV 2021 workshop: Learning 3D Representations for Shape and Appearance</a><br>
-        <li><span> <a href=https://geometry.stanford.edu/3DReps/index.html>ECCV 2020 workshop: Learning 3D Representations for Shape and Appearance</a><br>
-        <li><span> <a href=https://gdl-israel.github.io/>iGDL 2020: Israeli Geometric Deep Learning Workshop</a><br>                  
-        <li><span> <a href="=https://geometry.cs.ucl.ac.uk/creativeai_eg19/">Eurographics 2019 tutorial -- Deep Learning for Computer Graphics and Geometry Processing</a> <br>            
-        <li><span><a href=https://sites.google.com/view/eccv2018fmapstutorial/home>ECCV 2018 tutorial on Functional Maps: A Flexible Representation for Learning and Computing Correspondence</a> <br>            
-        <li><span><a href=https://www.eusipco2017.org/workshops/#collapse3>EUSIPCO 2017 workshop: Deep Learning and Geometry</a><br>
-      </ul> -->        
-      <table width="90%" border="0" align="center" cellpadding="20"></table>
-      </div>
-      </div>
-    <br>
+  </div>
+</div>            
+</div>
+<br>
 
 
-    <div class="container">
-      <h2>Press</h2><div class="news">
-          <ul>
-            <li><span>September 2022: <a href="https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/">Interview for UnboxingAI podcast</a><br>
-            <li><span>March 2022: <a href="https://nvda.ws/3IGnfZu">NVIDIA Showcases Novel AI Tools in DRIVE Sim to Advance Autonomous Vehicle Development</a><br>
-            <li><span>July 2020: <a href="https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/">Stanford makes an impact at machine learning conference</a><br>
-            <li><span>July 2020: <a href="https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/">חוקרי אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)</a><br>
+<div class="container">
+  <h2>Press</h2><div class="news">
+      <ul>
+        <li><span>September 2022: <a href="https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/">Interview for UnboxingAI podcast</a><br>
+        <li><span>March 2022: <a href="https://nvda.ws/3IGnfZu">NVIDIA Showcases Novel AI Tools in DRIVE Sim to Advance Autonomous Vehicle Development</a><br>
+        <li><span>July 2020: <a href="https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/">Stanford makes an impact at machine learning conference</a><br>
+        <li><span>July 2020: <a href="https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/">חוקרי אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)</a><br>
 
-              <!-- </span></li>  -->
-              <!-- <p> </p>		 -->
-          </ul>
-        </div>
-        <!-- <table width="90%" border="0" align="center" cellpadding="20"> -->
-      <!-- </table> -->
+          
+      </ul>
     </div>
-    <br>
+</div>
+<br>
 
   <div class="container">
     <h2> Publications </h2>
@@ -324,70 +235,11 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
   </script>
 
-  <!-- <script type="module" src="let data; $.getJSON('./data2.json', function(json) { data = json; });"></script> -->
-  <script src="publications.js"></script>
-  <script src="bibs.js"></script>
-  <script src="workshops.js"></script>
-    
-  <script>
-    new Vue({
-      el: "#read_pub_record",
-      data() {              
-        return {
-          data: data,
-          bibs: bibs
-        }
-      },
-      methods: {
-        breakbib2(x) {    
-          if (x.bibtex in bibs){return bibs[x.bibtex]} else {
-            return "Coming soon"
-          }
-        },
-        breakbib(x) {            
-          bib_split = x.split(",")
-          if (bib_split.length == 1) {return bib_split[0]}
-          bib_first = bib_split[0]+",\n "
-          bib_rest = bib_split.slice(1).join(",").split("},").join("},\n ")
-          // breakline for final }
-          bib_rest = bib_rest.slice(0,-1) + "\n" + bib_rest.slice(-1)
-          return bib_first + bib_rest
-        },
-        boldMyName(x) {
-          let phrase = "Or Litany"
-          let pos = x.search(phrase)
-          let length = phrase.length;
-          x = x.slice(0,pos) + "<strong>" + x.slice(pos,pos+length) + 
-            "</strong>" + x.slice(pos+length)
-          return x
-        }
-      }
-    });
+  <script
+  src="helper_functions/read_dicts.js">
   </script>
 
-  <script>
-    new Vue({
-      el: "#read_workshop_record",
-      data() {              
-        return {
-          events: events,
-        }
-      },
-      methods: {
-        concat(x) {          
-          let txt
-          txt = x.name + ", "+x.venue + " " + x.year            
-          if ("upcoming" in x){
-            txt = "<mark>[UPCOMING]</mark> " + txt
-          }
-          return txt
-        }
-      }
-    });
-  </script>
-
-  <!-- Publications.-->
-
+  
   </div><br>
 
   
@@ -400,4 +252,5 @@ hideallbibs();
 
 
 
-</body></html>
+</body>
+</html>

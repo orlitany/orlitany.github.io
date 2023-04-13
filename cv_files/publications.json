@@ -1,6 +1,5 @@
-data = {  
-    "publications": [
-        // ------------ 2023 -----------------                      
+{  
+    "publications": [        
         {
           "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
           "authors":"David Rozenberszki, Or Litany, Angela Dai",
@@ -49,8 +48,7 @@ data = {
           "page": "https://jonasschult.github.io/Mask3D/",
           "code": "https://github.com/JonasSchult/Mask3D",
           "bibtex":"schult2023mask3d"
-        },
-      // ------------ 2022 -----------------      
+        },      
         {
           "name": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
           "authors": "Jun Gao, Tianchang Shen, Zian Wang, Wenzheng Chen, Kangxue Yin, Daiqing Li, Or Litany, Zan Gojcic, Sanja Fidler",
@@ -223,7 +221,6 @@ data = {
         "page": "https://thu17cyz.github.io/3DIoUMatch/",
         "bibtex":"wang20203dioumatch"
       },
-      // ------------ 2020 -----------------
       {
           "name": "Human 3D keypoints via spatial uncertainty modeling",
           "authors": "Francis Williams, Or Litany, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
@@ -300,7 +297,6 @@ data = {
           "talk": "https://www.youtube.com/watch?v=xCnbvgMAg-Y",
           "bibtex":"qi2020imvotenet"
       },
-  // ------------ 2019 -----------------
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
           "authors": "Charles R. Qi, Or Litany, Kaiming He, Leonidas J. Guibas",
@@ -346,7 +342,6 @@ data = {
             "talk": "https://www.linkedin.com/feed/update/urn:li:activity:6547910607310598144",
             "bibtex": "halimi2019unsupervised"
         },
-  // ------------ 2018 -----------------
         {
             "name": "Deformable Shape Completion with Graph Convolutional Autoencoders",
             "authors": "Or Litany, Alex M. Bronstein, Michael M. Bronstein, Ameesh Makadia",
@@ -372,9 +367,6 @@ data = {
             "code": "https://github.com/TalRemez/deep_class_aware_denoising",
             "bibtex": "remez2018class"
         },
-
-
-  // ------------ 2017 -----------------
         {
             "name": "Efficient Deformable Shape Correspondence via Kernel Matching",
             "authors": "Zorah Lähner, Matthias Vestner, Amit Boyarski, Or Litany, et. al.",
@@ -438,7 +430,6 @@ data = {
             "paper": "http://arxiv.org/abs/1512.01515",
             "bibtex": "litany2017asist"
         },
-    // ------------ 2016 -----------------
         {
             "name": "Non-Rigid Puzzles",
             "authors": "Or Litany, Emanuele Rodolà, Alex Bronstein, Michael Bronstein, Daniel Cremers",
@@ -465,7 +456,6 @@ data = {
             "paper": "https://arxiv.org/abs/1608.01074",
             "bibtex": "remez2016fpga"
         },
-    // ------------ 2015 -----------------
         {
             "name": "Image reconstruction from dense binary pixels",
             "authors": "Or Litany*, Tal Remez*, Alex Bronstein (*Equal contributors)",
@@ -474,7 +464,6 @@ data = {
             "paper": "http://arxiv.org/abs/1512.01774",
             "bibtex": "litany2015image"
         },
-    // ------------ 2012 -----------------
         {
             "name": "Putting the pieces together: regularized multi-shape partial matching",
             "authors": "Or Litany, Alex Bronstein, Michael Bronstein",
@@ -482,6 +471,6 @@ data = {
             "image": "./OL_files/rigidpuzzles.png",
             "paper": "https://vista.cs.technion.ac.il/wp-content/uploads/2018/10/LitBroBroNORDIA12.pdf",
             "bibtex": "litany2012putting"
-        },
+        }
     ]
-};
+}

@@ -1,6 +1,13 @@
 {
     "events": [
         {
+            "name": "Neural Fields for Visual Computing", 
+            "venue": "SIGGRAPH",
+            "year": "2023",
+            "type": "Course",
+            "link": ""
+        },
+        {
             "name": "3DOVScene: Open-Vocabulary 3D Scene Understanding", 
             "venue": "ICCV",
             "year": "2023",

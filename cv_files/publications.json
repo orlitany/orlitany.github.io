@@ -1,6 +1,15 @@
 {  
     "publications": [        
         {
+          "name": "",
+          "authors":"",
+          "publication": "",
+          "image": "./OL_files/comingsoon.jpeg",
+          "paper": "",          
+          "page": "",
+          "bibtex":""
+        },
+        {
           "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
           "authors":"David Rozenberszki, Or Litany, Angela Dai",
           "publication": "",

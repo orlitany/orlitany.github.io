@@ -1,13 +1,18 @@
 /* CSS Document */
 
+html {
+	width: 1024px;
+	margin: auto;
+}
 
 body {
 	/*background: #f7f7f7;*/
 	background: #e3e5e8;
 	color: #FFFFFF;
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;;
-    font-weight: 300;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;;
+	font-weight: 300;
 	font-size:22px;
+	width: 1024px;
 }
 
 /* Headings */
@@ -215,7 +220,6 @@ table.psets {
   margin-bottom: 10px;
   max-width: 100%;
   display: block;
-}
 }
 
 .instructorphotosmall img {

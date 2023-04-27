@@ -1,8 +1,8 @@
 {  
     "publications": [        
         {
-          "name": "",
-          "authors":"",
+          "name": "Neural LiDAR Fields for Novel View Synthesis",
+          "authors":"Shengyu Huang, Zan Gojcic, Zian Wang, Francis Williams, Yoni Kasten, Sanja Fidler, Konrad Schindler, Or Litany",
           "publication": "",
           "image": "./OL_files/comingsoon.jpeg",
           "paper": "",          

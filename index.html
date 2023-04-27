@@ -1,16 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 
-<head>  
+<head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM4LVVKPRS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM4LVVKPRS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-GM4LVVKPRS');
-</script>
+    gtag('config', 'G-GM4LVVKPRS');
+  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,7 +26,7 @@
   <link rel="shortcut icon" href="./OL_files/orlitany-ai.png" />
 
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
 "@context": "http://www.schema.org",
 "@type": "Person",
@@ -87,7 +88,7 @@
 }
 </script>
 
-<title>Or Litany</title>
+  <title>Or Litany</title>
 
   <link rel="stylesheet" href="./OL_files/bootstrap.min.css">
   <link href="./OL_files/css" rel="stylesheet" type="text/css">
@@ -95,162 +96,193 @@
   <script type="text/javascript" async="" src="./OL_files/ga.js.download"></script>
   <script type="text/javascript" src="./OL_files/hidebib.js.download"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="helper_functions/load_dicts_from_json.js"></script>
 
 </head>
 
 <body>
 
-<!-- Start main content -->
-<div class="container">
-  <!-- <table width="900" border="0" align="center" cellpadding="20"></table> -->
-  <table width="90%" align="center" border="0" cellpadding="10">
-    <tbody><tr>
-      <td width="70%" valign="top">
-      <p align="center">&nbsp;</p>
-      
-      <!-- BIO -->
-      <p align="center"><font size="6px">Or Litany</font><br></p>
-      <p style="font-family: 'Roboto', sans-serif;">orlitany at gmail dot com</p>            
-      <p>I am a senior research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA</a> and an incoming assistant professor at the
-      <a href="https://www.cs.technion.ac.il/">Technion</a>. Before that I was a postdoc at <a href="https://geometry.stanford.edu/member/orlitany/">Stanford University</a> working under <a href="https://geometry.stanford.edu/member/guibas/">Prof. Leonidas Guibas</a>, and <a href="https://research.facebook.com/ai/">FAIR</a> hosted by <a href="https://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a>. I received my PhD from Tel-Aviv University, where I was advised by <a href="http://www.cs.technion.ac.il/~bron/">Prof. Alex Bronstein</a>. I received my B.Sc. in Physics and Mathematics from the Hebrew University under the auspices of <a href="https://en.wikipedia.org/wiki/Talpiot_program">“Talpiot”</a>. <br><br> My research interests include: Deep learning for 3D vision and geometry, and learning with reduced supervision. </p>
+  <!-- Start main content -->
+  <main id="vue-app">
+    <div class="container">
+      <!-- <table width="900" border="0" align="center" cellpadding="20"></table> -->
+      <table width="90%" align="center" border="0" cellpadding="10">
+        <tbody>
+          <tr>
+            <td width="70%" valign="top">
+              <p align="center">&nbsp;</p>
 
-      <!-- Links -->
-      <p><a href="./OL_files/orlitany_cv.pdf"><img src="./OL_files/cv.png" height="16"></a> /
-      <a href="https://www.linkedin.com/in/orlitany/main.html"><img src="./OL_files/linkedin.png" height="16"></a> /
-      <a href="https://twitter.com/orlitany"><img src="./OL_files/twitterlogo.png" height="16"></a> /
-      <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank"><img src="./OL_files/google_scholar.png" height="16"></a> /
-      <a href="https://github.com/orlitany/" target="_blank"><img src="./OL_files/github_alt.png" height="16"></a></p>
-      </td>
-      <td width="30%"><div class="instructorphoto"><img typeof="foaf:Image" src="./OL_files/or_yosemite_small_jpg.jpg" id="orlitany" alt="Or Litany profile picture"></div></td>
-
-    </tr></tbody>
-  </table>
-</div>
-<br> 
-
-
-<!-- Invited talks -->
-<div class="container">
-  <h2>Invited talks</h2><div class="news">        
-<div id="read_talks_record">
-  <div v-for="talk in talks.talks" class="workshops">        
-    <li>{{talk.title}}. 
-      <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
-      <span v-if="talk.video"><a :href="talk.video">Video</a></span>
-    </li>    
-  </div>
-</div>            
-</div>
-</div>
-<br>
-
-<!-- Workshops / Tutorials -->
-<div class="container">
-  <h2>Workshops / Tutorials</h2><div class="news">        
-  <div id="read_workshop_record">
-    <div v-for="event in events.events" class="workshops">
-      <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
-    </div>
-  </div>
-</div>            
-</div>
-<br>
-
-
-<div class="container">
-  <h2>Press</h2><div class="news">
-      <ul>
-        <li><span>September 2022: <a href="https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/">Interview for UnboxingAI podcast</a><br>
-        <li><span>March 2022: <a href="https://nvda.ws/3IGnfZu">NVIDIA Showcases Novel AI Tools in DRIVE Sim to Advance Autonomous Vehicle Development</a><br>
-        <li><span>July 2020: <a href="https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/">Stanford makes an impact at machine learning conference</a><br>
-        <li><span>July 2020: <a href="https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/">חוקרי אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)</a><br>
-
-          
-      </ul>
-    </div>
-</div>
-<br>
-
-  <div class="container">
-    <h2> Publications </h2>
-  <!-- Auto publications reader -->
-  <div id="read_pub_record">
-    <div v-for="pub in data.publications" class="publication">
-
-      <table width="900" align="center" border="0" cellpadding="0">
-          <tbody><tr>
-            <td width="25%" valign="top">
-              <img :src="pub.image" alt="game" width="150" height="" style="border-style: none">
-            </td>
-            <td width="75%" valign="top">
-              <p><a :href="pub.paper">
-                <heading>{{ pub.name }}</heading></a><br>
-                <!-- <span v-html="pub.authors"></span><br> -->                
-                <span v-html=boldMyName(pub.authors)></span><br>
-                <em>{{ pub.publication }}</em>
-                <span v-if="pub.misc">
-                  <br><span v-html="pub.misc"></span><br>
-                </span>
-
+              <!-- BIO -->
+              <p align="center">
+                <font size="6px">Or Litany</font><br>
               </p>
-              <div class="paper" :id="pub.name">
-                <a :href="pub.paper">paper</a> /
-                <span v-if="pub.code">
-                  <a :href="pub.code">code</a> /
-                </span>
-                <span v-if="pub.page">
-                  <a :href="pub.page">page</a> /
-                </span>
-                <span v-if="pub.dataset">
-                  <a :href="pub.dataset">dataset</a> /
-                </span>
-                <span v-if="pub.slides">
-                  <a :href="pub.slides">slides</a> /
-                </span>
-                <span v-if="pub.poster">
-                  <a :href="pub.poster">poster</a> /
-                </span>
-                <span v-if="pub.talk">
-                  <a :href="pub.talk">talk</a> /
-                </span>
+              <p style="font-family: 'Roboto', sans-serif;">orlitany at gmail dot com</p>
+              <p>I am a senior research scientist at <a href="https://nv-tlabs.github.io/">NVIDIA</a> and an incoming
+                assistant professor at the
+                <a href="https://www.cs.technion.ac.il/">Technion</a>. Before that I was a postdoc at <a
+                  href="https://geometry.stanford.edu/member/orlitany/">Stanford University</a> working under <a
+                  href="https://geometry.stanford.edu/member/guibas/">Prof. Leonidas Guibas</a>, and <a
+                  href="https://research.facebook.com/ai/">FAIR</a> hosted by <a
+                  href="https://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a>. I received my PhD from
+                Tel-Aviv University, where I was advised by <a href="http://www.cs.technion.ac.il/~bron/">Prof. Alex
+                  Bronstein</a>. I received my B.Sc. in Physics and Mathematics from the Hebrew University under the
+                auspices of <a href="https://en.wikipedia.org/wiki/Talpiot_program">“Talpiot”</a>. <br><br> My research
+                interests include: Deep learning for 3D vision and geometry, and learning with reduced supervision.
+              </p>
 
-                <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
-
-                <pre xml:space="preserve" style="display: none;"><span v-text=breakbib2(pub)></span>
-                </pre>                                
-                
-              </div>
+              <!-- Links -->
+              <p><a href="./OL_files/orlitany_cv.pdf"><img src="./OL_files/cv.png" height="16"></a> /
+                <a href="https://www.linkedin.com/in/orlitany/main.html"><img src="./OL_files/linkedin.png"
+                    height="16"></a> /
+                <a href="https://twitter.com/orlitany"><img src="./OL_files/twitterlogo.png" height="16"></a> /
+                <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank"><img
+                    src="./OL_files/google_scholar.png" height="16"></a> /
+                <a href="https://github.com/orlitany/" target="_blank"><img src="./OL_files/github_alt.png"
+                    height="16"></a>
+              </p>
+            </td>
+            <td width="30%">
+              <div class="instructorphoto"><img typeof="foaf:Image" src="./OL_files/or_yosemite_small_jpg.jpg"
+                  id="orlitany" alt="Or Litany profile picture"></div>
             </td>
 
-          </tr></tbody></table>
-          <hr>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <br>
 
 
-  </div>
+    <!-- Invited talks -->
+    <div class="container">
+      <h2>Invited talks</h2>
+      <div class="news">
+        <div id="read_talks_record">
+          <div v-for="talk in talks" class="workshops">
+            <li>{{talk.title}}.
+              <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
+              <span v-if="talk.video"><a :href="talk.video">Video</a></span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Workshops / Tutorials -->
+    <div class="container">
+      <h2>Workshops / Tutorials</h2>
+      <div class="news">
+        <div id="read_workshop_record">
+          <div v-for="event in events" class="workshops">
+            <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
 
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
-  </script>
+    <div class="container">
+      <h2>Press</h2>
+      <div class="news">
+        <ul>
+          <li><span>September 2022: <a
+                href="https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/">Interview
+                for UnboxingAI podcast</a><br>
+          <li><span>March 2022: <a href="https://nvda.ws/3IGnfZu">NVIDIA Showcases Novel AI Tools in DRIVE Sim to
+                Advance
+                Autonomous Vehicle Development</a><br>
+          <li><span>July 2020: <a
+                href="https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/">Stanford
+                makes an impact at machine learning conference</a><br>
+          <li><span>July 2020: <a
+                href="https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/">חוקרי
+                אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)</a><br>
 
-  <script
-  src="helper_functions/read_dicts.js">
-  </script>
 
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div class="container">
+      <h2> Publications </h2>
+      <!-- Auto publications reader -->
+      <div id="read_pub_record">
+        <div v-for="pub in publications" class="publication">
+
+          <table width="900" align="center" border="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="25%" valign="top">
+                  <img :src="pub.image" alt="game" width="150" height="" style="border-style: none">
+                </td>
+                <td width="75%" valign="top">
+                  <p><a :href="pub.paper">
+                      <heading>{{ pub.name }}</heading>
+                    </a><br>
+                    <!-- <span v-html="pub.authors"></span><br> -->
+                    <span v-html=boldMyName(pub.authors)></span><br>
+                    <em>{{ pub.publication }}</em>
+                    <span v-if="pub.misc">
+                      <br><span v-html="pub.misc"></span><br>
+                    </span>
+
+                  </p>
+                  <div class="paper" :id="pub.name">
+                    <a :href="pub.paper">paper</a> /
+                    <span v-if="pub.code">
+                      <a :href="pub.code">code</a> /
+                    </span>
+                    <span v-if="pub.page">
+                      <a :href="pub.page">page</a> /
+                    </span>
+                    <span v-if="pub.dataset">
+                      <a :href="pub.dataset">dataset</a> /
+                    </span>
+                    <span v-if="pub.slides">
+                      <a :href="pub.slides">slides</a> /
+                    </span>
+                    <span v-if="pub.poster">
+                      <a :href="pub.poster">poster</a> /
+                    </span>
+                    <span v-if="pub.talk">
+                      <a :href="pub.talk">talk</a> /
+                    </span>
+
+                    <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
+
+                    <pre xml:space="preserve" style="display: none;"><span v-text=breakbib2(pub)></span>
+                </pre>
+
+                  </div>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+
+
+      </div>
+
+
+
+    </div><br>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js"></script>
+    <script src="helper_functions/load_dicts_from_json.js"></script>
   
-  </div><br>
+    <script xml:space="preserve" language="JavaScript">
+      hideallbibs();
+    </script>
 
-  
-
-
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-</script>
-
-
+  </main>
 
 
 </body>
+
 </html>

@@ -1,13 +1,14 @@
 {
     "talks": [
         {
-            "title": "Data-driven simulation for AV -- new version", 
+            "title": "Data-driven simulation for AV", 
             "venue": "Brown Visual Computing",
             "year": "2023",            
+            "slides": "https://drive.google.com/file/d/1GsIurVQvrg6XTQJouR-dq3J4oZrLNEsb/view?usp=share_link",
             "video": "https://www.youtube.com/@brownvisualcomputing"
         },
         {
-            "title": "Data-driven simulation for AV", 
+            "title": "Data-driven simulation for AV (short)", 
             "venue": "ECCV workshop on 3D Perception for Autonomous Driving",
             "year": "2022",            
             "slides": "https://docs.google.com/presentation/d/1rd_W_3amrpOBGyFu5gSu7yEuH4FvTgqf/edit?usp=share_link&ouid=117600662291196930244&rtpof=true&sd=true"

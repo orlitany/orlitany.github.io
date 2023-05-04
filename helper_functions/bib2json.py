@@ -20,14 +20,14 @@ def bib_to_json(bibfile):
     bib_dict[entry_dict['ID']] = bibtex_str
     
   # save file to js 
-  with open("./bibs.json","w") as f:  
+  with open("./cv_files/bibs.json","w") as f:  
     # f.write('bibs = ')
     json.dump(bib_dict,f, indent = 3)
     print("Created/updated file bibs.json")
 
 
 def main():
-  bib_to_json("./cv/citations.bib")
+  bib_to_json("./cv_files/citations.bib")
 
 if __name__ == "__main__":
   main()

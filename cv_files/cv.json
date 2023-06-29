@@ -1,11 +1,20 @@
 {
     "name": "Dr. Or Litany",            
-    "job title": "Senior Research Scientist", 
-    "workplace": "NVIDIA",
-    "contact":
-        {            
-            "phone": "(+1)669-264-3983)",
-            "email": "orlitany at gmail dot com",
-            "homepage": "https://orlitany.github.io/"            
-        }
+    "job title": "(incoming) Assitant professor and Senior Research Scientist", 
+    "workplace": "Technion, NVIDIA",
+    "contact": {                
+        "phone": "(+1)669-264-3983",
+        "email": "orlitany at gmail dot com",
+        "homepage": "https://orlitany.github.io/"            
+        },
+    "interests": "AI for Generative and Perception tasks in 3D Computer Vision and Graphics, and Data efficient learning.",
+    "education": {
+        [
+            {
+                "institute": "Tel Aviv University",
+                "address": "Tel Aviv, Israel"
+            }
+        ]
+    }
+
 }

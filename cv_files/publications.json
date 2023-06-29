@@ -22,11 +22,11 @@
           "name": "Neural Kernel Surface Reconstruction",
           "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, Or Litany, Sanja Fidler, Francis Williams",
           "publication": "CVPR 2023",
-          "image": "./OL_files/comingsoon.jpeg",
-          "paper": "",          
-          "page": "",
-          "code": "",
-          "bibtex":"",
+          "image": "./OL_files/nksr_teaser.jpg",
+          "paper": "https://arxiv.org/pdf/2305.19590.pdf",          
+          "page": "https://research.nvidia.com/labs/toronto-ai/NKSR/",
+          "code": "https://github.com/nv-tlabs/nksr",
+          "bibtex":"Huang2023nksr",
           "misc": "<mark>Highlight (top 10% of accepted papers)</mark>"
         },
         {

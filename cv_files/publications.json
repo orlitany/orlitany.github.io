@@ -42,11 +42,11 @@
           "name": "Fast Monocular Scene Reconstruction with Global-Sparse Local-Dense Grids",
           "authors":"Wei Dong, Chris Choy, Charles T. Loop, Yuke Zhu, Or Litany, Anima Anandkumar",
           "publication": "CVPR 2023",
-          "image": "./OL_files/comingsoon.jpeg",
-          "paper": "",          
-          "page": "",
-          "code": "",
-          "bibtex":""
+          "image": "./OL_files/fastmono_teaser.png",
+          "paper": "https://arxiv.org/abs/2305.13220",          
+          "page": "https://research.nvidia.com/labs/toronto-ai/publication/2023_cvpr_monocular/",
+          "code": "https://dongwei.info/publication/ash-mono/",
+          "bibtex":"dong2023fast"
         },
         {
           "name": "Mask3D for 3D Semantic Instance Segmentation",

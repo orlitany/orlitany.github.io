@@ -3,11 +3,20 @@
         {
           "name": "Neural LiDAR Fields for Novel View Synthesis",
           "authors":"Shengyu Huang, Zan Gojcic, Zian Wang, Francis Williams, Yoni Kasten, Sanja Fidler, Konrad Schindler, Or Litany",
-          "publication": "",
+          "publication": "ICCV 2023",
           "image": "./OL_files/nfl_teaser.png",
           "paper": "https://arxiv.org/abs/2305.01643",          
           "page": "https://research.nvidia.com/labs/toronto-ai/nfl/",
           "bibtex":"Huang2023nfl"
+        },
+        {
+          "name": "Towards Viewpoint Robustness in Bird’s Eye View Segmentation",          
+          "authors":"Tzofi Klinghoffer, Jonah Philion, Wenzheng Chen, Or Litany, Zan Gojcic, Jungseock Joo, Ramesh Raskar, Sanja Fidler, Jose Alvarez",
+          "publication": "ICCV 2023",
+          "image": "./OL_files/comingsoon.jpeg",
+          "paper": "",          
+          "page": "",
+          "bibtex":"tzofi2023view"
         },
         {
           "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",

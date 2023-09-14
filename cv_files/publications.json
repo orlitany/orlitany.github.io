@@ -22,8 +22,8 @@
           "name": "Towards Viewpoint Robustness in Bird’s Eye View Segmentation",          
           "authors":"Tzofi Klinghoffer, Jonah Philion, Wenzheng Chen, Or Litany, Zan Gojcic, Jungseock Joo, Ramesh Raskar, Sanja Fidler, Jose Alvarez",
           "publication": "ICCV 2023",
-          "image": "./OL_files/comingsoon.jpeg",
-          "paper": "",          
+          "image": "./OL_files/viewrobust_teaser.jpg",
+          "paper": "https://arxiv.org/pdf/2309.05192.pdf",          
           "page": "",
           "bibtex":"tzofi2023view"
         },

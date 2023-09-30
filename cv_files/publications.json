@@ -23,8 +23,9 @@
           "authors":"Tzofi Klinghoffer, Jonah Philion, Wenzheng Chen, Or Litany, Zan Gojcic, Jungseock Joo, Ramesh Raskar, Sanja Fidler, Jose Alvarez",
           "publication": "ICCV 2023",
           "image": "./OL_files/viewrobust_teaser.jpg",
-          "paper": "https://arxiv.org/pdf/2309.05192.pdf",          
-          "page": "",
+          "paper": "https://arxiv.org/pdf/2309.05192.pdf",
+          "page": "https://nvlabs.github.io/viewpoint-robustness/",
+          "talk": "https://youtu.be/CuJ9gfJpfhc",
           "bibtex":"tzofi2023view"
         },
         {

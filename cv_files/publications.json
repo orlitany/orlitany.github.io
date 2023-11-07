@@ -1,6 +1,15 @@
 {  
     "publications": [  
-        {
+      {
+        "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
+        "authors":"Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, Yue Wang",
+        "publication": "arXiv",
+        "image": "./OL_files/emerf_overview.png",
+        "paper": "https://arxiv.org/abs/2311.02077",          
+        "page": "https://emernerf.github.io/",
+        "bibtex":"yang2023emernerf"
+      },          
+    {
           "name": "Semi-Supervised Semantic Segmentation via Marginal Contextual Information",
           "authors":"Moshe Kimhi, Shai Kimhi, Evgenii Zheltonozhskii, Or Litany, Chaim Baskin",
           "publication": "arXiv",

@@ -1,5 +1,14 @@
 {  
-    "publications": [  
+    "publications": [ 
+      {
+        "name": "3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features",
+        "authors":"Chenfeng Xu, Huan Ling, Sanja Fidler, Or Litany",
+        "publication": "arXiv",
+        "image": "./OL_files/3difftection.png",
+        "paper": "https://arxiv.org/abs/2311.04391",          
+        "page": "https://research.nvidia.com/labs/toronto-ai/3difftection/",
+        "bibtex":"xu20233difftection"
+      },   
       {
         "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
         "authors":"Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, Yue Wang",

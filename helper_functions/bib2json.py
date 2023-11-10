@@ -21,7 +21,6 @@ def bib_to_json(bibfile):
     
   # save file to js 
   with open("./cv_files/bibs.json","w") as f:  
-    # f.write('bibs = ')
     json.dump(bib_dict,f, indent = 3)
     print("Created/updated file bibs.json")
 

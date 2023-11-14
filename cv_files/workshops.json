@@ -5,7 +5,7 @@
             "venue": "SIGGRAPH",
             "year": "2023",
             "type": "Course",
-            "link": ""
+            "link": "https://neuralfields.cs.brown.edu/siggraph23.html"
         },
         {
             "name": "3DOVScene: Open-Vocabulary 3D Scene Understanding", 

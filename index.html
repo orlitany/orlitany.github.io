@@ -1,6 +1,6 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html lang="en">
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -152,13 +152,15 @@
     <div class="container">
       <h2>Invited talks</h2>
       <div class="news">
-        <div id="read_talks_record">
+        <ul>
+        <div id="read_talks_record">          
           <div v-for="talk in talks" class="workshops">
             <li>{{talk.title}}.
               <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
               <span v-if="talk.video"><a :href="talk.video">Video</a></span>
             </li>
           </div>
+        </ul>
         </div>
       </div>
     </div>
@@ -168,11 +170,13 @@
     <div class="container">
       <h2>Workshops / Tutorials</h2>
       <div class="news">
+        <ul>
         <div id="read_workshop_record">
           <div v-for="event in events" class="workshops">
             <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
           </div>
         </div>
+        </ul>
       </div>
     </div>
     <br>

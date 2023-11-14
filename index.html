@@ -153,15 +153,15 @@
       <h2>Invited talks</h2>
       <div class="news">
         <ul>
-        <div id="read_talks_record">          
-          <div v-for="talk in talks" class="workshops">
-            <li>{{talk.title}}.
-              <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
-              <span v-if="talk.video"><a :href="talk.video">Video</a></span>
-            </li>
+          <div id="read_talks_record">          
+            <div v-for="talk in talks" class="workshops">
+              <li>{{talk.title}}.
+                <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
+                <span v-if="talk.video"><a :href="talk.video">Video</a></span>
+              </li>
+            </div>        
           </div>
         </ul>
-        </div>
       </div>
     </div>
     <br>
@@ -171,11 +171,11 @@
       <h2>Workshops / Tutorials</h2>
       <div class="news">
         <ul>
-        <div id="read_workshop_record">
-          <div v-for="event in events" class="workshops">
-            <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
+          <div id="read_workshop_record">
+            <div v-for="event in events" class="workshops">
+              <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
+            </div>
           </div>
-        </div>
         </ul>
       </div>
     </div>

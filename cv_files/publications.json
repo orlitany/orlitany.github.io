@@ -1,6 +1,15 @@
 {  
     "publications": [ 
       {
+        "name": "Dynamic LiDAR Re-simulation using Compositional Neural Fields",
+        "authors":"Hanfeng Wu, Xingxing Zuo, Stefan Leutenegger, Or Litany, Konrad Schindler, Shengyu Huang",
+        "publication": "arXiv",
+        "image": "./OL_files/dynfl_teaser.png",
+        "paper": "https://arxiv.org/abs/2312.05247",          
+        "page": "https://shengyuh.github.io/dynfl/index.html",
+        "bibtex":"wu2023dynamic"
+      },  
+      {
         "name": "3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features",
         "authors":"Chenfeng Xu, Huan Ling, Sanja Fidler, Or Litany",
         "publication": "arXiv",
@@ -49,7 +58,7 @@
         {
           "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
           "authors":"David Rozenberszki, Or Litany, Angela Dai",
-          "publication": "",
+          "publication": "arXiv",
           "image": "./OL_files/unscene3d_teaser.jpeg",
           "paper": "https://arxiv.org/abs/2303.14541",          
           "page": "https://rozdavid.github.io/unscene3d",

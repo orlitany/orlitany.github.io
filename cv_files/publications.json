@@ -1,6 +1,15 @@
 {  
     "publications": [ 
       {
+        "name": "Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation",
+        "authors":"Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe",
+        "publication": "arXiv",
+        "image": "./OL_files/multitrack_teaser.png",
+        "paper": "https://arxiv.org/abs/2401.08559",          
+        "page": "https://mathis.petrovich.fr/stmc/",
+        "bibtex":"petrovich24stmc"
+      },  
+      {
         "name": "Dynamic LiDAR Re-simulation using Compositional Neural Fields",
         "authors":"Hanfeng Wu, Xingxing Zuo, Stefan Leutenegger, Or Litany, Konrad Schindler, Shengyu Huang",
         "publication": "arXiv",

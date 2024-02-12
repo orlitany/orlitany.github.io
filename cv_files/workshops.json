@@ -1,6 +1,20 @@
 {
     "events": [
         {
+            "name": "Data-Driven Autonomous Driving Simulation", 
+            "venue": "CVPR",
+            "year": "2024",
+            "type": "workshop",
+            "link": "https://agents4ad.github.io/"
+        },
+        {
+            "name": "Neural Fields for Visual Computing", 
+            "venue": "CVPR",
+            "year": "2024",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/"
+        },
+        {
             "name": "Neural Fields for Visual Computing", 
             "venue": "SIGGRAPH",
             "year": "2023",

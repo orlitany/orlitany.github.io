@@ -1,6 +1,14 @@
 {  
     "publications": [ 
       {
+        "name": "Approximately Piecewise E(3) Equivariant Point Networks",
+        "authors":"Matan Atzmon, Jiahui Huang, Francis Williams, Or Litany",
+        "publication": "arXiv",
+        "image": "./OL_files/APEN_teaser.png",
+        "paper": "https://arxiv.org/abs/2402.08529",                  
+        "bibtex":"atzmon2024approximately"
+      },  
+      {
         "name": "Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation",
         "authors":"Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe",
         "publication": "arXiv",

@@ -3,7 +3,7 @@
       {
         "name": "Approximately Piecewise E(3) Equivariant Point Networks",
         "authors":"Matan Atzmon, Jiahui Huang, Francis Williams, Or Litany",
-        "publication": "arXiv",
+        "publication": "ICLR 2024",
         "image": "./OL_files/APEN_teaser.jpg",
         "paper": "https://arxiv.org/abs/2402.08529",                  
         "bibtex":"atzmon2024approximately"
@@ -38,7 +38,7 @@
       {
         "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
         "authors":"Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, Yue Wang",
-        "publication": "arXiv",
+        "publication": "ICLR 2024",
         "image": "./OL_files/emerf_overview.png",
         "paper": "https://arxiv.org/abs/2311.02077",          
         "page": "https://emernerf.github.io/",

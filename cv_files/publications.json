@@ -1,26 +1,9 @@
 {  
-    "publications": [ 
-      {
-        "name": "Approximately Piecewise E(3) Equivariant Point Networks",
-        "authors":"Matan Atzmon, Jiahui Huang, Francis Williams, Or Litany",
-        "publication": "ICLR 2024",
-        "image": "./OL_files/APEN_teaser.jpg",
-        "paper": "https://arxiv.org/abs/2402.08529",                  
-        "bibtex":"atzmon2024approximately"
-      },  
-      {
-        "name": "Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation",
-        "authors":"Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe",
-        "publication": "arXiv",
-        "image": "./OL_files/multitrack_teaser.png",
-        "paper": "https://arxiv.org/abs/2401.08559",          
-        "page": "https://mathis.petrovich.fr/stmc/",
-        "bibtex":"petrovich24stmc"
-      },  
+    "publications": [
       {
         "name": "Dynamic LiDAR Re-simulation using Compositional Neural Fields",
         "authors":"Hanfeng Wu, Xingxing Zuo, Stefan Leutenegger, Or Litany, Konrad Schindler, Shengyu Huang",
-        "publication": "arXiv",
+        "publication": "CVPR 2024",
         "image": "./OL_files/dynfl_teaser.png",
         "paper": "https://arxiv.org/abs/2312.05247",          
         "page": "https://shengyuh.github.io/dynfl/index.html",
@@ -29,12 +12,29 @@
       {
         "name": "3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features",
         "authors":"Chenfeng Xu, Huan Ling, Sanja Fidler, Or Litany",
-        "publication": "arXiv",
+        "publication": "CVPR 2024",
         "image": "./OL_files/3difftection.png",
         "paper": "https://arxiv.org/abs/2311.04391",          
         "page": "https://research.nvidia.com/labs/toronto-ai/3difftection/",
         "bibtex":"xu20233difftection"
       },   
+      {
+        "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
+        "authors":"David Rozenberszki, Or Litany, Angela Dai",
+        "publication": "CVPR 2024",
+        "image": "./OL_files/unscene3d_teaser.jpeg",
+        "paper": "https://arxiv.org/abs/2303.14541",          
+        "page": "https://rozdavid.github.io/unscene3d",
+        "bibtex":"rozenberszki2023unscene3d"
+      },  
+      {
+        "name": "Approximately Piecewise E(3) Equivariant Point Networks",
+        "authors":"Matan Atzmon, Jiahui Huang, Francis Williams, Or Litany",
+        "publication": "ICLR 2024",
+        "image": "./OL_files/APEN_teaser.jpg",
+        "paper": "https://arxiv.org/abs/2402.08529",                  
+        "bibtex":"atzmon2024approximately"
+      },
       {
         "name": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision",
         "authors":"Jiawei Yang, Boris Ivanovic, Or Litany, Xinshuo Weng, Seung Wook Kim, Boyi Li, Tong Che, Danfei Xu, Sanja Fidler, Marco Pavone, Yue Wang",
@@ -43,8 +43,17 @@
         "paper": "https://arxiv.org/abs/2311.02077",          
         "page": "https://emernerf.github.io/",
         "bibtex":"yang2023emernerf"
-      },          
-    {
+      },           
+      {
+        "name": "Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation",
+        "authors":"Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe",
+        "publication": "arXiv",
+        "image": "./OL_files/multitrack_teaser.png",
+        "paper": "https://arxiv.org/abs/2401.08559",          
+        "page": "https://mathis.petrovich.fr/stmc/",
+        "bibtex":"petrovich24stmc"
+      },                  
+      {
           "name": "Semi-Supervised Semantic Segmentation via Marginal Contextual Information",
           "authors":"Moshe Kimhi, Shai Kimhi, Evgenii Zheltonozhskii, Or Litany, Chaim Baskin",
           "publication": "arXiv",
@@ -52,35 +61,26 @@
           "paper": "https://arxiv.org/abs/2308.13900",          
           "page": "https://s4mcontext.github.io/",
           "bibtex":"kimhi2023semisupervised"
-        },      
-        {
-          "name": "Neural LiDAR Fields for Novel View Synthesis",
-          "authors":"Shengyu Huang, Zan Gojcic, Zian Wang, Francis Williams, Yoni Kasten, Sanja Fidler, Konrad Schindler, Or Litany",
-          "publication": "ICCV 2023",
-          "image": "./OL_files/nfl_teaser.png",
-          "paper": "https://arxiv.org/abs/2305.01643",          
-          "page": "https://research.nvidia.com/labs/toronto-ai/nfl/",
-          "bibtex":"Huang2023nfl"
-        },
-        {
-          "name": "Towards Viewpoint Robustness in Bird’s Eye View Segmentation",          
-          "authors":"Tzofi Klinghoffer, Jonah Philion, Wenzheng Chen, Or Litany, Zan Gojcic, Jungseock Joo, Ramesh Raskar, Sanja Fidler, Jose Alvarez",
-          "publication": "ICCV 2023",
-          "image": "./OL_files/viewrobust_teaser.jpg",
-          "paper": "https://arxiv.org/pdf/2309.05192.pdf",
-          "page": "https://nvlabs.github.io/viewpoint-robustness/",
-          "talk": "https://youtu.be/CuJ9gfJpfhc",
-          "bibtex":"tzofi2023view"
-        },
-        {
-          "name": "UnScene3D: Unsupervised 3D Instance Segmentation for Indoor Scenes",
-          "authors":"David Rozenberszki, Or Litany, Angela Dai",
-          "publication": "arXiv",
-          "image": "./OL_files/unscene3d_teaser.jpeg",
-          "paper": "https://arxiv.org/abs/2303.14541",          
-          "page": "https://rozdavid.github.io/unscene3d",
-          "bibtex":"rozenberszki2023unscene3d"
-        },
+      },      
+      {
+        "name": "Neural LiDAR Fields for Novel View Synthesis",
+        "authors":"Shengyu Huang, Zan Gojcic, Zian Wang, Francis Williams, Yoni Kasten, Sanja Fidler, Konrad Schindler, Or Litany",
+        "publication": "ICCV 2023",
+        "image": "./OL_files/nfl_teaser.png",
+        "paper": "https://arxiv.org/abs/2305.01643",          
+        "page": "https://research.nvidia.com/labs/toronto-ai/nfl/",
+        "bibtex":"Huang2023nfl"
+      },
+      {
+        "name": "Towards Viewpoint Robustness in Bird’s Eye View Segmentation",          
+        "authors":"Tzofi Klinghoffer, Jonah Philion, Wenzheng Chen, Or Litany, Zan Gojcic, Jungseock Joo, Ramesh Raskar, Sanja Fidler, Jose Alvarez",
+        "publication": "ICCV 2023",
+        "image": "./OL_files/viewrobust_teaser.jpg",
+        "paper": "https://arxiv.org/pdf/2309.05192.pdf",
+        "page": "https://nvlabs.github.io/viewpoint-robustness/",
+        "talk": "https://youtu.be/CuJ9gfJpfhc",
+        "bibtex":"tzofi2023view"
+      },        
         {
           "name": "Neural Kernel Surface Reconstruction",
           "authors":"Jiahui Huang, Zan Gojcic, Matan Atzmon, Or Litany, Sanja Fidler, Francis Williams",

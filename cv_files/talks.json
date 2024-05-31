@@ -1,6 +1,12 @@
 {
     "talks": [
         {
+            "title": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision", 
+            "venue": "IMVC",
+            "year": "2024",            
+            "video": "https://www.youtube.com/watch?v=Xqm612SguX4&ab_channel=OrtraMeetingPoint"
+        },
+        {
             "title": "Data-driven simulation for AV", 
             "venue": "Brown Visual Computing",
             "year": "2023",            

@@ -1,6 +1,14 @@
 {  
     "publications": [
       {
+        "name": "Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering",
+        "authors":"Ido Sobol, Chenfeng Xu, Or Litany",
+        "publication": "arXiv 2024",
+        "image": "./OL_files/zero2hero.jpg",
+        "paper": "https://arxiv.org/abs/2405.18677",
+        "bibtex":"sobol2024zerotohero"
+      },
+      {
         "name": "The NeRFect Match: Exploring NeRF Features for Visual Localization",
         "authors":"Qunjie Zhou, Maxim Maximov, Or Litany, Laura Leal-Taixé",
         "publication": "arXiv 2024",
@@ -64,7 +72,7 @@
       {
           "name": "Semi-Supervised Semantic Segmentation via Marginal Contextual Information",
           "authors":"Moshe Kimhi, Shai Kimhi, Evgenii Zheltonozhskii, Or Litany, Chaim Baskin",
-          "publication": "arXiv",
+          "publication": "TMLR",
           "image": "./OL_files/s4mc_teaser.png",
           "paper": "https://arxiv.org/abs/2308.13900",          
           "page": "https://s4mcontext.github.io/",

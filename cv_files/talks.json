@@ -1,6 +1,12 @@
 {
     "talks": [
         {
+            "title": "Lights, Camera, Action! Revolutionizing Computer Vision with Video Generative AI", 
+            "venue": "Azrieli Fellows Program",
+            "year": "2024",            
+            "video": "https://www.youtube.com/watch?v=sVC4p6unC8M&ab_channel=AzrieliFellowsProgram"
+        },
+        {
             "title": "EmerNeRF: Emergent Spatial-Temporal Scene Decomposition via Self-Supervision", 
             "venue": "IMVC",
             "year": "2024",            

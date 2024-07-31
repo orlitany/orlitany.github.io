@@ -6,12 +6,13 @@
         "publication": "arXiv 2024",
         "image": "./OL_files/zero2hero.jpg",
         "paper": "https://arxiv.org/abs/2405.18677",
+        "page": "https://zero2hero-nvs.github.io/",
         "bibtex":"sobol2024zerotohero"
       },
       {
         "name": "The NeRFect Match: Exploring NeRF Features for Visual Localization",
         "authors":"Qunjie Zhou, Maxim Maximov, Or Litany, Laura Leal-Taixé",
-        "publication": "arXiv 2024",
+        "publication": "ECCV 2024",
         "image": "./OL_files/nerfmatch_teaser.jpg",
         "paper": "https://arxiv.org/abs/2403.09577",                  
         "bibtex":"zhou2024nerfect"

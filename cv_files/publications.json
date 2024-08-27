@@ -64,7 +64,7 @@
       {
         "name": "Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation",
         "authors":"Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe",
-        "publication": "arXiv",
+        "publication": "CVPR 2024 Workshop on Human Motion Generation",
         "image": "./OL_files/multitrack_teaser.png",
         "paper": "https://arxiv.org/abs/2401.08559",          
         "page": "https://mathis.petrovich.fr/stmc/",

@@ -15,6 +15,7 @@
         "publication": "ECCV 2024",
         "image": "./OL_files/nerfmatch_teaser.jpg",
         "paper": "https://arxiv.org/abs/2403.09577",                  
+        "page": "https://nerfmatch.github.io/",
         "bibtex":"zhou2024nerfect"
       },  
       {

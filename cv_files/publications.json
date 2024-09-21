@@ -1,6 +1,15 @@
 {  
     "publications": [
       {
+        "name": "OmniRe: Omni Urban Scene Reconstruction",
+        "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
+        "publication": "arXiv 2024",
+        "image": "./OL_files/omnire.png",
+        "paper": "https://arxiv.org/abs/2408.16760",
+        "page": "https://ziyc.github.io/omnire/",
+        "bibtex":"chen2024omnire"
+      },
+      {
         "name": "Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering",
         "authors":"Ido Sobol, Chenfeng Xu, Or Litany",
         "publication": "arXiv 2024",

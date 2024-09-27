@@ -12,7 +12,7 @@
       {
         "name": "Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering",
         "authors":"Ido Sobol, Chenfeng Xu, Or Litany",
-        "publication": "arXiv 2024",
+        "publication": "NeurIPS 2024",
         "image": "./OL_files/zero2hero.jpg",
         "paper": "https://arxiv.org/abs/2405.18677",
         "page": "https://zero2hero-nvs.github.io/",

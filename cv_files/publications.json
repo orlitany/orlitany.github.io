@@ -1,14 +1,14 @@
 {  
     "publications": [
       {
-        "name": "OmniRe: Omni Urban Scene Reconstruction",
-        "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
-        "publication": "arXiv 2024",
-        "image": "./OL_files/omnire.png",
-        "paper": "https://arxiv.org/abs/2408.16760",
-        "page": "https://ziyc.github.io/omnire/",
-        "bibtex":"chen2024omnire"
-      },
+        "name": "Robust Symmetry Detection via Riemannian Langevin Dynamics",
+        "authors":"Jihyeon Je, Jiayi Liu, Guandao Yang, Boyang Deng, Shengqu Cai, Gordon Wetzstein, Or Litany, Leonidas Guibas",
+        "publication": "SIGGRAPH-ASIA 2024",
+        "image": "./OL_files/symmetry_teaser.jpg",
+        "paper": "https://arxiv.org/abs/2410.02786",
+        "page": "https://symmetry-langevin.github.io/",
+        "bibtex":"je2024robustlangsym"
+      },      
       {
         "name": "Zero-to-Hero: Enhancing Zero-Shot Novel View Synthesis via Attention Map Filtering",
         "authors":"Ido Sobol, Chenfeng Xu, Or Litany",
@@ -17,6 +17,15 @@
         "paper": "https://arxiv.org/abs/2405.18677",
         "page": "https://zero2hero-nvs.github.io/",
         "bibtex":"sobol2024zerotohero"
+      },
+      {
+        "name": "OmniRe: Omni Urban Scene Reconstruction",
+        "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
+        "publication": "arXiv 2024",
+        "image": "./OL_files/omnire.png",
+        "paper": "https://arxiv.org/abs/2408.16760",
+        "page": "https://ziyc.github.io/omnire/",
+        "bibtex":"chen2024omnire"
       },
       {
         "name": "The NeRFect Match: Exploring NeRF Features for Visual Localization",
@@ -34,7 +43,7 @@
         "image": "./OL_files/dynfl_teaser.png",
         "paper": "https://arxiv.org/abs/2312.05247",          
         "page": "https://shengyuh.github.io/dynfl/index.html",
-        "bibtex":"wu2023dynamic"
+        "bibtex":"Wu2023dynfl"
       },  
       {
         "name": "3DiffTection: 3D Object Detection with Geometry-Aware Diffusion Features",

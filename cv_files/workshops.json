@@ -1,6 +1,27 @@
 {
     "events": [
         {
+            "name": "Neural Fields Beyond Conventional Cameras", 
+            "venue": "ECCV",
+            "year": "2024",
+            "type": "workshop",
+            "link": "https://neural-fields-beyond-cams.github.io/"
+        },
+        {
+            "name": "3rd Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "venue": "ECCV",
+            "year": "2024",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/index.html"
+        },
+        {
+            "name": "2rd Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "venue": "CVPR",
+            "year": "2024",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/index_cvpr24.html"
+        },       
+        {
             "name": "Data-Driven Autonomous Driving Simulation", 
             "venue": "CVPR",
             "year": "2024",
@@ -26,7 +47,7 @@
             "venue": "ICCV",
             "year": "2023",
             "type": "workshop",
-            "link": "https://opensun3d.github.io/"
+            "link": "https://opensun3d.github.io/index_iccv23.html"
         },
         {
             "name": "Neural Fields in Computer Vision", 

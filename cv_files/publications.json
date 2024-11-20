@@ -1,6 +1,14 @@
 {  
     "publications": [
       {
+        "name": "Epi-NAF: Enhancing Neural Attenuation Fields for Limited-Angle CT with Epipolar Consistency Conditions",
+        "authors":"Daniel Gilo, Tzofi Klinghoffer, Or Litany",
+        "publication": "arXiv",
+        "image": "./OL_files/epinaf_teaser.png",
+        "paper": "https://arxiv.org/abs/2411.06181v1",        
+        "bibtex":"gilo2024epi"
+      },  
+      {
         "name": "Robust Symmetry Detection via Riemannian Langevin Dynamics",
         "authors":"Jihyeon Je, Jiayi Liu, Guandao Yang, Boyang Deng, Shengqu Cai, Gordon Wetzstein, Or Litany, Leonidas Guibas",
         "publication": "SIGGRAPH-ASIA 2024",

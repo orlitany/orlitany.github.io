@@ -1,6 +1,23 @@
 {  
     "publications": [
       {
+        "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
+        "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",
+        "publication": "arXiv",
+        "image": "./OL_files/lessonInSplats.png",
+        "paper": "https://arxiv.org/abs/2412.00623",        
+        "bibtex":"peng2024lessonsplatsteacherguideddiffusion"
+      }, 
+      {
+        "name": "ReHub: Linear Complexity Graph Transformers with Adaptive Hub-Spoke Reassignment",
+        "authors":"Tomer Borreda, Daniel Freedman, Or Litany",
+        "publication": "arXiv",
+        "image": "./OL_files/rehub.png",
+        "paper": "https://arxiv.org/abs/2412.01519",        
+        "page": "https://tomerborreda.github.io/rehub/",
+        "bibtex":"borreda2024rehublinearcomplexitygraph"
+      }, 
+      {
         "name": "Epi-NAF: Enhancing Neural Attenuation Fields for Limited-Angle CT with Epipolar Consistency Conditions",
         "authors":"Daniel Gilo, Tzofi Klinghoffer, Or Litany",
         "publication": "arXiv",

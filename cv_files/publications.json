@@ -1,6 +1,16 @@
 {  
     "publications": [
       {
+        "name": "OmniRe: Omni Urban Scene Reconstruction",
+        "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
+        "publication": "ICLR 2025",
+        "image": "./OL_files/omnire.png",
+        "paper": "https://arxiv.org/abs/2408.16760",
+        "page": "https://ziyc.github.io/omnire/",
+        "misc": "<mark>Spotlight</mark>",
+        "bibtex":"chen2024omnire"
+      },
+      {
         "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
         "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",
         "publication": "arXiv",
@@ -42,16 +52,7 @@
         "paper": "https://arxiv.org/abs/2405.18677",
         "page": "https://zero2hero-nvs.github.io/",
         "bibtex":"sobol2024zerotohero"
-      },
-      {
-        "name": "OmniRe: Omni Urban Scene Reconstruction",
-        "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
-        "publication": "arXiv 2024",
-        "image": "./OL_files/omnire.png",
-        "paper": "https://arxiv.org/abs/2408.16760",
-        "page": "https://ziyc.github.io/omnire/",
-        "bibtex":"chen2024omnire"
-      },
+      },      
       {
         "name": "The NeRFect Match: Exploring NeRF Features for Visual Localization",
         "authors":"Qunjie Zhou, Maxim Maximov, Or Litany, Laura Leal-Taixé",

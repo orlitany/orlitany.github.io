@@ -33,7 +33,8 @@
         "publication": "ISBI 2025",
         "image": "./OL_files/epinaf_teaser.png",
         "paper": "https://arxiv.org/abs/2411.06181v1",        
-        "bibtex":"gilo2024epi"
+        "bibtex":"gilo2024epi",
+        "misc": "<mark>Oral</mark>"
       },  
       {
         "name": "Robust Symmetry Detection via Riemannian Langevin Dynamics",

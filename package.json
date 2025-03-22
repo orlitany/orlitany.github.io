@@ -11,5 +11,13 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orlitany/orlitany.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orlitany/orlitany.github.io/issues"
+  },
+  "homepage": "https://github.com/orlitany/orlitany.github.io#readme",
   "description": ""
 }

@@ -1,21 +1,35 @@
 {
     "events": [
         {
+            "name": "4th Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "venue": "CVPR",
+            "year": "2025",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/index.html"
+        },
+        {
+            "name": "2nd Workshop on Neural Fields Beyond Conventional Cameras", 
+            "venue": "CVPR",
+            "year": "2025",
+            "type": "workshop",
+            "link": "https://neural-fields-beyond-cams.github.io/"
+        },
+        {
             "name": "Neural Fields Beyond Conventional Cameras", 
             "venue": "ECCV",
             "year": "2024",
             "type": "workshop",
-            "link": "https://neural-fields-beyond-cams.github.io/"
+            "link": "https://neural-bcc.github.io/2024/2024.html"
         },
         {
             "name": "3rd Workshop on Open-Vocabulary 3D Scene Understanding", 
             "venue": "ECCV",
             "year": "2024",
             "type": "workshop",
-            "link": "https://opensun3d.github.io/index.html"
+            "link": "https://opensun3d.github.io/index_eccv24.html"
         },
         {
-            "name": "2rd Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "name": "2nd Workshop on Open-Vocabulary 3D Scene Understanding", 
             "venue": "CVPR",
             "year": "2024",
             "type": "workshop",

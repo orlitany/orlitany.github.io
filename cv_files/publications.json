@@ -1,6 +1,15 @@
 {  
     "publications": [
       {
+        "name": "FRIDU: Functional Map Refinement with Guided Image Diffusion",
+        "authors":"Avigail Cohen-Rimon, Miri Ben-Chen, Or Litany",
+        "publication": "SGP 2025",
+        "image": "./OL_files/FRIDU_teaser.jpg",
+        "paper": "",
+        "page": "",        
+        "bibtex":""
+      },
+      {
         "name": "OmniRe: Omni Urban Scene Reconstruction",
         "authors":"Ziyu Chen, Jiawei Yang, Jiahui Huang, Riccardo de Lutio, Janick Martinez Esturo, Boris Ivanovic, Or Litany, Zan Gojcic, Sanja Fidler, Marco Pavone, Li Song, Yue Wang",
         "publication": "ICLR 2025",
@@ -10,6 +19,22 @@
         "misc": "<mark>Spotlight</mark>",
         "bibtex":"chen2024omnire"
       },
+      {
+        "name": "GAS-NeRF: Geometry-Aware Stylization of Dynamic Radiance Fields",
+        "authors":"Nhat Phuong Anh Vu, Abhishek Saroha, Or Litany, Daniel Cremers",
+        "publication": "arXiv",
+        "image": "./OL_files/GASnerf_teaser.png",
+        "paper": "https://arxiv.org/abs/2503.08483",        
+        "bibtex":"vu2025gasnerfgeometryawarestylizationdynamic"
+      }, 
+      {
+        "name": "ZDySS--Zero-Shot Dynamic Scene Stylization using Gaussian Splatting",
+        "authors":"Abhishek Saroha, Florian Hofherr, Mariia Gladkova, Cecilia Curreli, Or Litany, Daniel Cremers",
+        "publication": "arXiv",
+        "image": "./OL_files/teaser_zdyss.png",
+        "paper": "https://arxiv.org/abs/2501.03875",        
+        "bibtex":"saroha2025zdysszeroshotdynamic"
+      }, 
       {
         "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
         "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",

@@ -214,12 +214,17 @@ table.psets {
 	font-family: "Courier New", Courier, monospace
 }
 
-.instructorphoto img {
+/* .instructorphoto img {
   width: 220px;
   border-radius: 220px;
   margin-bottom: 10px;
   max-width: 100%;
   display: block;
+} */
+.instructorphoto {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px; /* optional: makes the image rounded */
 }
 
 .instructorphotosmall img {

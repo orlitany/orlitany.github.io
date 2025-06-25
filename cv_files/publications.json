@@ -1,13 +1,29 @@
 {  
     "publications": [
       {
+        "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
+        "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",
+        "publication": "ICCV 2025",
+        "image": "./OL_files/lessonInSplats.png",
+        "paper": "https://arxiv.org/abs/2412.00623",        
+        "bibtex":"peng2024lessonsplatsteacherguideddiffusion"
+      }, 
+      {
+        "name": "MonSTeR : a Unified Model for Motion, Scene, Text Retrieval",
+        "authors":"Luca Collorone, Matteo Gioia, Massimiliano Pappa, Paolo Leoni, Giovanni Ficarra, Or Litany, Indro Spinelli, Fabio Galasso",
+        "publication": "ICCV 2025",
+        "image": "./OL_files/monster_teaser.jpg",
+        "paper": "",        
+        "bibtex":"collorone2025monster"
+      }, 
+      {
         "name": "FRIDU: Functional Map Refinement with Guided Image Diffusion",
         "authors":"Avigail Cohen-Rimon, Miri Ben-Chen, Or Litany",
         "publication": "SGP 2025",
         "image": "./OL_files/FRIDU_teaser.jpg",
-        "paper": "",
+        "paper": "https://arxiv.org/abs/2506.14322",
         "page": "",        
-        "bibtex":""
+        "bibtex":"rimon2025fridu"
       },
       {
         "name": "OmniRe: Omni Urban Scene Reconstruction",
@@ -34,15 +50,7 @@
         "image": "./OL_files/teaser_zdyss.png",
         "paper": "https://arxiv.org/abs/2501.03875",        
         "bibtex":"saroha2025zdysszeroshotdynamic"
-      }, 
-      {
-        "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
-        "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",
-        "publication": "arXiv",
-        "image": "./OL_files/lessonInSplats.png",
-        "paper": "https://arxiv.org/abs/2412.00623",        
-        "bibtex":"peng2024lessonsplatsteacherguideddiffusion"
-      }, 
+      },       
       {
         "name": "ReHub: Linear Complexity Graph Transformers with Adaptive Hub-Spoke Reassignment",
         "authors":"Tomer Borreda, Daniel Freedman, Or Litany",

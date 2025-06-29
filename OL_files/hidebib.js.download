@@ -1,26 +1,30 @@
 // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
-function hideallbibs()
-{
-    var el = document.getElementsByTagName("div") ;
-    for (var i = 0 ; i < el.length ; ++i) {
-        if (el[i].className == "paper") {
-            var bib = el[i].getElementsByTagName("pre") ;
-            if (bib.length > 0) {
-                bib [0] .style.display = 'none' ;
-            }
-        }
-    }
+function hideallbibs() {
+  const bibBlocks = document.querySelectorAll('.bibtex-block');
+  for (let i = 0; i < bibBlocks.length; ++i) {
+    bibBlocks[i].style.display = 'none';
+  }
 }
 
-function togglebib(paperid)
-{
-    var paper = document.getElementById(paperid) ;
-    var bib = paper.getElementsByTagName('pre') ;
-    if (bib.length > 0) {
-        if (bib [0] .style.display == 'none') {
-            bib [0] .style.display = 'block' ;
-        } else {
-            bib [0] .style.display = 'none' ;
-        }
-    }
+
+function togglebib(paperid) {
+  const container = document.querySelector('[data-paper-id="' + paperid + '"]');
+  if (!container) {
+    console.warn("No container found for paper ID:", paperid);
+    return;
+  }
+
+  const bibBlock = container.querySelector('.bibtex-block');
+  if (!bibBlock) {
+    console.warn("No bibtex block found in:", container);
+    return;
+  }
+
+  // Toggle display
+  if (bibBlock.style.display === 'none' || bibBlock.style.display === '') {
+    bibBlock.style.display = 'block';
+  } else {
+    bibBlock.style.display = 'none';
+  }
 }
+

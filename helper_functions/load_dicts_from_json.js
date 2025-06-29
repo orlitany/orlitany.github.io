@@ -15,14 +15,13 @@ let myVue = new Vue({
             }
         },
         breakbib(x) {
-            bib_split = x.split(",");
-            if (bib_split.length == 1) { return bib_split[0]; }
-            bib_first = bib_split[0] + ",\n ";
-            bib_rest = bib_split.slice(1).join(",").split("},").join("},\n ");
-            // breakline for final }
-            bib_rest = bib_rest.slice(0, -1) + "\n" + bib_rest.slice(-1);
-            return bib_first + bib_rest;
-        },
+  let bib_split = x.split(",");
+  if (bib_split.length === 1) return bib_split[0];
+  const firstLine = bib_split[0] + ",\n";
+  const rest = bib_split.slice(1).map(s => s.trim()).join(",\n");
+  return firstLine + rest;
+}
+,
         boldMyName(x) {
             let phrase = "Or Litany";
             let pos = x.search(phrase);
@@ -52,21 +51,27 @@ let myVue = new Vue({
             return txt;
         },
         copyBib(paperId) {
-            const paper = document.getElementById(paperId);
-            if (!paper) return;
-            const pre = paper.getElementsByTagName('pre')[0];
-            const span = pre.querySelector('span');
-            if (!span) return;
-            
-            const text = span.textContent;
-            navigator.clipboard.writeText(text).then(() => {
-                // Optional: Replace alert with something less intrusive
-                alert('BibTeX copied to clipboard!');
-            }).catch(err => {
-                console.error('Copy failed', err);
-                alert('Failed to copy BibTeX.');
-            });
+    const selector = `[data-paper-id="${paperId}"] .bibtex-block pre span`;
+    const span = document.querySelector(selector);
+    if (!span) {
+        alert("Could not find bib entry");
+        return;
+    }
+
+    const text = span.textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector(`[data-paper-id="${paperId}"] .copy-btn`);
+        if (btn) {
+            const oldText = btn.innerText;
+            btn.innerText = "Copied!";
+            setTimeout(() => btn.innerText = oldText, 1000);
         }
+    }).catch(err => {
+        console.error('Copy failed', err);
+        alert('Failed to copy BibTeX.');
+    });
+}
+
     }
 });
 

@@ -251,59 +251,40 @@
       <div id="read_pub_record">
         <div v-for="pub in publications" class="publication">
 
-          <table width="900" align="center" border="0" cellpadding="0">
-            <tbody>
-              <tr>
-                <td width="25%" valign="top">
-                  <img :src="pub.image" :alt="pub.name" width="150" height="" style="border-style: none">
-                </td>
-                <td width="75%" valign="top">
-                  <p><a :href="pub.paper">
-                      <heading>{{ pub.name }}</heading>
-                    </a><br>
-                    <!-- <span v-html="pub.authors"></span><br> -->
-                    <span v-html=boldMyName(pub.authors)></span><br>
-                    <em>{{ pub.publication }}</em>
-                    <span v-if="pub.misc">
-                      <br><span v-html="pub.misc"></span><br>
-                    </span>
+          <div class="paper-entry">
+  <div class="paper-image">
+    <img :src="pub.image" :alt="pub.name">
+  </div>
+  <div class="paper-content" :data-paper-id="pub.name">
+    <p>
+      <a :href="pub.paper"><heading>{{ pub.name }}</heading></a><br>
+      <span v-html="boldMyName(pub.authors)"></span><br>
+      <em>{{ pub.publication }}</em>
+      <span v-if="pub.misc">
+        <br><span v-html="pub.misc"></span><br>
+      </span>
+    </p>
+    <div class="paper-links">
+      <a :href="pub.paper">paper</a>
+      <span v-if="pub.code"> / <a :href="pub.code">code</a></span>
+      <span v-if="pub.page"> / <a :href="pub.page">page</a></span>
+      <span v-if="pub.dataset"> / <a :href="pub.dataset">dataset</a></span>
+      <span v-if="pub.slides"> / <a :href="pub.slides">slides</a></span>
+      <span v-if="pub.poster"> / <a :href="pub.poster">poster</a></span>
+      <span v-if="pub.talk"> / <a :href="pub.talk">talk</a></span>
+      / <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
+    </div>
 
-                  </p>
-                  <div class="paper" :id="pub.name">
-                    <a :href="pub.paper">paper</a> /
-                    <span v-if="pub.code">
-                      <a :href="pub.code">code</a> /
-                    </span>
-                    <span v-if="pub.page">
-                      <a :href="pub.page">page</a> /
-                    </span>
-                    <span v-if="pub.dataset">
-                      <a :href="pub.dataset">dataset</a> /
-                    </span>
-                    <span v-if="pub.slides">
-                      <a :href="pub.slides">slides</a> /
-                    </span>
-                    <span v-if="pub.poster">
-                      <a :href="pub.poster">poster</a> /
-                    </span>
-                    <span v-if="pub.talk">
-                      <a :href="pub.talk">talk</a> /
-                    </span>
+    <div class="bibtex-block" style="display: none;">
+  <div class="bibtex-header">
+    <button class="copy-btn" @click="copyBib(pub.name)">Copy</button>
+  </div>
+  <pre><span v-text="breakbib2(pub)"></span></pre>
+</div>
 
-                    <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
+  </div>
+</div>
 
-                    <pre xml:space="preserve" style="display: none;">
-                      <button class="copy-btn" @click="copyBib(pub.name)">Copy</button>
-                      <span v-text="breakbib2(pub)"></span>
-                    </pre>
-    
-
-                  </div>
-                </td>
-
-              </tr>
-            </tbody>
-          </table>
           <hr>
         </div>
 

@@ -172,15 +172,18 @@ img {
   background: #f8f9fa;
   color: #333;
   padding: 1em;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.85em;
-  white-space: pre-wrap;
-  word-break: break-word;
+  white-space: pre;        /* preserves spacing and line breaks */
+  word-break: normal;      /* don’t split words mid-line */
+  overflow-x: auto;        /* scroll horizontally if needed */
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-top: 0.5em;
   position: relative;
 }
+
+
 
 /* Style for the copy button */
 .copy-btn {
@@ -233,4 +236,103 @@ img {
   .bio-text {
     text-align: left;
   }
+}
+.paper-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: 2em 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.paper-image img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.paper-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.paper-links {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.paper-content pre {
+  background: #f8f9fa;
+  color: #333;
+  padding: 1em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85em;
+  white-space: pre;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 1em;
+  position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 0.75em;
+  background-color: #1772d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.copy-btn:hover {
+  background-color: #0e5cbf;
+}
+
+@media (max-width: 768px) {
+  .paper-entry {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paper-image img {
+    width: 120px;
+  }
+
+  .paper-content {
+    text-align: left;
+    width: 100%;
+  }
+}
+.bibtex-block {
+  margin-top: 1em;
+  position: relative;
+}
+
+.bibtex-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.25em;
+}
+
+.bibtex-block pre {
+  background: #f8f9fa;
+  color: #333;
+  padding: 1em;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85em;
+  white-space: pre;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-width: 100%;
+  box-sizing: border-box;
 }

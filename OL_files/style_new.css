@@ -199,3 +199,38 @@ img {
 .copy-btn:hover {
   background-color: #0e5cbf;
 }
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.bio-photo {
+  max-width: 200px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .bio-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio-photo {
+    max-width: 150px;
+  }
+
+  .bio-text {
+    text-align: left;
+  }
+}

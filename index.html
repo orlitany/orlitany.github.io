@@ -101,7 +101,7 @@
 
 
   <link rel="stylesheet" href="./OL_files/bootstrap.min.css">
-  <link href="./OL_files/style.css" rel="stylesheet" type="text/css">
+  <link href="./OL_files/style_new.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" async="" src="./OL_files/ga.js.download"></script>
   <script type="text/javascript" src="./OL_files/hidebib.js.download"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -135,14 +135,14 @@
 
 
               <!-- Links -->
-              <p><a href="./OL_files/orlitany_cv.pdf" aria-label="a pdf with my updated cv"><img src="./OL_files/cv.png" alt="cv icon" height="16"></a> /
+              <p><a href="./OL_files/orlitany_cv.pdf" aria-label="a pdf with my updated cv"><img src="./OL_files/cv.png" alt="cv icon" class="icon"></a> /
                 <a href="https://www.linkedin.com/in/orlitany/main.html" aria-label="my linkedin profile page"><img src="./OL_files/linkedin.png" alt="linkedin logo"
-                    height="16"></a> /
-                <a href="https://twitter.com/orlitany" aria-label="my X (twitter) profile page"><img src="./OL_files/twitterlogo.png" alt="twitter logo" height="16"></a> /
+                    class="icon"></a> /
+                <a href="https://twitter.com/orlitany" aria-label="my X (twitter) profile page"><img src="./OL_files/twitterlogo.png" alt="twitter logo" class="icon"></a> /
                 <a href="https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en" target="_blank" aria-label="my google scholar page"><img
-                    src="./OL_files/google_scholar.png" alt="google scholar logo" height="16"></a> /
+                    src="./OL_files/google_scholar.png" alt="google scholar logo" class="icon"></a> /
                 <a href="https://github.com/orlitany/" target="_blank" aria-label="my github page"><img src="./OL_files/github_alt.png" alt="github logo" 
-                    height="16"></a>
+                    class="icon"></a>
               </p>
             </td>
             <td width="1%">
@@ -297,8 +297,11 @@
 
                     <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
 
-                    <pre xml:space="preserve" style="display: none;"><span v-text=breakbib2(pub)></span>
-                </pre>  
+                    <pre xml:space="preserve" style="display: none;">
+                      <button class="copy-btn" @click="copyBib(pub.name)">Copy</button>
+                      <span v-text="breakbib2(pub)"></span>
+                    </pre>
+    
 
                   </div>
                 </td>

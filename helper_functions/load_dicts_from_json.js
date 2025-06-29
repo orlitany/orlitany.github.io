@@ -51,6 +51,22 @@ let myVue = new Vue({
             // }
             return txt;
         },
+        copyBib(paperId) {
+            const paper = document.getElementById(paperId);
+            if (!paper) return;
+            const pre = paper.getElementsByTagName('pre')[0];
+            const span = pre.querySelector('span');
+            if (!span) return;
+            
+            const text = span.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                // Optional: Replace alert with something less intrusive
+                alert('BibTeX copied to clipboard!');
+            }).catch(err => {
+                console.error('Copy failed', err);
+                alert('Failed to copy BibTeX.');
+            });
+        }
     }
 });
 

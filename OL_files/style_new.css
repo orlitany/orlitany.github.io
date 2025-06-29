@@ -1,0 +1,201 @@
+/* === General Reset === */
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  background: #e3e5e8;
+  color: #4d4b59;
+}
+
+/* === Headings === */
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+
+/* === Links === */
+a:link, a:visited {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f09228;
+}
+
+a:active {
+  color: red;
+}
+
+/* === Layout Containers === */
+.container,
+.containersmall,
+.news,
+.publication,
+.paper,
+.schedule {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* === Utility === */
+mark {
+  font-size: 0.9em;
+  background-color: #0B6100;
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 1.4em;
+  margin: 1px;
+}
+
+.menubar {
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+/* === Tables === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.schedule,
+table.notes,
+table.psets {
+  border: none;
+}
+
+.notes td,
+.psets td {
+  border-bottom: 1px solid;
+  padding: 5px 0;
+}
+
+.schedule_week {
+  font-size: small;
+  background-color: #CCF;
+}
+
+/* === Instructor Photos === */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.instructorphoto {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.instructorphotosmall img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.instructor {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* === Acknowledgement and Code === */
+.acknowledgement {
+  font-size: 0.875em;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* === Responsive Typography and Padding === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .container,
+  .containersmall,
+  .news,
+  .publication,
+  .paper {
+    padding: 0.5em;
+  }
+
+  .instructorphoto {
+    max-width: 100%;
+  }
+
+  .menubar {
+    font-size: 0.9em;
+  }
+}
+.paper pre {
+  background: #f8f9fa;
+  color: #333;
+  padding: 1em;
+  font-family: monospace;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  position: relative;
+}
+
+/* Style for the copy button */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 0.75em;
+  background-color: #1772d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #0e5cbf;
+}

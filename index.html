@@ -193,7 +193,7 @@
       <div class="news">
         <ul>
           <div id="read_talks_record">          
-            <div v-for="talk in talks" class="workshops">
+            <div v-for="talk in displayedTalks" class="workshops">
               <li>{{talk.title}}.
                 <span v-if="talk.slides"><a :href="talk.slides">Slides</a></span>
                 <span v-if="talk.video"><a :href="talk.video">Video</a></span>
@@ -201,6 +201,11 @@
             </div>        
           </div>
         </ul>
+        <div v-if="hasMoreItems('talks')" class="show-more-container">
+          <button @click="toggleSection('talks')" class="show-more-btn">
+            {{ expandedSections.talks ? 'Show less' : 'Show more' }}
+          </button>
+        </div>
       </div>
     </div>
     <br>
@@ -211,12 +216,16 @@
       <div class="news">        
         <div id="read_workshop_record">
           <ul>
-            <div v-for="event in events" class="workshops">
+            <div v-for="event in displayedWorkshops" class="workshops">
               <li><a :href="event.link"><span v-html=concat(event)></span></a>.</li>
             </div>
           </ul>
         </div>
-        </ul>
+        <div v-if="hasMoreItems('workshops')" class="show-more-container">
+          <button @click="toggleSection('workshops')" class="show-more-btn">
+            {{ expandedSections.workshops ? 'Show less' : 'Show more' }}
+          </button>
+        </div>
       </div>
     </div>
     <br>
@@ -226,21 +235,15 @@
       <h2>Press</h2>
       <div class="news">
         <ul>
-          <li>Nov 2023: <a href="https://developer.nvidia.com/blog/using-synthetic-data-to-address-novel-viewpoints-for-autonomous-vehicle-perception/">NVIDIA technical blog: Using Synthetic Data to Address Novel Viewpoints for Autonomous Vehicle Perception</a></li>
-          <li>July 2023: <a href="https://developer.nvidia.com/blog/sensing-new-frontiers-with-neural-lidar-fields-for-autonomous-vehicle-simulation/">NVIDIA technical blog: Sensing New Frontiers with Neural Lidar Fields for Autonomous Vehicle Simulation</a></li>
-          <li>September 2022: <a
-                href="https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/">Interview
-                for UnboxingAI podcast</a></li>
-          <li>March 2022: <a href="https://nvda.ws/3IGnfZu">NVIDIA Showcases Novel AI Tools in DRIVE Sim to
-                Advance
-                Autonomous Vehicle Development</a></li>
-          <li>July 2020: <a
-                href="https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/">Stanford
-                makes an impact at machine learning conference</a></li>
-          <li>July 2020: <a
-                href="https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/">חוקרי
-                אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)</a></li>
+          <div v-for="item in displayedPress" class="press-item">
+            <li>{{item.date}}: <a :href="item.link">{{item.title}}</a></li>
+          </div>
         </ul>
+        <div v-if="hasMoreItems('press')" class="show-more-container">
+          <button @click="toggleSection('press')" class="show-more-btn">
+            {{ expandedSections.press ? 'Show less' : 'Show more' }}
+          </button>
+        </div>
       </div>
     </div>
     <br>
@@ -249,7 +252,7 @@
       <h2> Publications </h2>
       <!-- Auto publications reader -->
       <div id="read_pub_record">
-        <div v-for="pub in publications" class="publication">
+        <div v-for="pub in displayedPublications" class="publication">
 
           <div class="paper-entry">
   <div class="paper-image">
@@ -289,11 +292,16 @@
         </div>
 
 
-      </div>
+              </div>
+        <div v-if="hasMoreItems('publications')" class="show-more-container">
+          <button @click="toggleSection('publications')" class="show-more-btn">
+            {{ expandedSections.publications ? 'Show less' : 'Show more' }}
+          </button>
+        </div>
 
 
 
-    </div><br>
+      </div><br>
 
 
 

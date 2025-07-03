@@ -1,0 +1,34 @@
+{
+  "press": [
+    {
+      "date": "Nov 2023",
+      "title": "NVIDIA technical blog: Using Synthetic Data to Address Novel Viewpoints for Autonomous Vehicle Perception",
+      "link": "https://developer.nvidia.com/blog/using-synthetic-data-to-address-novel-viewpoints-for-autonomous-vehicle-perception/"
+    },
+    {
+      "date": "July 2023",
+      "title": "NVIDIA technical blog: Sensing New Frontiers with Neural Lidar Fields for Autonomous Vehicle Simulation",
+      "link": "https://developer.nvidia.com/blog/sensing-new-frontiers-with-neural-lidar-fields-for-autonomous-vehicle-simulation/"
+    },
+    {
+      "date": "September 2022",
+      "title": "Interview for UnboxingAI podcast",
+      "link": "https://unboxingai.show/podcast-item/the-next-frontier-computer-vision-on-3d-data-with-or-litany/"
+    },
+    {
+      "date": "March 2022",
+      "title": "NVIDIA Showcases Novel AI Tools in DRIVE Sim to Advance Autonomous Vehicle Development",
+      "link": "https://nvda.ws/3IGnfZu"
+    },
+    {
+      "date": "July 2020",
+      "title": "Stanford makes an impact at machine learning conference",
+      "link": "https://www.stanforddaily.com/2020/07/21/stanford-makes-an-impact-at-machine-learning-conference/"
+    },
+    {
+      "date": "July 2020",
+      "title": "חוקרי אנבידיה זכו בפרס עבודת המחקר המצטיינת בכנס הבינלאומי המוביל בעולם ללמידת מכונה (ICML)",
+      "link": "https://www.new-techonline.com/2020/07/%D7%97%D7%95%D7%A7%D7%A8%D7%99-%D7%90%D7%A0%D7%91%D7%99%D7%93%D7%99%D7%94-%D7%96%D7%9B%D7%95-%D7%91%D7%A4%D7%A8%D7%A1-%D7%A2%D7%91%D7%95%D7%93%D7%AA-%D7%94%D7%9E%D7%97%D7%A7%D7%A8-%D7%94%D7%9E%D7%A6/"
+    }
+  ]
+} 

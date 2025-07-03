@@ -175,7 +175,7 @@ img {
   font-family: "Courier New", Courier, monospace;
   font-size: 0.85em;
   white-space: pre;        /* preserves spacing and line breaks */
-  word-break: normal;      /* don’t split words mid-line */
+  word-break: normal;      /* don't split words mid-line */
   overflow-x: auto;        /* scroll horizontally if needed */
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -335,4 +335,36 @@ img {
   border-radius: 6px;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+/* Show more button styles */
+.show-more-container {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.show-more-btn {
+  background-color: #1772d0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #0e5cbf;
+}
+
+.show-more-btn:active {
+  background-color: #0a4a9e;
+}
+
+@media (max-width: 768px) {
+  .show-more-btn {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+  }
 }

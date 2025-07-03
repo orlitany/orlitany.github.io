@@ -6,9 +6,47 @@ let myVue = new Vue({
             bibs: [],
             events: [],
             talks: [],
+            press: [],
+            expandedSections: {
+                workshops: false,
+                talks: false,
+                publications: false,
+                press: false
+            }
         };
     },
+    computed: {
+        displayedWorkshops() {
+            return this.expandedSections.workshops ? this.events : this.events.slice(0, 3);
+        },
+        displayedTalks() {
+            return this.expandedSections.talks ? this.talks : this.talks.slice(0, 3);
+        },
+        displayedPublications() {
+            return this.expandedSections.publications ? this.publications : this.publications.slice(0, 3);
+        },
+        displayedPress() {
+            return this.expandedSections.press ? this.press : this.press.slice(0, 3);
+        }
+    },
     methods: {
+        toggleSection(section) {
+            this.expandedSections[section] = !this.expandedSections[section];
+        },
+        hasMoreItems(section) {
+            switch(section) {
+                case 'workshops':
+                    return this.events.length > 3;
+                case 'talks':
+                    return this.talks.length > 3;
+                case 'publications':
+                    return this.publications.length > 3;
+                case 'press':
+                    return this.press.length > 3;
+                default:
+                    return false;
+            }
+        },
         breakbib2(x) {
             if (x.bibtex in this.bibs) { return this.bibs[x.bibtex]; } else {
                 return "Coming soon";
@@ -89,5 +127,9 @@ $.getJSON('./cv_files/bibs.json', function (json) {
 
 $.getJSON('./cv_files/talks.json', function (json) {
     myVue.talks = json.talks;
+});
+
+$.getJSON('./cv_files/press.json', function (json) {
+    myVue.press = json.press;
 });
 

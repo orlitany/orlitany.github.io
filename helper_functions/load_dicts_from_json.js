@@ -133,3 +133,40 @@ $.getJSON('./cv_files/press.json', function (json) {
     myVue.press = json.press;
 });
 
+// Sticky Navigation Bar functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.getElementById('sticky-nav');
+    let lastScrollTop = 0;
+    const scrollThreshold = 200; // Show nav after scrolling 200px
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Show nav when scrolling down past threshold
+        if (scrollTop > scrollThreshold) {
+            nav.classList.add('visible');
+        } else {
+            nav.classList.remove('visible');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+    
+    // Smooth scroll for navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 80; // Account for nav height
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+

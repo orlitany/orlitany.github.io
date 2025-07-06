@@ -113,11 +113,26 @@
 
 <body>
 
+  <!-- Sticky Navigation Bar -->
+  <nav class="sticky-nav" id="sticky-nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="#bio" class="nav-link">About</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#students" class="nav-link">Students</a>
+        <a href="#talks" class="nav-link">Talks</a>
+        <a href="#workshops" class="nav-link">Workshops</a>
+        <a href="#press" class="nav-link">Press</a>
+        <a href="#publications" class="nav-link">Publications</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Start main content -->
   <main id="vue-app">
     <div class="container">
       <!-- <table width="900" border="0" align="center" cellpadding="20"></table> -->
-      <div class="bio-wrapper container">
+      <div class="bio-wrapper container" id="bio">
   <div class="bio-text">
     <h1>Or Litany</h1>
     <p style="font-family: 'Roboto', sans-serif;">orlitany at gmail dot com</p>
@@ -152,7 +167,7 @@
     </div>
     <br>
 
-    <div class="container">
+    <div class="container" id="news">
       <h2>News</h2>
       <ul class="news">
         <li>
@@ -180,7 +195,7 @@
     </div>
     <br>
 
-    <div class="container">
+    <div class="container" id="students">
       <h2>Prospective students</h2><div class="news">
         I am actively seeking talented and motivated Postdoctoral and PhD candidates to join my new lab at the Technion. To get a sense of the research areas I am most passionate about, I encourage you to explore my recent publications and invited talks. As an ELLIS scholar, I also invite eligible candidates to consider applying through the <a href="https://ellis.eu/phd-postdoc">ELLIS PhD and Postdoc Program</a>.
     </div></div>
@@ -188,7 +203,7 @@
 
 
     <!-- Invited talks -->
-    <div class="container">
+    <div class="container" id="talks">
       <h2>Invited talks</h2>
       <div class="news">
         <ul>
@@ -231,7 +246,7 @@
     <br>
 
 
-    <div class="container">
+    <div class="container" id="press">
       <h2>Press</h2>
       <div class="news">
         <ul>
@@ -248,7 +263,7 @@
     </div>
     <br>
 
-    <div class="container">
+    <div class="container" id="publications">
       <h2> Publications </h2>
       <!-- Auto publications reader -->
       <div id="read_pub_record">

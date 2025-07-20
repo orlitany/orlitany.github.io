@@ -6,6 +6,7 @@
         "publication": "ICCV 2025",
         "image": "./OL_files/lessonInSplats.png",
         "paper": "https://arxiv.org/abs/2412.00623",        
+        "page": "https://lesson-in-splats.github.io/",
         "bibtex":"peng2024lessonsplatsteacherguideddiffusion"
       }, 
       {

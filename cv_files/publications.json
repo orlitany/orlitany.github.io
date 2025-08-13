@@ -1,6 +1,15 @@
 {  
     "publications": [
       {
+        "name": "Gaussian See, Gaussian Do: Semantic 3D Motion Transfer from Multiview Video ",
+        "authors":"Yarin Bekor, Gal Harari, Or Perel, Or Litany",
+        "publication": "SIGGRAPH-ASIA 2025",
+        "image": "./OL_files/GSGD_teaser.jpg",
+        "paper": "",        
+        "page": "",
+        "bibtex":""
+      }, 
+      {
         "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",
         "authors":"Chensheng Peng, Ido Sobol, Masayoshi Tomizuka, Kurt Keutzer, Chenfeng Xu, Or Litany",
         "publication": "ICCV 2025",

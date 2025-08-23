@@ -64,7 +64,7 @@
       {
         "name": "ReHub: Linear Complexity Graph Transformers with Adaptive Hub-Spoke Reassignment",
         "authors":"Tomer Borreda, Daniel Freedman, Or Litany",
-        "publication": "arXiv",
+        "publication": "TMLR",
         "image": "./OL_files/rehub.png",
         "paper": "https://arxiv.org/abs/2412.01519",        
         "page": "https://tomerborreda.github.io/rehub/",

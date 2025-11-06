@@ -1,3 +1,11 @@
+// Configuration: Number of items to show before "Show more" button
+const INITIAL_ITEMS_TO_SHOW = {
+    workshops: 3,
+    talks: 3,
+    publications: 10,
+    press: 3
+};
+
 let myVue = new Vue({
     el: "#vue-app",
     data() {
@@ -17,16 +25,20 @@ let myVue = new Vue({
     },
     computed: {
         displayedWorkshops() {
-            return this.expandedSections.workshops ? this.events : this.events.slice(0, 3);
+            const limit = INITIAL_ITEMS_TO_SHOW.workshops;
+            return this.expandedSections.workshops ? this.events : this.events.slice(0, limit);
         },
         displayedTalks() {
-            return this.expandedSections.talks ? this.talks : this.talks.slice(0, 3);
+            const limit = INITIAL_ITEMS_TO_SHOW.talks;
+            return this.expandedSections.talks ? this.talks : this.talks.slice(0, limit);
         },
         displayedPublications() {
-            return this.expandedSections.publications ? this.publications : this.publications.slice(0, 3);
+            const limit = INITIAL_ITEMS_TO_SHOW.publications;
+            return this.expandedSections.publications ? this.publications : this.publications.slice(0, limit);
         },
         displayedPress() {
-            return this.expandedSections.press ? this.press : this.press.slice(0, 3);
+            const limit = INITIAL_ITEMS_TO_SHOW.press;
+            return this.expandedSections.press ? this.press : this.press.slice(0, limit);
         }
     },
     methods: {
@@ -34,15 +46,16 @@ let myVue = new Vue({
             this.expandedSections[section] = !this.expandedSections[section];
         },
         hasMoreItems(section) {
+            const limit = INITIAL_ITEMS_TO_SHOW[section] || 3;
             switch(section) {
                 case 'workshops':
-                    return this.events.length > 3;
+                    return this.events.length > limit;
                 case 'talks':
-                    return this.talks.length > 3;
+                    return this.talks.length > limit;
                 case 'publications':
-                    return this.publications.length > 3;
+                    return this.publications.length > limit;
                 case 'press':
-                    return this.press.length > 3;
+                    return this.press.length > limit;
                 default:
                     return false;
             }

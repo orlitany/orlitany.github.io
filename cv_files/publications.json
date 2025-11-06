@@ -1,11 +1,40 @@
 {  
     "publications": [
       {
-        "name": "Gaussian See, Gaussian Do: Semantic 3D Motion Transfer from Multiview Video ",
+        "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
+        "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_T2M.png",
+        "page": "",
+        "bibtex":""
+      }, 
+      {
+        "name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",
+        "authors":"Daniel Gilo, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_IM2M.png",
+        "paper": "",        
+        "bibtex":""
+      }, 
+      {
+        "name": "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling",
+        "authors":"Francis Engelmann, Elisabetta Fedele, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_supergen.png"        
+      }, 
+      {
+        "name": "Appreciate the View: A Task-Aware Evaluation Framework for Novel View Synthesis",
+        "authors": "Saar Stern, Ido Sobol, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_AppreciatetheView.png",
+        "page": "https://openreview.net/pdf?id=8yBHXq0Pgh",
+        "bibtex":""
+      }, 
+      {
+        "name": "Gaussian See, Gaussian Do: Semantic 3D Motion Transfer from Multiview Video",
         "authors":"Yarin Bekor, Gal Harari, Or Perel, Or Litany",
         "publication": "SIGGRAPH-ASIA 2025",
-        "image": "./OL_files/GSGD_teaser.jpg",
-        "paper": "",        
+        "image": "./OL_files/GSGD_teaser.jpg",        
         "page": "",
         "bibtex":""
       }, 

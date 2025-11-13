@@ -5,8 +5,9 @@
         "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",
         "publication": "Preprint",
         "image": "./OL_files/teaser_T2M.png",
-        "page": "",
-        "bibtex":""
+        "paper": "https://arxiv.org/abs/2511.08633",
+        "page": "https://time-to-move.github.io/",
+        "bibtex":"singer2025timetomovetrainingfreemotioncontrolled"
       }, 
       {
         "name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",

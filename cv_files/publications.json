@@ -28,8 +28,9 @@
         "authors": "Saar Stern, Ido Sobol, Or Litany",
         "publication": "3DV 2026",
         "image": "./OL_files/teaser_AppreciatetheView.png",
-        "page": "https://openreview.net/pdf?id=8yBHXq0Pgh",
-        "bibtex":""
+        "paper": "https://arxiv.org/abs/2511.12675",
+        "page": "https://saarst.github.io/appreciate-the-view-website/",
+        "bibtex":"stern2025appreciateviewtaskawareevaluation"
       }, 
       {
         "name": "Gaussian See, Gaussian Do: Semantic 3D Motion Transfer from Multiview Video",

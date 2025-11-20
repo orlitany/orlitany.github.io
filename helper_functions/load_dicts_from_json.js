@@ -134,8 +134,107 @@ $.getJSON('./cv_files/publications.json', function (json) {
     myVue.publications = json.publications;
 });
 
-$.getJSON('./cv_files/bibs.json', function (json) {
-    myVue.bibs = json;
+// Parse BibTeX file directly from citations.bib
+function parseBibTeX(bibtexText) {
+    const bibs = {};
+    let i = 0;
+    const len = bibtexText.length;
+    
+    while (i < len) {
+        // Skip whitespace
+        while (i < len && /\s/.test(bibtexText[i])) {
+            i++;
+        }
+        
+        if (i >= len) break;
+        
+        // Skip comment lines
+        if (bibtexText[i] === '%') {
+            while (i < len && bibtexText[i] !== '\n') {
+                i++;
+            }
+            continue;
+        }
+        
+        // Look for @ to start an entry
+        if (bibtexText[i] === '@') {
+            const entryStart = i;
+            i++; // Skip '@'
+            
+            // Read entry type
+            let entryType = '';
+            while (i < len && /[a-zA-Z]/.test(bibtexText[i])) {
+                entryType += bibtexText[i];
+                i++;
+            }
+            
+            // Skip whitespace
+            while (i < len && /\s/.test(bibtexText[i])) {
+                i++;
+            }
+            
+            // Expect opening brace
+            if (i >= len || bibtexText[i] !== '{') {
+                continue;
+            }
+            i++; // Skip '{'
+            
+            // Read entry ID (until comma or closing brace)
+            let entryId = '';
+            while (i < len && bibtexText[i] !== ',' && bibtexText[i] !== '}') {
+                if (!/\s/.test(bibtexText[i])) {
+                    entryId += bibtexText[i];
+                }
+                i++;
+            }
+            entryId = entryId.trim();
+            
+            if (!entryId || i >= len || bibtexText[i] !== ',') {
+                continue;
+            }
+            i++; // Skip ','
+            
+            // Find the matching closing brace for the entire entry
+            let braceDepth = 1;
+            let endPos = -1;
+            
+            while (i < len && braceDepth > 0) {
+                if (bibtexText[i] === '{') {
+                    braceDepth++;
+                } else if (bibtexText[i] === '}') {
+                    braceDepth--;
+                    if (braceDepth === 0) {
+                        endPos = i;
+                        break;
+                    }
+                }
+                i++;
+            }
+            
+            if (endPos > 0 && entryId) {
+                // Extract the full entry (from @ to closing brace)
+                const entryContent = bibtexText.substring(entryStart, endPos + 1);
+                bibs[entryId] = entryContent;
+            }
+            
+            if (i < len) i++; // Move past closing brace
+        } else {
+            i++;
+        }
+    }
+    
+    return bibs;
+}
+
+// Load BibTeX file directly
+$.get('./cv_files/citations.bib', function(bibtexText) {
+    myVue.bibs = parseBibTeX(bibtexText);
+}, 'text').fail(function() {
+    console.warn('Could not load citations.bib, falling back to bibs.json');
+    // Fallback to JSON if BibTeX file not found
+    $.getJSON('./cv_files/bibs.json', function (json) {
+        myVue.bibs = json;
+    });
 });
 
 $.getJSON('./cv_files/talks.json', function (json) {

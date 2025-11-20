@@ -14,8 +14,8 @@
         "authors":"Daniel Gilo, Or Litany",
         "publication": "Preprint",
         "image": "./OL_files/teaser_IM2M.png",
-        "paper": "",        
-        "bibtex":""
+        "paper": "https://www.arxiv.org/abs/2511.14899",        
+        "bibtex":"gilo2025instructmix2mixconsistentsparseviewediting"
       }, 
       {
         "name": "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling",
@@ -37,8 +37,9 @@
         "authors":"Yarin Bekor, Gal Harari, Or Perel, Or Litany",
         "publication": "SIGGRAPH-ASIA 2025",
         "image": "./OL_files/GSGD_teaser.jpg",        
-        "page": "",
-        "bibtex":""
+        "paper": "https://arxiv.org/pdf/2511.14848",
+        "page": "https://gsgd-motiontransfer.github.io/",
+        "bibtex":"bekor2025gaussianseegaussiando"
       }, 
       {
         "name": "A Lesson in Splats: Teacher-Guided Diffusion for 3D Gaussian Splats Generation with 2D Supervision",

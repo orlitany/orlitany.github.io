@@ -171,16 +171,16 @@
       <h2>News</h2>
       <ul class="news">
         <li>
-          <span class="date">Nov, 2025</span> "Appreciate the View" is accepted at 3DV 2026. 
+          <span class="date">Nov, 2025</span> <a href="https://arxiv.org/abs/2511.12675">"Appreciate the View"</a> is accepted at 3DV 2026. 
         </li>
         <li>
-          <span class="date">August, 2025</span> Gaussian See Gaussian Do accepted at SIGGRAPH-ASIA 2025. 
+          <span class="date">August, 2025</span> <a href="https://arxiv.org/abs/2511.14848">"Gaussian See, Gaussian Do"</a> accepted at SIGGRAPH-ASIA 2025. 
         </li>
         <li>
           <span class="date">June, 2025</span> Two papers accepted at ICCV 2025. 
         </li>
         <li>
-          <span class="date">May, 2025</span> FRIDU is accepted at SGP 2025. 
+          <span class="date">May, 2025</span> <a href="https://arxiv.org/abs/2505.09803">"FRIDU"</a> is accepted at SGP 2025. 
         </li>
         <li>
           <span class="date">March, 2025</span> Honored to chair the Research Interaction sessions at the upcoming 3DV 2026</a>. 
@@ -202,9 +202,104 @@
     <br>
 
     <div class="container" id="students">
-      <h2>Prospective students</h2><div class="news">
-        I am actively seeking talented and motivated Postdoctoral and PhD candidates to join my new lab at the Technion. To get a sense of the research areas I am most passionate about, I encourage you to explore my recent publications and invited talks. As an ELLIS scholar, I also invite eligible candidates to consider applying through the <a href="https://ellis.eu/phd-postdoc">ELLIS PhD and Postdoc Program</a>.
-    </div></div>
+      <h2>Students</h2>
+      <div class="news">
+        <div class="prospective-students">
+          <p>I am actively seeking talented and motivated Postdoctoral and PhD candidates to join my new lab at the Technion. To get a sense of the research areas I am most passionate about, I encourage you to explore my recent publications and invited talks. As an ELLIS scholar, I also invite eligible candidates to consider applying through the <a href="https://ellis.eu/phd-postdoc">ELLIS PhD and Postdoc Program</a>.</p>
+        </div>
+        
+        <div class="students-summary" v-if="students.current.length > 0 || students.alumni.length > 0">
+          <div class="students-toggle" @click="toggleStudents()">
+            <span class="students-count">
+              <strong>{{ studentCounts.total.current }}</strong> current
+              <span v-if="studentCounts.total.alumni > 0"> • <strong>{{ studentCounts.total.alumni }}</strong> alumn{{ studentCounts.total.alumni !== 1 ? 'i' : 'us' }}</span>
+              <span class="student-types-summary" v-if="showStudents === false">
+                <span v-if="studentCounts.current.PhD > 0"> • {{ studentCounts.current.PhD }} PhD</span>
+                <span v-if="studentCounts.current.MSc > 0"> • {{ studentCounts.current.MSc }} MSc</span>
+                <span v-if="studentCounts.current.Postdoc > 0"> • {{ studentCounts.current.Postdoc }} Postdoc</span>
+                <span v-if="studentCounts.current.Intern > 0"> • {{ studentCounts.current.Intern }} Intern</span>
+              </span>
+            </span>
+            <span class="toggle-arrow">{{ showStudents ? '▼' : '▶' }}</span>
+          </div>
+          
+          <div v-if="showStudents" class="students-details">
+            <div class="students-tabs">
+              <button 
+                @click="setStudentsTab('current')" 
+                :class="['tab-btn', { active: studentsTab === 'current' }]"
+                v-if="students.current.length > 0">
+                Current ({{ studentCounts.total.current }})
+              </button>
+              <button 
+                @click="setStudentsTab('alumni')" 
+                :class="['tab-btn', { active: studentsTab === 'alumni' }]"
+                v-if="students.alumni.length > 0">
+                Alumni ({{ studentCounts.total.alumni }})
+              </button>
+            </div>
+            
+            <div class="students-list">
+              <div v-if="studentsTab === 'current' && students.current.length > 0">
+                <div v-for="type in ['PhD', 'MSc', 'Postdoc', 'Intern']" :key="type">
+                  <div v-if="studentsByType.current[type] && studentsByType.current[type].length > 0" class="student-type-group">
+                    <h4 class="student-type-header">{{ type }} <span class="type-count">({{ studentsByType.current[type].length }})</span></h4>
+                    <ul>
+                      <li v-for="student in studentsByType.current[type]" class="student-item">
+                        <span v-if="student.website"><a :href="student.website" target="_blank">{{ student.name }}</a></span>
+                        <span v-else>{{ student.name }}</span>
+                        <span v-if="student.startYear"> ({{ student.startYear }}-present)</span>
+                        <span v-if="student.note"> — {{ student.note }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Show students without type or with other types -->
+                <div v-if="students.current.filter(s => !s.type || !['PhD', 'MSc', 'Postdoc', 'Intern'].includes(s.type)).length > 0" class="student-type-group">
+                  <ul>
+                    <li v-for="student in students.current.filter(s => !s.type || !['PhD', 'MSc', 'Postdoc', 'Intern'].includes(s.type))" class="student-item">
+                      <span v-if="student.website"><a :href="student.website" target="_blank">{{ student.name }}</a></span>
+                      <span v-else>{{ student.name }}</span>
+                      <span v-if="student.startYear"> ({{ student.startYear }}-present)</span>
+                      <span v-if="student.note"> — {{ student.note }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div v-if="studentsTab === 'alumni' && students.alumni.length > 0">
+                <div v-for="type in ['PhD', 'MSc', 'Postdoc', 'Intern']" :key="type">
+                  <div v-if="studentsByType.alumni[type] && studentsByType.alumni[type].length > 0" class="student-type-group">
+                    <h4 class="student-type-header">{{ type }} <span class="type-count">({{ studentsByType.alumni[type].length }})</span></h4>
+                    <ul>
+                      <li v-for="alumnus in studentsByType.alumni[type]" class="student-item">
+                        <span v-if="alumnus.website"><a :href="alumnus.website" target="_blank">{{ alumnus.name }}</a></span>
+                        <span v-else>{{ alumnus.name }}</span>
+                        <span v-if="alumnus.graduationYear"> ({{ alumnus.graduationYear }})</span>
+                        <span v-if="alumnus.currentPosition"> — {{ alumnus.currentPosition }}</span>
+                        <span v-if="alumnus.note"> — {{ alumnus.note }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Show alumni without type or with other types -->
+                <div v-if="students.alumni.filter(a => !a.type || !['PhD', 'MSc', 'Postdoc', 'Intern'].includes(a.type)).length > 0" class="student-type-group">
+                  <ul>
+                    <li v-for="alumnus in students.alumni.filter(a => !a.type || !['PhD', 'MSc', 'Postdoc', 'Intern'].includes(a.type))" class="student-item">
+                      <span v-if="alumnus.website"><a :href="alumnus.website" target="_blank">{{ alumnus.name }}</a></span>
+                      <span v-else>{{ alumnus.name }}</span>
+                      <span v-if="alumnus.graduationYear"> ({{ alumnus.graduationYear }})</span>
+                      <span v-if="alumnus.currentPosition"> — {{ alumnus.currentPosition }}</span>
+                      <span v-if="alumnus.note"> — {{ alumnus.note }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <br>
 
 

@@ -15,6 +15,9 @@ let myVue = new Vue({
             events: [],
             talks: [],
             press: [],
+            students: { current: [], alumni: [] },
+            studentsTab: 'current', // 'current' or 'alumni'
+            showStudents: false,
             expandedSections: {
                 workshops: false,
                 talks: false,
@@ -39,11 +42,78 @@ let myVue = new Vue({
         displayedPress() {
             const limit = INITIAL_ITEMS_TO_SHOW.press;
             return this.expandedSections.press ? this.press : this.press.slice(0, limit);
+        },
+        studentsByType() {
+            const grouped = { current: {}, alumni: {} };
+            const types = ['PhD', 'MSc', 'Postdoc', 'Intern'];
+            
+            // Initialize groups
+            types.forEach(type => {
+                grouped.current[type] = [];
+                grouped.alumni[type] = [];
+            });
+            
+            // Group current students
+            this.students.current.forEach(student => {
+                const type = student.type || 'Other';
+                if (!grouped.current[type]) grouped.current[type] = [];
+                grouped.current[type].push(student);
+            });
+            
+            // Group alumni
+            this.students.alumni.forEach(alumnus => {
+                const type = alumnus.type || 'Other';
+                if (!grouped.alumni[type]) grouped.alumni[type] = [];
+                grouped.alumni[type].push(alumnus);
+            });
+            
+            // Sort current students by startYear (descending - most recent first)
+            types.forEach(type => {
+                if (grouped.current[type]) {
+                    grouped.current[type].sort((a, b) => {
+                        const yearA = parseInt(a.startYear) || 0;
+                        const yearB = parseInt(b.startYear) || 0;
+                        return yearB - yearA; // Descending order
+                    });
+                }
+            });
+            
+            // Sort alumni by graduationYear (descending - most recent first)
+            types.forEach(type => {
+                if (grouped.alumni[type]) {
+                    grouped.alumni[type].sort((a, b) => {
+                        const yearA = parseInt(a.graduationYear) || 0;
+                        const yearB = parseInt(b.graduationYear) || 0;
+                        return yearB - yearA; // Descending order
+                    });
+                }
+            });
+            
+            return grouped;
+        },
+        studentCounts() {
+            const counts = { current: {}, alumni: {}, total: { current: 0, alumni: 0 } };
+            const types = ['PhD', 'MSc', 'Postdoc', 'Intern'];
+            
+            types.forEach(type => {
+                counts.current[type] = this.students.current.filter(s => (s.type || 'Other') === type).length;
+                counts.alumni[type] = this.students.alumni.filter(a => (a.type || 'Other') === type).length;
+                counts.total.current += counts.current[type];
+                counts.total.alumni += counts.alumni[type];
+            });
+            
+            return counts;
         }
     },
     methods: {
         toggleSection(section) {
             this.expandedSections[section] = !this.expandedSections[section];
+        },
+        toggleStudents() {
+            this.showStudents = !this.showStudents;
+        },
+        setStudentsTab(tab) {
+            this.studentsTab = tab;
         },
         hasMoreItems(section) {
             const limit = INITIAL_ITEMS_TO_SHOW[section] || 3;
@@ -243,6 +313,24 @@ $.getJSON('./cv_files/talks.json', function (json) {
 
 $.getJSON('./cv_files/press.json', function (json) {
     myVue.press = json.press;
+});
+
+$.getJSON('./cv_files/students.json', function (json) {
+    // Sort current students by startYear (descending - most recent first)
+    json.current.sort((a, b) => {
+        const yearA = parseInt(a.startYear) || 0;
+        const yearB = parseInt(b.startYear) || 0;
+        return yearB - yearA; // Descending order
+    });
+    
+    // Sort alumni by graduationYear (descending - most recent first)
+    json.alumni.sort((a, b) => {
+        const yearA = parseInt(a.graduationYear) || 0;
+        const yearB = parseInt(b.graduationYear) || 0;
+        return yearB - yearA; // Descending order
+    });
+    
+    myVue.students = json;
 });
 
 // Sticky Navigation Bar functionality

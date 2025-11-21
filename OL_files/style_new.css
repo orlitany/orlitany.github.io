@@ -459,3 +459,167 @@ body {
     padding: 0.3em 0.5em;
   }
 }
+
+/* Students Section */
+.prospective-students {
+  margin-bottom: 1em;
+}
+
+.students-summary {
+  margin-top: 1.5em;
+  border-top: 1px solid #e3e5e8;
+  padding-top: 1em;
+}
+
+.students-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75em;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.students-toggle:hover {
+  background-color: #e9ecef;
+}
+
+.students-count {
+  font-size: 0.95em;
+  color: #4d4b59;
+}
+
+.toggle-arrow {
+  color: #1772d0;
+  font-size: 0.9em;
+  transition: transform 0.2s ease;
+}
+
+.students-details {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.students-tabs {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e3e5e8;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  color: #4d4b59;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #1772d0;
+}
+
+.tab-btn.active {
+  color: #1772d0;
+  border-bottom-color: #1772d0;
+  font-weight: 500;
+}
+
+.students-list {
+  min-height: 50px;
+}
+
+.students-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-item {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.student-item:last-child {
+  border-bottom: none;
+}
+
+.student-item {
+  color: #4d4b59;
+}
+
+.student-item a {
+  color: #1772d0;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.student-item a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+.student-item strong a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+.student-type-group {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.student-type-group:first-child {
+  margin-top: 0;
+}
+
+.student-type-header {
+  font-size: 1em;
+  font-weight: 600;
+  color: #4d4b59;
+  margin: 0 0 0.75em 0;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.type-count {
+  font-weight: 400;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.student-types-summary {
+  font-size: 0.85em;
+  color: #6c757d;
+  font-weight: normal;
+}
+
+
+@media (max-width: 768px) {
+  .students-toggle {
+    padding: 0.6em;
+  }
+  
+  .students-count {
+    font-size: 0.9em;
+  }
+  
+  .tab-btn {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+  }
+  
+  .student-item {
+    font-size: 0.9em;
+  }
+}

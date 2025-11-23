@@ -15,6 +15,7 @@
         "publication": "Preprint",
         "image": "./OL_files/teaser_IM2M.png",
         "paper": "https://www.arxiv.org/abs/2511.14899",        
+        "page": "https://danielgilo.github.io/instruct-mix2mix/",
         "bibtex":"gilo2025instructmix2mixconsistentsparseviewediting"
       }, 
       {

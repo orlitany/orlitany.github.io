@@ -186,6 +186,7 @@
         <a href="#bio" class="nav-link">About</a>
         <a href="#news" class="nav-link">News</a>
         <a href="#students" class="nav-link">Students</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
         <a href="#talks" class="nav-link">Talks</a>
         <a href="#workshops" class="nav-link">Workshops</a>
         <a href="#press" class="nav-link">Press</a>
@@ -368,6 +369,24 @@
     </div>
     <br>
 
+    <!-- Teaching -->
+    <div class="container" id="teaching">
+      <h2>Teaching</h2>
+      <div class="news">
+        <ul>
+          <div v-for="course in courses" class="course-item">
+            <li>
+              <strong>{{ course.title }}</strong>
+              <span v-if="course.courseNumber"> ({{ course.courseNumber }})</span>
+              <span v-if="course.link && course.link.trim()"> - <a :href="course.link" target="_blank">Course Page</a></span>
+              <br>
+              <span style="margin-left: 20px;">{{ course.description }}</span>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <br>
 
     <!-- Invited talks -->
     <div class="container" id="talks">
@@ -451,12 +470,12 @@
     </p>
     <div class="paper-links">
       <a :href="pub.paper">paper</a>
-      <span v-if="pub.code"> / <a :href="pub.code">code</a></span>
-      <span v-if="pub.page"> / <a :href="pub.page">page</a></span>
-      <span v-if="pub.dataset"> / <a :href="pub.dataset">dataset</a></span>
-      <span v-if="pub.slides"> / <a :href="pub.slides">slides</a></span>
-      <span v-if="pub.poster"> / <a :href="pub.poster">poster</a></span>
-      <span v-if="pub.talk"> / <a :href="pub.talk">talk</a></span>
+      <span v-if="pub.code && pub.code.trim()"> / <a :href="pub.code">code</a></span>
+      <span v-if="pub.page && pub.page.trim()"> / <a :href="pub.page">page</a></span>
+      <span v-if="pub.dataset && pub.dataset.trim()"> / <a :href="pub.dataset">dataset</a></span>
+      <span v-if="pub.slides && pub.slides.trim()"> / <a :href="pub.slides">slides</a></span>
+      <span v-if="pub.poster && pub.poster.trim()"> / <a :href="pub.poster">poster</a></span>
+      <span v-if="pub.talk && pub.talk.trim()"> / <a :href="pub.talk">talk</a></span>
       / <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
     </div>
 

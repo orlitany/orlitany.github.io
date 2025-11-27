@@ -15,6 +15,7 @@ let myVue = new Vue({
             events: [],
             talks: [],
             press: [],
+            courses: [],
             students: { current: [], alumni: [] },
             studentsTab: 'current', // 'current' or 'alumni'
             showStudents: false,
@@ -331,6 +332,10 @@ $.getJSON('./cv_files/students.json', function (json) {
     });
     
     myVue.students = json;
+});
+
+$.getJSON('./cv_files/courses.json', function (json) {
+    myVue.courses = json.courses;
 });
 
 // Sticky Navigation Bar functionality

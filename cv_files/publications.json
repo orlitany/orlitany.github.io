@@ -65,7 +65,7 @@
         "publication": "SGP 2025",
         "image": "./OL_files/FRIDU_teaser.jpg",
         "paper": "https://arxiv.org/abs/2506.14322",
-        "page": "",        
+        "code": "https://github.com/avigailco/FRIDU",        
         "bibtex":"rimon2025fridu"
       },
       {

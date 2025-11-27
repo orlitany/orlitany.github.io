@@ -1,0 +1,23 @@
+{
+    "courses": [
+        {
+            "title": "Deep Learning",
+            "courseNumber": "CS 02360781",
+            "link": "",
+            "description": "An introductory course covering the fundamentals of deep learning, neural networks, and their applications in computer vision and natural language processing."
+        },        
+        {
+            "title": "Compter Vision",
+            "courseNumber": "CS 02360873",
+            "link": "https://webcourse.cs.technion.ac.il/02360873/Spring2025/",
+            "description": "Topics in computer vision including classic methods like hough voting and RANSAC, multiview stereo, and modren methods like vision transformers and generative modeling."
+        },
+        {
+            "title": "3D Computer Vision Seminar",
+            "courseNumber": "CS 02360007",
+            "link": "https://technionmail-my.sharepoint.com/:b:/g/personal/orlitany_technion_ac_il/Eedn7he5xzVCm9ZE36077o4BkfcAyOWmjvWrsG-l3cQkwQ?e=h2A6D3",
+            "description": "Advanced topics in 3D computer vision including point cloud processing, neural rendering, and 3D scene understanding."
+        }
+    ]
+}
+

@@ -22,7 +22,8 @@
         "name": "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling",
         "authors":"Francis Engelmann, Elisabetta Fedele, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas",
         "publication": "Preprint",
-        "image": "./OL_files/teaser_supergen.png"        
+        "image": "./OL_files/teaser_supergen.png",
+        "page": "https://spacecontrol3d.github.io/"        
       }, 
       {
         "name": "Appreciate the View: A Task-Aware Evaluation Framework for Novel View Synthesis",

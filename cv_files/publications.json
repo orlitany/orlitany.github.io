@@ -24,7 +24,8 @@
         "publication": "Preprint",
         "image": "./OL_files/teaser_supergen.png",
         "paper": "https://arxiv.org/abs/2512.05343",
-        "page": "https://spacecontrol3d.github.io/"        
+        "page": "https://spacecontrol3d.github.io/",
+        "bibtex":"fedele2025spacecontrolintroducingtesttimespatial"
       }, 
       {
         "name": "Appreciate the View: A Task-Aware Evaluation Framework for Novel View Synthesis",

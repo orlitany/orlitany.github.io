@@ -1,6 +1,15 @@
 {  
     "publications": [
       {
+        "name": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
+        "authors":"Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/radargen_teaser.jpg",
+        "paper": "https://arxiv.org/abs/2512.17897",
+        "page": "https://radargen.github.io/",
+        "bibtex":"borreda2025radargenautomotiveradarpoint"
+      },
+      {
         "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
         "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",
         "publication": "Preprint",

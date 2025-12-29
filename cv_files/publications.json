@@ -34,6 +34,7 @@
         "image": "./OL_files/teaser_supergen.png",
         "paper": "https://arxiv.org/abs/2512.05343",
         "page": "https://spacecontrol3d.github.io/",
+        "code": "https://github.com/spacecontrol3d/spacecontrol",
         "bibtex":"fedele2025spacecontrolintroducingtesttimespatial"
       }, 
       {

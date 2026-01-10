@@ -1,6 +1,20 @@
 {
     "events": [
         {
+            "name": "6th Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "venue": "CVPR",
+            "year": "2026",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/index.html"
+        },
+        {
+            "name": "5th Workshop on Open-Vocabulary 3D Scene Understanding", 
+            "venue": "ICCV",
+            "year": "2025",
+            "type": "workshop",
+            "link": "https://opensun3d.github.io/index.html"
+        },
+        {
             "name": "4th Workshop on Open-Vocabulary 3D Scene Understanding", 
             "venue": "CVPR",
             "year": "2025",

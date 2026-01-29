@@ -237,40 +237,13 @@
     <div class="container" id="news">
       <h2>News</h2>
       <ul class="news">
-        <li>
-          <span class="date">Dec 22, 2025</span> Our workshop "OpenSUN3D: Open-World 3D Scene Understanding with Foundation Models", has been accepted as a Half-Day workshop at CVPR 2026!
+        <li v-for="(item, index) in displayedNews" :key="index">
+          <span v-if="item.date" class="date">[{{ item.date }}]</span> <span v-html="item.text"></span>
         </li>
-        <li>
-          <span class="date">Dec, 2025</span> Grateful to Meta for awarding an Academic Gift to support our lab's research. 
-        </li>
-        <li>
-          <span class="date">Nov, 2025</span> <a href="https://arxiv.org/abs/2511.12675">"Appreciate the View"</a> is accepted at 3DV 2026. 
-        </li>
-        <li>
-          <span class="date">August, 2025</span> <a href="https://arxiv.org/abs/2511.14848">"Gaussian See, Gaussian Do"</a> accepted at SIGGRAPH-ASIA 2025. 
-        </li>
-        <li>
-          <span class="date">June, 2025</span> Two papers accepted at ICCV 2025. 
-        </li>
-        <li>
-          <span class="date">May, 2025</span> <a href="https://arxiv.org/abs/2505.09803">"FRIDU"</a> is accepted at SGP 2025. 
-        </li>
-        <li>
-          <span class="date">March, 2025</span> Honored to chair the Research Interaction sessions at the upcoming 3DV 2026</a>. 
-        </li>
-        <li>
-          <span class="date">Feb 12, 2025</span> <a href="https://ziyc.github.io/omnire/">OmniRe</a> got a spotlight at ICLR  2025.            
-        </li>
-        <li>
-          Feb 2, 2025 I will serve as an Area Chair for the upcoming ICCV 2025.           
-        </li>
-        <li>
-          <span class="date">Jan 5, 2025</span> <a href="https://arxiv.org/abs/2411.06181v1">Epi-NAF</a> is accepted at ISBI 2025 as an Oral.            
-        </li>
-        <li>
-          <span class="date">Dec 21, 2024</span> Two <a href="#workshops">workshops</a> accepted at CVPR 2025.            
-        </li>                
       </ul>
+      <div v-if="hasMoreNews" class="show-more-container">
+        <button @click="showMoreNews()" class="show-more-btn">Show more</button>
+      </div>
     </div>
     <br>
 

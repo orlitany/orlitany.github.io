@@ -3,8 +3,10 @@ const INITIAL_ITEMS_TO_SHOW = {
     workshops: 3,
     talks: 3,
     publications: 10,
-    press: 3
+    press: 3,
+    news: 5
 };
+const NEWS_ITEMS_PER_PAGE = 5;
 
 let myVue = new Vue({
     el: "#vue-app",
@@ -15,6 +17,8 @@ let myVue = new Vue({
             events: [],
             talks: [],
             press: [],
+            news: [],
+            newsToShow: INITIAL_ITEMS_TO_SHOW.news,
             courses: [],
             students: { current: [], alumni: [] },
             studentsTab: 'current', // 'current' or 'alumni'
@@ -43,6 +47,12 @@ let myVue = new Vue({
         displayedPress() {
             const limit = INITIAL_ITEMS_TO_SHOW.press;
             return this.expandedSections.press ? this.press : this.press.slice(0, limit);
+        },
+        displayedNews() {
+            return this.news.slice(0, this.newsToShow);
+        },
+        hasMoreNews() {
+            return this.newsToShow < this.news.length;
         },
         studentsByType() {
             const grouped = { current: {}, alumni: {} };
@@ -109,6 +119,9 @@ let myVue = new Vue({
     methods: {
         toggleSection(section) {
             this.expandedSections[section] = !this.expandedSections[section];
+        },
+        showMoreNews() {
+            this.newsToShow += NEWS_ITEMS_PER_PAGE;
         },
         toggleStudents() {
             this.showStudents = !this.showStudents;
@@ -336,6 +349,13 @@ $.getJSON('./cv_files/students.json', function (json) {
 
 $.getJSON('./cv_files/courses.json', function (json) {
     myVue.courses = json.courses;
+});
+
+$.getJSON('./cv_files/news.json?t=' + Date.now(), function (json) {
+    myVue.news = json.news;
+}).fail(function (jqxhr, textStatus, err) {
+    console.error('Failed to load news.json:', textStatus, err, jqxhr.responseText || '');
+    console.warn('Tip: If you opened index.html as a file (file://), use a local server instead, e.g. run: python3 -m http.server 8000');
 });
 
 // Sticky Navigation Bar functionality

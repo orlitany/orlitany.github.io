@@ -8,16 +8,7 @@
         "paper": "https://arxiv.org/abs/2512.17897",
         "page": "https://radargen.github.io/",
         "bibtex":"borreda2025radargenautomotiveradarpoint"
-      },
-      {
-        "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
-        "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",
-        "publication": "Preprint",
-        "image": "./OL_files/teaser_T2M.png",
-        "paper": "https://arxiv.org/abs/2511.08633",
-        "page": "https://time-to-move.github.io/",
-        "bibtex":"singer2025timetomovetrainingfreemotioncontrolled"
-      }, 
+      },      
       {
         "name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",
         "authors":"Daniel Gilo, Or Litany",
@@ -29,9 +20,18 @@
         "bibtex":"gilo2025instructmix2mixconsistentsparseviewediting"
       }, 
       {
+        "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
+        "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",
+        "publication": "ICLR 2026",
+        "image": "./OL_files/teaser_T2M.png",
+        "paper": "https://arxiv.org/abs/2511.08633",
+        "page": "https://time-to-move.github.io/",
+        "bibtex":"singer2025timetomovetrainingfreemotioncontrolled"
+      }, 
+      {
         "name": "SpaceControl: Introducing Test-Time Spatial Control to 3D Generative Modeling",
         "authors":"Francis Engelmann, Elisabetta Fedele, Ian Huang, Or Litany, Marc Pollefeys, Leonidas Guibas",
-        "publication": "Preprint",
+        "publication": "ICLR 2026",
         "image": "./OL_files/teaser_supergen.png",
         "paper": "https://arxiv.org/abs/2512.05343",
         "page": "https://spacecontrol3d.github.io/",
@@ -95,7 +95,7 @@
       {
         "name": "GAS-NeRF: Geometry-Aware Stylization of Dynamic Radiance Fields",
         "authors":"Nhat Phuong Anh Vu, Abhishek Saroha, Or Litany, Daniel Cremers",
-        "publication": "arXiv",
+        "publication": "Preprint",
         "image": "./OL_files/GASnerf_teaser.png",
         "paper": "https://arxiv.org/abs/2503.08483",        
         "bibtex":"vu2025gasnerfgeometryawarestylizationdynamic"
@@ -103,7 +103,7 @@
       {
         "name": "ZDySS--Zero-Shot Dynamic Scene Stylization using Gaussian Splatting",
         "authors":"Abhishek Saroha, Florian Hofherr, Mariia Gladkova, Cecilia Curreli, Or Litany, Daniel Cremers",
-        "publication": "arXiv",
+        "publication": "Preprint",
         "image": "./OL_files/teaser_zdyss.png",
         "paper": "https://arxiv.org/abs/2501.03875",        
         "bibtex":"saroha2025zdysszeroshotdynamic"
@@ -327,7 +327,7 @@
         {
           "name": "Federated Learning with Heterogeneous Architectures using Graph HyperNetworks",
           "authors": "Or Litany, Haggai Maron, David Acuna, Jan Kautz, <br> Gal Chechik, Sanja Fidler",
-          "publication": "arxiv",
+          "publication": "Preprint",
           "image": "./OL_files/heterofl.png",
           "paper": "https://arxiv.org/abs/2201.08459",                    
           "bibtex":"litany2022federated"
@@ -389,7 +389,7 @@
         {
           "name": "StrobeNet: Category-Level Multiview Reconstruction of Articulated Objects",
           "authors": "Ge Zhang, Or Litany, Srinath Sridhar, Leonidas Guibas",
-          "publication": "arXiv",
+          "publication": "Preprint",
           "image": "./OL_files/strobenet.png",
           "paper": "https://arxiv.org/abs/2105.08016",          
           "page": "https://dzhange.github.io/StrobeNet/",
@@ -449,7 +449,7 @@
       {
           "name": "Human 3D keypoints via spatial uncertainty modeling",
           "authors": "Francis Williams, Or Litany, Avneesh Sud, Kevin Swersky, Andrea Tagliasacchi",
-          "publication": "arXiv 2012.10518",
+          "publication": "Preprint",
           "image": "./OL_files/3d_keypoint_estimation.png",
           "paper": "https://arxiv.org/abs/2012.10518",
           "bibtex":"williams2020human"
@@ -482,7 +482,7 @@
         {
             "name": "Object-Centric Multi-View Aggregation",
             "authors": "Shubham Tulsiani, Or Litany, Charles R. Qi, He Wang, Leonidas Guibas",
-            "publication": "Arxiv 2007.10300",
+            "publication": "Preprint",
             "image": "./OL_files/mva_teaser.png",
             "paper": "http://arxiv.org/abs/2007.10300",
             "bibtex":"tulsiani2020object"
@@ -525,7 +525,7 @@
       {
           "name": "Deep Hough Voting for 3D Object Detection in Point Clouds",
           "authors": "Charles R. Qi, Or Litany, Kaiming He, Leonidas J. Guibas",
-          "publication": "International Conference on Computer Vision (ICCV), 2019",
+          "publication": "ICCV, 2019",
           "image": "./OL_files/DHV_teaser.png",
           "paper": "https://arxiv.org/pdf/1904.09664.pdf",
           "code": "https://github.com/facebookresearch/votenet",
@@ -604,7 +604,7 @@
         {
             "name": "Deep Functional Maps: Structured Prediction for Dense Shape Correspondence",
             "authors": "Or Litany, Tal Remez, Emanuele Rodolà, Alex M. Bronstein, Michael M. Bronstein",
-            "publication": "International Conference on Computer Vision (ICCV), 2017",
+            "publication": "ICCV, 2017",
             "image": "./OL_files/FMNet.png",
             "paper": "http://vision.in.tum.de/_media/spezial/bib/litany-iccv17.pdf",
             "code": "https://github.com/orlitany/DeepFunctionalMaps",
@@ -621,7 +621,7 @@
         },
         {
             "name": "Cloud Dictionary: Sparse Coding and Modeling for Point Clouds",
-            "authors": "Or Litany*, Tal Remez*, Alex M. Bronstein (*Equal contributors)",
+            "authors": "Or Litany*, Tal Remez*, Alex M. Bronstein",
             "publication": "Signal Processing with Adaptive Sparse Structured Representations (SPARS), 2017",
             "image": "./OL_files/clouddict.png",
             "paper": "https://arxiv.org/pdf/1612.04956v1",
@@ -667,7 +667,7 @@
         },
         {
             "name": "A picture is worth a billion bits: Real-time image reconstruction from dense binary threshold pixels",
-            "authors": "Tal Remez*, Or Litany*, Alex Bronstein (*Equal contributors)",
+            "authors": "Tal Remez*, Or Litany*, Alex Bronstein",
             "publication": "International Conference on Computational Photography (ICCP), 2016",
             "image": "./OL_files/binarycam.png",
             "paper": "https://arxiv.org/pdf/1510.04601.pdf",
@@ -676,14 +676,14 @@
         {
             "name": "FPGA system for real-time computational extended depth of field imaging using phase aperture coding",
             "authors": "Tal Remez, Or Litany, Shachar Yoseff, Harel Haim, Alex Bronstein",
-            "publication": "arXiv preprint, 2016",
+            "publication": "Preprint",
             "image": "./OL_files/fpga.png",
             "paper": "https://arxiv.org/abs/1608.01074",
             "bibtex": "remez2016fpga"
         },
         {
             "name": "Image reconstruction from dense binary pixels",
-            "authors": "Or Litany*, Tal Remez*, Alex Bronstein (*Equal contributors)",
+            "authors": "Or Litany*, Tal Remez*, Alex Bronstein",
             "publication": "Signal Processing with Adaptive Sparse Structured Representations (SPARS), 2015",
             "image": "./OL_files/binarycamspars.png",
             "paper": "http://arxiv.org/abs/1512.01774",

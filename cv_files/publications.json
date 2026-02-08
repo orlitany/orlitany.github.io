@@ -26,6 +26,7 @@
         "image": "./OL_files/teaser_T2M.png",
         "paper": "https://arxiv.org/abs/2511.08633",
         "page": "https://time-to-move.github.io/",
+        "code": "https://github.com/time-to-move/TTM",
         "bibtex":"singer2025timetomovetrainingfreemotioncontrolled"
       }, 
       {
@@ -45,6 +46,7 @@
         "image": "./OL_files/teaser_AppreciatetheView.png",
         "paper": "https://arxiv.org/abs/2511.12675",
         "page": "https://saarst.github.io/appreciate-the-view-website/",
+        "code": "https://github.com/saarst/appreciate-the-view",
         "bibtex":"stern2025appreciateviewtaskawareevaluation"
       }, 
       {

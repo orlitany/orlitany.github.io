@@ -8,11 +8,19 @@
         "paper": "https://arxiv.org/abs/2512.17897",
         "page": "https://radargen.github.io/",
         "bibtex":"borreda2025radargenautomotiveradarpoint"
-      },      
+      },
+      {
+        "name": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
+        "authors":"Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",
+        "publication": "CVPR 2026",
+        "image": "./OL_files/realiz3d_teaser.jpg",        
+        "page": "https://idosobol.github.io/realiz3d/",
+        "bibtex":""
+      },       
       {
         "name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",
         "authors":"Daniel Gilo, Or Litany",
-        "publication": "Preprint",
+        "publication": "CVPR 2026",
         "image": "./OL_files/teaser_IM2M.png",
         "paper": "https://www.arxiv.org/abs/2511.14899",        
         "page": "https://danielgilo.github.io/instruct-mix2mix/",

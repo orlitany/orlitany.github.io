@@ -457,6 +457,7 @@
       <span v-if="pub.slides && pub.slides.trim()"> / <a :href="pub.slides">slides</a></span>
       <span v-if="pub.poster && pub.poster.trim()"> / <a :href="pub.poster">poster</a></span>
       <span v-if="pub.talk && pub.talk.trim()"> / <a :href="pub.talk">talk</a></span>
+      <span v-if="pub.tweet && pub.tweet.trim()"> / <a :href="pub.tweet" target="_blank" rel="noopener">tweet</a></span>
       / <a shape="rect" :href="'javascript:togglebib(\'' + pub.name + '\')'" class="togglebib">bibtex</a>
     </div>
 

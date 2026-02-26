@@ -1,5 +1,15 @@
 {  
-    "publications": [
+    "publications": [      
+      {
+        "name": "Test-Time Training with KV Binding Is Secretly Linear Attention",
+        "authors":"Junchen Liu, Sven Elflein, Or Litany, Zan Gojcic, Ruilong Li",
+        "publication": "Preprint",
+        "image": "./OL_files/tttlinear_teaser.jpg",
+        "paper": "https://arxiv.org/abs/2602.21204",
+        "page": "https://research.nvidia.com/labs/sil/projects/tttla/",
+        "tweet": "https://x.com/JunchenLiu77/status/2026665572755198224",
+        "bibtex":"liu2026testtimetrainingkvbinding"
+      },
       {
         "name": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
         "authors":"Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany",
@@ -7,6 +17,7 @@
         "image": "./OL_files/radargen_teaser.jpg",
         "paper": "https://arxiv.org/abs/2512.17897",
         "page": "https://radargen.github.io/",
+        "tweet": "https://x.com/TomerBorreda/status/2002974157911593179",
         "bibtex":"borreda2025radargenautomotiveradarpoint"
       },
       {
@@ -25,7 +36,16 @@
         "paper": "https://www.arxiv.org/abs/2511.14899",        
         "page": "https://danielgilo.github.io/instruct-mix2mix/",
         "code": "https://github.com/DanielGilo/instruct-mix2mix/tree/main",
+        "tweet": "https://x.com/orlitany/status/2026628621968789738?s=20",
         "bibtex":"gilo2025instructmix2mixconsistentsparseviewediting"
+      }, 
+      {
+        "name": "DiffusionHarmonizer: Bridging Neural Reconstruction and Photorealistic Simulation with Online Diffusion Enhancer",
+        "authors":"Yuxuan Zhang, Katarina Tothova, Zian Wang, Kangxue Yin, Haithem Turki, Riccardo de Lutio, Yen-Yu Chang, Or Litany, Sanja Fidler, Zan Gojcic",
+        "publication": "CVPR 2026",
+        "image": "./OL_files/harmonizer_teaser.gif",
+        "paper": "",                        
+        "bibtex":""
       }, 
       {
         "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
@@ -35,6 +55,7 @@
         "paper": "https://arxiv.org/abs/2511.08633",
         "page": "https://time-to-move.github.io/",
         "code": "https://github.com/time-to-move/TTM",
+        "tweet": "https://x.com/assaf_singer/status/1988967522033647618",
         "bibtex":"singer2025timetomovetrainingfreemotioncontrolled"
       }, 
       {
@@ -45,6 +66,7 @@
         "paper": "https://arxiv.org/abs/2512.05343",
         "page": "https://spacecontrol3d.github.io/",
         "code": "https://github.com/spacecontrol3d/spacecontrol",
+        "tweet": "https://x.com/efedele16/status/1997978439719305725",
         "bibtex":"fedele2025spacecontrolintroducingtesttimespatial"
       }, 
       {
@@ -55,6 +77,7 @@
         "paper": "https://arxiv.org/abs/2511.12675",
         "page": "https://saarst.github.io/appreciate-the-view-website/",
         "code": "https://github.com/saarst/appreciate-the-view",
+        "tweet": "https://x.com/SternSaar/status/1991622794925469952",
         "bibtex":"stern2025appreciateviewtaskawareevaluation"
       }, 
       {
@@ -80,7 +103,9 @@
         "authors":"Luca Collorone, Matteo Gioia, Massimiliano Pappa, Paolo Leoni, Giovanni Ficarra, Or Litany, Indro Spinelli, Fabio Galasso",
         "publication": "ICCV 2025",
         "image": "./OL_files/monster_teaser.jpg",
-        "paper": "",        
+        "paper": "https://arxiv.org/abs/2510.03200",        
+        "code": "https://github.com/colloroneluca/MonSTeR?tab=readme-ov-file",
+        "tweet": "https://x.com/IndroSpinelli/status/1940445067959038357",
         "bibtex":"collorone2025monster"
       }, 
       {
@@ -152,6 +177,7 @@
         "image": "./OL_files/zero2hero.jpg",
         "paper": "https://arxiv.org/abs/2405.18677",
         "page": "https://zero2hero-nvs.github.io/",
+        "tweet": "https://x.com/orlitany/status/1840155773029986480",
         "bibtex":"sobol2024zerotohero"
       },      
       {

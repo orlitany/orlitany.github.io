@@ -37,7 +37,7 @@ with open(input_json, "r", encoding="utf-8") as f:
 # Extract publications
 publications = data["publications"]
 
-# Start LaTeX formatted output
+# Start LaTeX formatted output (requires \\usepackage{enumitem} in main doc)
 latex_output = "\\begin{enumerate}[leftmargin=*]\n\n"
 
 for pub in publications:

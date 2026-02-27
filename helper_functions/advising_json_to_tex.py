@@ -178,5 +178,4 @@ def students_to_advising_tex(input_file, output_file):
 
 
 if __name__ == "__main__":
-    json_to_tex("cv_files/publications.json", "latex/publications.tex")
     students_to_advising_tex("cv_files/students.json", "latex/advising.tex")

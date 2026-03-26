@@ -438,7 +438,18 @@
 
           <div class="paper-entry">
   <div class="paper-image">
-    <img :src="pub.image" :alt="pub.name">
+    <video
+      v-if="pub.image && pub.image.toLowerCase().endsWith('.mp4')"
+      :src="pub.image"
+      :aria-label="pub.name"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      @loadeddata="ensureVideoPlays"
+    ></video>
+    <img v-else :src="pub.image" :alt="pub.name">
   </div>
   <div class="paper-content" :data-paper-id="pub.name">
     <p>

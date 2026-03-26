@@ -1,5 +1,15 @@
 {  
-    "publications": [      
+    "publications": [            
+      {
+        "name": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
+        "authors":"Avigail Cohen Rimon, Amir Mann, Mirela Ben Chen, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/spectralsplats_teaser.mp4",
+        "paper": "https://arxiv.org/abs/2603.24036",
+        "page": "https://avigailco.github.io/SpectralSplats/",
+        "tweet": "https://x.com/orlitany/status/2037133567910674747",
+        "bibtex":"rimon2026spectralsplatsrobustdifferentiabletracking"
+      },
       {
         "name": "Test-Time Training with KV Binding Is Secretly Linear Attention",
         "authors":"Junchen Liu, Sven Elflein, Or Litany, Zan Gojcic, Ruilong Li",
@@ -44,8 +54,8 @@
         "authors":"Yuxuan Zhang, Katarina Tothova, Zian Wang, Kangxue Yin, Haithem Turki, Riccardo de Lutio, Yen-Yu Chang, Or Litany, Sanja Fidler, Zan Gojcic",
         "publication": "CVPR 2026",
         "image": "./OL_files/harmonizer_teaser.gif",
-        "paper": "",                        
-        "bibtex":""
+        "paper": "https://arxiv.org/abs/2602.24096",                        
+        "bibtex":"zhang2026diffusionharmonizer"
       }, 
       {
         "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",

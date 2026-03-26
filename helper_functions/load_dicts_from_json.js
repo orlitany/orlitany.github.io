@@ -185,6 +185,18 @@ let myVue = new Vue({
             // }
             return txt;
         },
+        ensureVideoPlays(event) {
+            const video = event && event.target;
+            if (!video) return;
+            video.muted = true;
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === "function") {
+                playPromise.catch(() => {
+                    // If autoplay is blocked, expose controls so user can start playback.
+                    video.setAttribute("controls", "controls");
+                });
+            }
+        },
         copyBib(paperId) {
     const selector = `[data-paper-id="${paperId}"] .bibtex-block pre span`;
     const span = document.querySelector(selector);

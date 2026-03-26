@@ -252,6 +252,13 @@ img {
   height: auto;
   border-radius: 6px;
 }
+.paper-image video {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
 
 .paper-content {
   flex: 1;
@@ -304,6 +311,9 @@ img {
   }
 
   .paper-image img {
+    width: 120px;
+  }
+  .paper-image video {
     width: 120px;
   }
 

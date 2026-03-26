@@ -1,6 +1,13 @@
 {
   "current": [
     {
+      "name": "Tomer Borreda",
+      "type": "PhD",
+      "startYear": "2026",
+      "website": "",
+      "note": ""
+    },
+    {
       "name": "Daniel Gilo",
       "type": "PhD",
       "startYear": "2024",
@@ -22,11 +29,11 @@
       "note": ""
     },
     {
-        "name": "Ido Sobol",
-        "type": "PhD",
-        "startYear": "2025",
-        "website": "",
-        "note": ""
+      "name": "Ido Sobol",
+      "type": "PhD",
+      "startYear": "2025",
+      "website": "",
+      "note": ""
     },
     {
       "name": "Junchen Liu",
@@ -34,59 +41,59 @@
       "startYear": "2025",
       "website": "https://junchenliu77.github.io/",
       "note": ""
+    },    
+    {
+      "name": "Amir Mann",
+      "type": "MSc",
+      "startYear": "2025",
+      "website": "",
+      "note": ""
     },
     {
-        "name": "Tomer Borreda",
-        "type": "MSc",
-        "startYear": "2024",
-        "website": "",
-        "note": ""
+      "name": "Nitzan Leshem",
+      "type": "MSc",
+      "startYear": "2025",
+      "website": "",
+      "note": ""
     },
     {
-        "name": "Amir Mann",
-        "type": "MSc",
-        "startYear": "2025",
-        "website": "",
-        "note": ""
+      "name": "Merav Keidar",
+      "type": "MSc",
+      "startYear": "2025",
+      "website": "",
+      "note": ""
     },
     {
-        "name": "Nitzan Leshem",
-        "type": "MSc",
-        "startYear": "2025",
-        "website": "",
-        "note": ""
-    },
-    {
-        "name": "Merav Keidar",
-        "type": "MSc",
-        "startYear": "2025",
-        "website": "",
-        "note": ""
-    },
-    {
-        "name": "Roi Teichman",
-        "type": "MSc",
-        "startYear": "2025",
-        "website": "",
-        "note": "Joint advising with Prof. Oren Salzman"
+      "name": "Roi Teichman",
+      "type": "MSc",
+      "startYear": "2025",
+      "website": "",
+      "note": "Joint advising with Prof. Oren Salzman"
     }
   ],
   "alumni": [
     {
-        "name": "Guy Levavi",
-        "type": "MSc",
-        "graduationYear": "2024",
-        "currentPosition": "",
-        "website": "",
-        "note": "Joint advising with Prof. Assaf Marom"
+      "name": "Tomer Borreda",
+      "type": "MSc",
+      "graduationYear": "2026",
+      "website": "",
+      "note": ""
     },
     {
-        "name": "Yarin Bekor",
-        "type": "MSc",
-        "graduationYear": "2025",
-        "currentPosition": "",
-        "website": "",
-        "note": ""
+      "name": "Guy Levavi",
+      "type": "MSc",
+      "graduationYear": "2024",
+      "currentPosition": "",
+      "website": "",
+      "note": "Joint advising with Prof. Assaf Marom"
+    },
+    {
+      "name": "Yarin Bekor",
+      "type": "MSc",
+      "graduationYear": "2025",
+      "currentPosition": "",
+      "website": "",
+      "note": ""
     },
     {
       "name": "Saar Stern",
@@ -105,68 +112,68 @@
       "note": ""
     },
     {
-        "name": "Chenfeng Xu",
-        "type": "Intern",
-        "graduationYear": "2023",
-        "currentPosition": "Assistant professor at UT Austin",
-        "website": "https://www.chenfengx.com/",
-        "note": ""
+      "name": "Chenfeng Xu",
+      "type": "Intern",
+      "graduationYear": "2023",
+      "currentPosition": "Assistant professor at UT Austin",
+      "website": "https://www.chenfengx.com/",
+      "note": ""
     },
     {
-        "name": "Davis Rempe",
-        "type": "Intern",
-        "graduationYear": "2023",
-        "currentPosition": "Research Scientist at Nvidia",
-        "website": "https://davrempe.github.io/",
-        "note": ""
+      "name": "Davis Rempe",
+      "type": "Intern",
+      "graduationYear": "2023",
+      "currentPosition": "Research Scientist at Nvidia",
+      "website": "https://davrempe.github.io/",
+      "note": ""
     },
     {
-        "name": "Shengyu Hunag",
-        "type": "Intern",
-        "graduationYear": "2023",
-        "currentPosition": "Research Scientist at Nvidia",
-        "website": "https://shengyuh.github.io/",
-        "note": ""
+      "name": "Shengyu Hunag",
+      "type": "Intern",
+      "graduationYear": "2023",
+      "currentPosition": "Research Scientist at Nvidia",
+      "website": "https://shengyuh.github.io/",
+      "note": ""
     },
     {
-        "name": "Zan Gojcic",
-        "type": "Intern",
-        "graduationYear": "2022",
-        "currentPosition": "Sr. Research Manager at Nvidia",
-        "website": "https://zgojcic.github.io/",
-        "note": ""
+      "name": "Zan Gojcic",
+      "type": "Intern",
+      "graduationYear": "2022",
+      "currentPosition": "Sr. Research Manager at Nvidia",
+      "website": "https://zgojcic.github.io/",
+      "note": ""
     },
     {
-        "name": "Francis Williams",
-        "type": "Intern",
-        "graduationYear": "2022",
-        "currentPosition": "Sr. Research Scientist at Nvidia",
-        "website": "https://fwilliams.info/",
-        "note": ""
+      "name": "Francis Williams",
+      "type": "Intern",
+      "graduationYear": "2022",
+      "currentPosition": "Sr. Research Scientist at Nvidia",
+      "website": "https://fwilliams.info/",
+      "note": ""
     },
     {
-        "name": "Derek Liu",
-        "type": "Intern",
-        "graduationYear": "2022",
-        "currentPosition": "Sr. Research Scientist at Roblox and an Adjunct Professor at UBC",
-        "website": "https://dzhange.github.io/",
-        "note": ""
+      "name": "Derek Liu",
+      "type": "Intern",
+      "graduationYear": "2022",
+      "currentPosition": "Sr. Research Scientist at Roblox and an Adjunct Professor at UBC",
+      "website": "https://dzhange.github.io/",
+      "note": ""
     },
     {
-        "name": "Tzofi Klinghoffer",
-        "type": "Intern",
-        "graduationYear": "2023",
-        "currentPosition": "PhD at MIT Media Lab",
-        "website": "https://www.tzofi.com/",
-        "note": ""
+      "name": "Tzofi Klinghoffer",
+      "type": "Intern",
+      "graduationYear": "2023",
+      "currentPosition": "PhD at MIT Media Lab",
+      "website": "https://www.tzofi.com/",
+      "note": ""
     },
     {
-        "name": "Ge Zhang",
-        "type": "Intern",
-        "graduationYear": "2021",
-        "currentPosition": "Software Engineer at Righthand Robotics",
-        "website": "https://dzhange.github.io/",
-        "note": "Summer intern at Stanford University"
+      "name": "Ge Zhang",
+      "type": "Intern",
+      "graduationYear": "2021",
+      "currentPosition": "Software Engineer at Righthand Robotics",
+      "website": "https://dzhange.github.io/",
+      "note": "Summer intern at Stanford University"
     }
   ]
 }

@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "date": "Mar 28, 2026",
+      "text": "Prox-E accepted to SIGGRAPH 2026!"
+    },
+    {
+      "date": "Feb 21, 2026",
+      "text": "Three papers accepted to CVPR 2026!"
+    },
+    {
       "date": "Jan 26, 2026",
       "text": "Two papers accepted to ICLR 2026!"
     },

@@ -1,5 +1,5 @@
 {  
-    "publications": [            
+    "publications": [          
       {
         "name": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
         "authors":"Avigail Cohen Rimon, Amir Mann, Mirela Ben Chen, Or Litany",
@@ -9,6 +9,16 @@
         "page": "https://avigailco.github.io/SpectralSplats/",
         "tweet": "https://x.com/orlitany/status/2037133567910674747",
         "bibtex":"rimon2026spectralsplatsrobustdifferentiabletracking"
+      },
+      {
+        "name": "Prox·E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions",
+        "authors":"Etai Sella, Hao Phung, Nitay Amiel, Or Litany, Or Patashnik, Hadar Averbuch-Elor",
+        "publication": "SIGGRAPH 2026",
+        "image": "./OL_files/teaser_proxe.png",
+        "paper": "",
+        "page": "",
+        "tweet": "",
+        "bibtex":""
       },
       {
         "name": "Test-Time Training with KV Binding Is Secretly Linear Attention",

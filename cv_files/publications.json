@@ -66,7 +66,16 @@
         "image": "./OL_files/harmonizer_teaser.gif",
         "paper": "https://arxiv.org/abs/2602.24096",                        
         "bibtex":"zhang2026diffusionharmonizer"
-      }, 
+      },
+       {
+        "name": "Retrieval-Augmented Gaussian Avatars: Improving Expression Generalization",
+        "authors":"Matan Levy, Gavriel Habib, Issar Tzachor, Dvir Samuel, Rami Ben-Ari, Nir Darshan, Or Litany, Dani Lischinski",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_RAGaussianAvaters.jpg",
+        "paper": "https://arxiv.org/abs/2603.08645",          
+        "page": "",
+        "bibtex":"levy2026retrievalaugmentedgaussianavatarsimproving"
+      },
       {
         "name": "Time-to-Move: Training-Free Motion-Controlled Video Generation via Dual-Clock Denoising",
         "authors":"Assaf Singer, Noam Rotstein, Amir Mann, Ron Kimmel, Or Litany",

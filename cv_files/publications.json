@@ -45,8 +45,9 @@
         "authors":"Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",
         "publication": "CVPR 2026",
         "image": "./OL_files/realiz3d_teaser.jpg",        
+        "paper": "https://idosobol.github.io/realiz3d/realiz3d_paper.pdf",
         "page": "https://idosobol.github.io/realiz3d/",
-        "bibtex":""
+        "bibtex":"sobol2026realiz3d"
       },       
       {
         "name": "InstructMix2Mix: Consistent Sparse-View Editing Through Multi-View Model Personalization",

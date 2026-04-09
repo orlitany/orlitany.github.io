@@ -1,5 +1,14 @@
 {  
-    "publications": [          
+    "publications": [     
+      {
+        "name": "SceneTeract: Agentic Functional Affordances and VLM Grounding in 3D Scenes",
+        "authors":"Léopold Maillard, Francis Engelmann, Tom Durand, Boxiao Pan, Yang You, Or Litany, Leonidas Guibas, Maks Ovsjanikov",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_sceneteract.jpg",
+        "paper": "https://arxiv.org/abs/2603.29798",
+        "page": "https://sceneteract.github.io/",        
+        "bibtex":"maillard2026sceneteract"
+      },     
       {
         "name": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
         "authors":"Avigail Cohen Rimon, Amir Mann, Mirela Ben Chen, Or Litany",

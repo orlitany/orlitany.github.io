@@ -32,7 +32,7 @@
       {
         "name": "Test-Time Training with KV Binding Is Secretly Linear Attention",
         "authors":"Junchen Liu, Sven Elflein, Or Litany, Zan Gojcic, Ruilong Li",
-        "publication": "Preprint",
+        "publication": "ICML 2026",
         "image": "./OL_files/tttlinear_teaser.jpg",
         "paper": "https://arxiv.org/abs/2602.21204",
         "page": "https://research.nvidia.com/labs/sil/projects/tttla/",

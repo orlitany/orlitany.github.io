@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "May 1, 2026",
+      "text": "Test-Time Training with KV Binding accepted to ICML 2026!"
+    },
+    {
       "date": "Mar 28, 2026",
       "text": "Prox-E accepted to SIGGRAPH 2026!"
     },

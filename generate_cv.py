@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Generate publications.tex and advising.tex from JSON, then compile cv.tex with tectonic."""
+"""Generate CV LaTeX from JSON, compile latex/cv.tex, and publish OL_files/orlitany_cv.pdf."""
 
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CV_FILES = os.path.join(ROOT, "cv_files")
 LATEX_DIR = os.path.join(ROOT, "latex")
+SITE_CV_PDF = os.path.join(ROOT, "OL_files", "orlitany_cv.pdf")
 
 
 def abbreviate_author(name):
@@ -221,7 +223,9 @@ def main():
         print("ERROR: tectonic failed.", file=sys.stderr)
         sys.exit(result.returncode)
 
-    print("Done. PDF generated at latex/cv.pdf")
+    built_pdf = os.path.join(LATEX_DIR, "cv.pdf")
+    shutil.copy2(built_pdf, SITE_CV_PDF)
+    print(f"Done. PDF at {built_pdf} (copied to {SITE_CV_PDF})")
 
 
 if __name__ == "__main__":

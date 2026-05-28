@@ -24,10 +24,10 @@
         "authors":"Etai Sella, Hao Phung, Nitay Amiel, Or Litany, Or Patashnik, Hadar Averbuch-Elor",
         "publication": "SIGGRAPH 2026",
         "image": "./OL_files/teaser_proxe.png",
-        "paper": "",
-        "page": "",
-        "tweet": "",
-        "bibtex":""
+        "paper": "https://arxiv.org/abs/2604.23774",
+        "page": "https://etaisella.github.io/Prox-E/",
+        "tweet": "https://x.com/etai_sella/status/2051284611552936127?s=20",
+        "bibtex":"sella2026proxefinegrained3dshape"
       },
       {
         "name": "Test-Time Training with KV Binding Is Secretly Linear Attention",

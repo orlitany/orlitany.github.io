@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "May 19, 2026",
+      "text": "Honored to receive the Outstanding Area Chair award at CVPR 2026."
+    },
+    {
       "date": "May 1, 2026",
       "text": "Test-Time Training with KV Binding accepted to ICML 2026!"
     },

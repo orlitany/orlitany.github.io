@@ -1,6 +1,13 @@
 {
   "current": [
     {
+      "name": "Matan Levy",
+      "type": "Postdoc",
+      "startYear": "2026",
+      "website": "https://levymsn.github.io/",
+      "note": "Joint advising with Prof. Hadar Elor"
+    },
+    {
       "name": "Tomer Borreda",
       "type": "PhD",
       "startYear": "2026",
@@ -188,6 +195,14 @@
       "currentPosition": "Software Engineer at Righthand Robotics",
       "website": "https://dzhange.github.io/",
       "note": "Summer intern at Stanford University"
+    },
+    {
+      "name": "Cinjon Resnick",
+      "type": "Intern",
+      "graduationYear": "2021",
+      "currentPosition": "Research Scientist at Sesame",
+      "website": "",
+      "note": ""
     }
   ]
 }

@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "June 18, 2026",
+      "text": "Two papers accepted to ECCV 2026!"
+    },
+    {
       "date": "May 19, 2026",
       "text": "Honored to receive the Outstanding Area Chair award at CVPR 2026."
     },

@@ -22,7 +22,7 @@
       {
         "name": "SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision",
         "authors":"Avigail Cohen Rimon, Amir Mann, Mirela Ben Chen, Or Litany",
-        "publication": "Preprint",
+        "publication": "ECCV 2026",
         "image": "./OL_files/spectralsplats_teaser.mp4",
         "paper": "https://arxiv.org/abs/2603.24036",
         "page": "https://avigailco.github.io/SpectralSplats/",
@@ -52,7 +52,7 @@
       {
         "name": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
         "authors":"Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany",
-        "publication": "Preprint",
+        "publication": "ECCV 2026",
         "image": "./OL_files/radargen_teaser.jpg",
         "paper": "https://arxiv.org/abs/2512.17897",
         "page": "https://radargen.github.io/",

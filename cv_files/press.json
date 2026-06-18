@@ -1,6 +1,11 @@
 {
   "press": [
     {
+      "date": "June 2026",
+      "title": "Technion tool lets users create AI videos by mouse",
+      "link": "https://www.ynetnews.com/tech-and-digital/article/rypmpdkzgg"
+    },
+    {
       "date": "Nov 2023",
       "title": "NVIDIA technical blog: Using Synthetic Data to Address Novel Viewpoints for Autonomous Vehicle Perception",
       "link": "https://developer.nvidia.com/blog/using-synthetic-data-to-address-novel-viewpoints-for-autonomous-vehicle-perception/"

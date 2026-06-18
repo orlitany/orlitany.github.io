@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Generate CV LaTeX from JSON, compile latex/cv.tex, and publish OL_files/orlitany_cv.pdf."""
+"""Generate CV LaTeX from JSON and compile latex/cv.pdf."""
 
 import json
 import os
 import re
-import shutil
 import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CV_FILES = os.path.join(ROOT, "cv_files")
 LATEX_DIR = os.path.join(ROOT, "latex")
-SITE_CV_PDF = os.path.join(ROOT, "OL_files", "orlitany_cv.pdf")
 
 
 def abbreviate_author(name):
@@ -224,8 +222,7 @@ def main():
         sys.exit(result.returncode)
 
     built_pdf = os.path.join(LATEX_DIR, "cv.pdf")
-    shutil.copy2(built_pdf, SITE_CV_PDF)
-    print(f"Done. PDF at {built_pdf} (copied to {SITE_CV_PDF})")
+    print(f"Done. PDF at {built_pdf}")
 
 
 if __name__ == "__main__":

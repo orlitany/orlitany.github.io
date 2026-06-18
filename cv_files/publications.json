@@ -30,6 +30,16 @@
         "bibtex":"rimon2026spectralsplatsrobustdifferentiabletracking"
       },
       {
+        "name": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
+        "authors":"Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany",
+        "publication": "ECCV 2026",
+        "image": "./OL_files/radargen_teaser.jpg",
+        "paper": "https://arxiv.org/abs/2512.17897",
+        "page": "https://radargen.github.io/",
+        "tweet": "https://x.com/TomerBorreda/status/2002974157911593179",
+        "bibtex":"borreda2025radargenautomotiveradarpoint"
+      },
+      {
         "name": "Prox·E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions",
         "authors":"Etai Sella, Hao Phung, Nitay Amiel, Or Litany, Or Patashnik, Hadar Averbuch-Elor",
         "publication": "SIGGRAPH 2026",
@@ -48,17 +58,7 @@
         "page": "https://research.nvidia.com/labs/sil/projects/tttla/",
         "tweet": "https://x.com/JunchenLiu77/status/2026665572755198224",
         "bibtex":"liu2026testtimetrainingkvbinding"
-      },
-      {
-        "name": "RadarGen: Automotive Radar Point Cloud Generation from Cameras",
-        "authors":"Tomer Borreda, Fangqiang Ding, Sanja Fidler, Shengyu Huang, Or Litany",
-        "publication": "ECCV 2026",
-        "image": "./OL_files/radargen_teaser.jpg",
-        "paper": "https://arxiv.org/abs/2512.17897",
-        "page": "https://radargen.github.io/",
-        "tweet": "https://x.com/TomerBorreda/status/2002974157911593179",
-        "bibtex":"borreda2025radargenautomotiveradarpoint"
-      },
+      },      
       {
         "name": "Realiz3D: 3D Generation Made Photorealistic via Domain-Aware Learning",
         "authors":"Ido Sobol, Kihyuk Sohn, Yoav Blum, Egor Zakharov, Max Bluvstein, Andrea Vedaldi, Or Litany",

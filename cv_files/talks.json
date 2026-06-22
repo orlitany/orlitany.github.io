@@ -1,7 +1,7 @@
 {
     "talks": [
         {
-            "title": "Seeing by Genberating: NVS as a route to 3D understanding", 
+            "title": "Seeing by Generating: NVS as a route to 3D understanding", 
             "venue": "Scannet++ workshop at CVPR",
             "year": "2026",
             "slides": "https://drive.google.com/file/d/16ph8264i6BKX2Pcoklw4AtELzK4m_1pY/view?usp=sharing"

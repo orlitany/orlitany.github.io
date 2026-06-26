@@ -1,6 +1,16 @@
 {  
     "publications": [           
       {
+        "name": "FlowBender: Feedback-Aware Training for Self-Correcting Conditional Flows",
+        "authors":"Daniel Gilo, Sven Elflein, Ido Sobol, Or Litany",
+        "publication": "Preprint",
+        "image": "./OL_files/teaser_flowbender.jpg",
+        "paper": "https://arxiv.org/abs/2606.20404",
+        "page": "https://flow-bender.github.io/",
+        "tweet": "https://x.com/danielgilo1/status/2067986128766951885?s=20",
+        "bibtex":"gilo2026flowbenderfeedbackawaretrainingselfcorrecting"
+      }, 
+      {
         "name": "VideoMDM: Towards 3D Human Motion Generation From 2D Supervision",
         "authors":"Amir Mann, Gal Harari, Merav keidar, Or Litany",
         "publication": "Preprint",

@@ -48,6 +48,8 @@ There is a separate, gitignored `local_internal_cv/` directory with `generate_cv
 
 ## Notes
 
+- The single source of truth for publications is `cv_files/publications.bib` (read by both the Astro loader and `generate_cv.py`). A stale, unused `cv_files/citations.bib` export was removed in a cleanup — don't reintroduce it.
+- `site/` has its own `AGENTS.md` (symlinked as `site/CLAUDE.md`) that only points at Astro's upstream docs; the real project-specific guidance is this root file.
 - `example_cv.json` is a template/reference schema, not live data.
 - `notes.txt`, `read_json.ipynb`, and `publications_backup.js` are gitignored scratch files if present locally.
 - SEO/social metadata (Open Graph, Twitter cards, JSON-LD `Person`/`WebSite` schema) is defined in `site/src/layouts/Base.astro` — update it there if bio facts (title, affiliation, awards) change, since it's duplicated from the bio text in `Bio.astro`.

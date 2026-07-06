@@ -7,84 +7,76 @@ import re
 import subprocess
 import sys
 
+import bibtexparser
+from bibtexparser.customization import splitname
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CV_FILES = os.path.join(ROOT, "cv_files")
 LATEX_DIR = os.path.join(ROOT, "latex")
 
 
-def abbreviate_author(name):
-    """Convert full name to abbreviated: 'FirstName Last Name' -> 'F.Last-Name'."""
-    name = name.strip()
-    parts = name.split()
-    if not parts:
-        return name
-    initial = parts[0][0]
-    last_parts = parts[1:]
-    last_name = "-".join(last_parts) if last_parts else ""
-    return f"{initial}.{last_name}" if last_name else initial
+def format_authors_from_bib(author_field):
+    """Format a BibTeX 'author' field for LaTeX, underlining Or Litany.
 
-
-def format_authors(authors_str):
-    """Format comma-separated author names for LaTeX, underlining Or Litany."""
-    authors = [a.strip() for a in authors_str.split(",")]
+    Uses bibtexparser's name splitting (handles both 'Last, First' and
+    'First Last' BibTeX conventions) rather than naively splitting on
+    whitespace, so multi-token first/last names abbreviate correctly.
+    """
+    names = [n.strip() for n in author_field.split(" and ") if n.strip()]
     formatted = []
-    for author in authors:
-        if author in ("Or Litany", "O. Litany"):
+    for name in names:
+        parts = splitname(name, strict_mode=False)
+        first = " ".join(parts.get("first", [])).strip()
+        von = " ".join(parts.get("von", [])).strip()
+        last = " ".join(parts.get("last", [])).strip()
+        jr = " ".join(parts.get("jr", [])).strip()
+        last_full = " ".join(p for p in (von, last, jr) if p)
+
+        if first == "Or" and last_full == "Litany":
             formatted.append(r"\underline{O.Litany}")
         else:
-            formatted.append(abbreviate_author(author))
+            initial = first[0] if first else ""
+            last_hyphen = last_full.replace(" ", "-")
+            formatted.append(f"{initial}.{last_hyphen}" if last_hyphen else initial)
     return ", ".join(formatted)
 
 
-def convert_misc(misc):
-    """Convert HTML misc field to LaTeX."""
-    if not misc:
+def convert_award(award):
+    """Render the bib entry's custom 'award' field (a short highlight/badge) for LaTeX."""
+    if not award:
         return ""
-    # <mark>...</mark>  ->  \textcolor{red}{...}
-    result = re.sub(
-        r"<mark>(.*?)</mark>",
-        lambda m: r"\textcolor{red}{" + m.group(1).replace("%", r"\%") + "}",
-        misc,
-    )
-    # <em>...</em>  ->  \emph{...}
-    result = re.sub(r"<em>(.*?)</em>", lambda m: r"\emph{" + m.group(1) + "}", result)
-    return result
+    return r"\textcolor{red}{" + award.replace("%", r"\%") + "}"
 
 
 def generate_publications_tex():
-    with open(os.path.join(CV_FILES, "publications.json")) as f:
-        data = json.load(f)
+    with open(os.path.join(CV_FILES, "publications.bib")) as f:
+        bib_db = bibtexparser.load(f)
 
-    pubs = data["publications"]
-    published = [p for p in pubs if p.get("publication", "") != "Preprint"]
-    preprints = [p for p in pubs if p.get("publication", "") == "Preprint"]
+    pubs = bib_db.entries  # preserved in the curated (newest-first) order
+    published = [p for p in pubs if p.get("venue", "") != "Preprint"]
+    preprints = [p for p in pubs if p.get("venue", "") == "Preprint"]
+
+    def render_entry(pub):
+        name = pub.get("title", "")
+        authors = format_authors_from_bib(pub.get("author", ""))
+        venue = pub.get("venue", "")
+        award = convert_award(pub.get("award", ""))
+
+        entry = f'\\item ``{name}\'\', {authors}, {venue}'
+        if award:
+            entry += f" {award}"
+        entry += "."
+        return entry
 
     lines = [r"\begin{enumerate}", ""]
     for pub in published:
-        name = pub["name"]
-        authors = format_authors(pub["authors"])
-        venue = pub.get("publication", "")
-        misc = convert_misc(pub.get("misc", ""))
-
-        entry = f'\\item ``{name}\'\', {authors}, {venue}'
-        if misc:
-            entry += f" {misc}"
-        entry += "."
-        lines.append(entry)
+        lines.append(render_entry(pub))
         lines.append("")
     lines.append(r"\end{enumerate}")
 
     lines += ["", r"\section{\sc Preprints}", "", r"\begin{enumerate}", ""]
     for pub in preprints:
-        name = pub["name"]
-        authors = format_authors(pub["authors"])
-        misc = convert_misc(pub.get("misc", ""))
-
-        entry = f'\\item ``{name}\'\', {authors}, Preprint'
-        if misc:
-            entry += f" {misc}"
-        entry += "."
-        lines.append(entry)
+        lines.append(render_entry(pub))
         lines.append("")
     lines.append(r"\end{enumerate}")
 

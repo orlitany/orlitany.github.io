@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import PublicationCard from './PublicationCard.astro';
+
+const INITIAL_COUNT = 10;
+const rawPublications = await getCollection('publications');
+
+// The bib `year` field is often the arXiv posting year, not the year the
+// paper actually appeared (e.g. an ICLR 2025 paper can carry year=2024 from
+// its preprint). For display/grouping, prefer the year embedded in `venue`
+// (e.g. "CVPR 2026") and only fall back to the bib year for preprints.
+function displayYear(pub: (typeof rawPublications)[number]['data']) {
+  return pub.venue.match(/\d{4}/)?.[0] ?? pub.year;
+}
+
+// Primary: display year, descending. Secondary: venue, so multiple papers at
+// the same venue (e.g. two ECCV 2026 papers) sit next to each other instead
+// of being scattered by curation order. Stable sort preserves curated order
+// as the final tiebreaker within an identical (year, venue) pair.
+const publications = [...rawPublications].sort((a, b) => {
+  const yearDiff = Number(displayYear(b.data)) - Number(displayYear(a.data));
+  if (yearDiff !== 0) return yearDiff;
+  return a.data.venue.localeCompare(b.data.venue);
+});
+
+let previousYear: string | null = null;
+const withYearHeaders = publications.map((pub, i) => {
+  const year = displayYear(pub.data);
+  const isNewYear = year !== previousYear;
+  previousYear = year;
+  return { pub, year, index: i, isNewYear };
+});
+---
+
+<div class="section" id="publications">
+  <h2>Publications</h2>
+  <div id="publications-list">
+    {
+      withYearHeaders.map(({ pub, year, index, isNewYear }) => (
+        <Fragment>
+          {isNewYear && (
+            <h3 class:list={{ 'year-heading': true, extra: index >= INITIAL_COUNT, hidden: index >= INITIAL_COUNT }}>
+              {year}
+            </h3>
+          )}
+          <div class:list={{ extra: index >= INITIAL_COUNT, hidden: index >= INITIAL_COUNT }}>
+            <PublicationCard pub={pub.data} />
+          </div>
+        </Fragment>
+      ))
+    }
+  </div>
+  {
+    publications.length > INITIAL_COUNT && (
+      <div class="show-more-container">
+        <button id="publications-show-more" class="show-more-btn" type="button">
+          Show more
+        </button>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .year-heading {
+    margin: 1.75em 0 0.25em;
+    font-size: 1.05em;
+    color: var(--text-muted);
+    border-bottom: none;
+    padding-bottom: 0;
+    position: sticky;
+    top: 3.25rem;
+    background: var(--bg);
+    padding-top: 0.25em;
+  }
+
+  .year-heading:first-child {
+    margin-top: 0;
+  }
+
+  .extra.hidden {
+    display: none;
+  }
+
+  .show-more-container {
+    margin-top: 1.5em;
+  }
+</style>
+
+<script>
+  const button = document.getElementById('publications-show-more');
+  button?.addEventListener('click', () => {
+    const list = document.getElementById('publications-list');
+    const extras = list?.querySelectorAll('.extra');
+    if (!extras || extras.length === 0) return;
+    const isHidden = extras[0].classList.contains('hidden');
+    extras.forEach((el) => el.classList.toggle('hidden', !isHidden));
+    button.textContent = isHidden ? 'Show less' : 'Show more';
+  });
+</script>

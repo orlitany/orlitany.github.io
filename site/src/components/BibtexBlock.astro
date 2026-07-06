@@ -1,0 +1,76 @@
+---
+interface Props {
+  citekey: string;
+  raw: string;
+}
+
+const { citekey, raw } = Astro.props;
+---
+
+<div class="bibtex-block" data-citekey={citekey} hidden>
+  <div class="bibtex-header">
+    <button class="copy-btn" type="button">Copy</button>
+  </div>
+  <pre>{raw}</pre>
+</div>
+
+<style>
+  .bibtex-block {
+    position: relative;
+    margin-top: 0.75em;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1em;
+  }
+
+  .bibtex-header {
+    position: absolute;
+    top: 0.5em;
+    right: 0.6em;
+  }
+
+  .copy-btn {
+    font-size: 0.75em;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2em 0.6em;
+    cursor: pointer;
+  }
+
+  pre {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.82em;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--text);
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.bibtex-toggle').forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+      const key = toggle.dataset.citekey;
+      const block = document.querySelector<HTMLElement>(`.bibtex-block[data-citekey="${key}"]`);
+      if (!block) return;
+      block.hidden = !block.hidden;
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+      const pre = button.closest('.bibtex-block')?.querySelector('pre');
+      const text = pre?.textContent ?? '';
+      navigator.clipboard.writeText(text).then(() => {
+        const original = button.textContent;
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+          button.textContent = original;
+        }, 1000);
+      });
+    });
+  });
+</script>

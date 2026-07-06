@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+
+const INITIAL_COUNT = 3;
+const press = await getCollection('press');
+---
+
+<div class="section" id="press">
+  <h2>Press</h2>
+  <ul class="press-list" id="press-list">
+    {
+      press.map((item, i) => (
+        <li class:list={{ extra: i >= INITIAL_COUNT, hidden: i >= INITIAL_COUNT }}>
+          {item.data.date}: <a href={item.data.link}>{item.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    press.length > INITIAL_COUNT && (
+      <div class="show-more-container">
+        <button id="press-show-more" class="show-more-btn" type="button">
+          Show more
+        </button>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .press-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .press-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .press-list li:last-child {
+    border-bottom: none;
+  }
+
+  .press-list li.extra.hidden {
+    display: none;
+  }
+
+  .show-more-container {
+    margin-top: 1.25em;
+  }
+</style>
+
+<script>
+  const button = document.getElementById('press-show-more');
+  button?.addEventListener('click', () => {
+    const list = document.getElementById('press-list');
+    const extras = list?.querySelectorAll('li.extra');
+    if (!extras || extras.length === 0) return;
+    const isHidden = extras[0].classList.contains('hidden');
+    extras.forEach((el) => el.classList.toggle('hidden', !isHidden));
+    button.textContent = isHidden ? 'Show less' : 'Show more';
+  });
+</script>

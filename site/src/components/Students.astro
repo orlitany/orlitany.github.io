@@ -1,0 +1,229 @@
+---
+import { getCollection } from 'astro:content';
+
+const TYPES = ['PhD', 'MSc', 'Postdoc', 'Intern'] as const;
+
+const allStudents = await getCollection('students');
+const current = allStudents.filter((s) => s.data.status === 'current');
+const alumni = allStudents.filter((s) => s.data.status === 'alumni');
+
+function groupByType<T extends { data: { type: string } }>(items: T[]) {
+  const groups = new Map<string, T[]>();
+  for (const type of TYPES) groups.set(type, []);
+  for (const item of items) {
+    if (!groups.has(item.data.type)) groups.set(item.data.type, []);
+    groups.get(item.data.type)!.push(item);
+  }
+  return groups;
+}
+
+const currentByType = groupByType(current);
+const alumniByType = groupByType(alumni);
+
+function sortByYear<T extends { data: Record<string, unknown> }>(items: T[], field: string) {
+  return [...items].sort((a, b) => {
+    const yearA = parseInt(String(a.data[field] ?? '0'), 10) || 0;
+    const yearB = parseInt(String(b.data[field] ?? '0'), 10) || 0;
+    return yearB - yearA;
+  });
+}
+
+const currentCounts = TYPES.map((t) => ({ type: t, count: currentByType.get(t)?.length ?? 0 }));
+---
+
+<div class="section" id="students">
+  <h2>Students</h2>
+
+  <p class="prospective">
+    I am actively seeking talented and motivated Postdoctoral and PhD candidates to join my new lab at the
+    Technion. To get a sense of the research areas I am most passionate about, I encourage you to explore my
+    recent publications and invited talks. As an ELLIS scholar, I also invite eligible candidates to consider
+    applying through the <a href="https://ellis.eu/phd-postdoc">ELLIS PhD and Postdoc Program</a>.
+  </p>
+
+  <div class="students-toggle" id="students-toggle">
+    <span class="students-count">
+      <strong>{current.length}</strong> current
+      {alumni.length > 0 && (
+        <>
+          {' '}
+          • <strong>{alumni.length}</strong> alumn{alumni.length !== 1 ? 'i' : 'us'}
+        </>
+      )}
+      <span class="student-types-summary">
+        {currentCounts
+          .filter((c) => c.count > 0)
+          .map((c) => (
+            <> • {c.count} {c.type}</>
+          ))}
+      </span>
+    </span>
+    <span class="toggle-arrow" aria-hidden="true">▶</span>
+  </div>
+
+  <div class="students-details" id="students-details" hidden>
+    <div class="students-tabs">
+      <button class="tab-btn active" data-tab="current" type="button">Current ({current.length})</button>
+      <button class="tab-btn" data-tab="alumni" type="button">Alumni ({alumni.length})</button>
+    </div>
+
+    <div class="tab-panel" data-panel="current">
+      {
+        TYPES.map((type) => {
+          const items = sortByYear(currentByType.get(type) ?? [], 'startYear');
+          if (items.length === 0) return null;
+          return (
+            <div class="student-type-group">
+              <h4>
+                {type} <span class="type-count">({items.length})</span>
+              </h4>
+              <ul>
+                {items.map((s) => (
+                  <li class="student-item">
+                    {s.data.website ? <a href={s.data.website} target="_blank">{s.data.name}</a> : <span>{s.data.name}</span>}
+                    {s.data.startYear && <> ({s.data.startYear}-present)</>}
+                    {s.data.note && <> — {s.data.note}</>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })
+      }
+    </div>
+
+    <div class="tab-panel" data-panel="alumni" hidden>
+      {
+        TYPES.map((type) => {
+          const items = sortByYear(alumniByType.get(type) ?? [], 'graduationYear');
+          if (items.length === 0) return null;
+          return (
+            <div class="student-type-group">
+              <h4>
+                {type} <span class="type-count">({items.length})</span>
+              </h4>
+              <ul>
+                {items.map((s) => (
+                  <li class="student-item">
+                    {s.data.website ? <a href={s.data.website} target="_blank">{s.data.name}</a> : <span>{s.data.name}</span>}
+                    {s.data.graduationYear && <> ({s.data.graduationYear})</>}
+                    {s.data.currentPosition && <> — {s.data.currentPosition}</>}
+                    {s.data.note && <> — {s.data.note}</>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .prospective {
+    color: var(--text-muted);
+  }
+
+  .students-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 1em;
+    background: var(--surface-alt);
+    border-radius: var(--radius);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .student-types-summary {
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+
+  .toggle-arrow {
+    color: var(--text-muted);
+    transition: transform 0.15s ease;
+  }
+
+  .students-toggle.expanded .toggle-arrow {
+    transform: rotate(90deg);
+  }
+
+  .students-details {
+    margin-top: 1em;
+  }
+
+  .students-tabs {
+    display: flex;
+    gap: 0.5em;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 1em;
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 0.95em;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+  }
+
+  .tab-btn.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .student-type-group h4 {
+    margin: 1em 0 0.4em;
+    font-size: 1em;
+  }
+
+  .type-count {
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  .student-type-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .student-item {
+    padding: 0.4em 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95em;
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('students-toggle');
+  const details = document.getElementById('students-details');
+
+  toggle?.addEventListener('click', () => {
+    const isHidden = details?.hasAttribute('hidden');
+    if (isHidden) {
+      details?.removeAttribute('hidden');
+      toggle.classList.add('expanded');
+    } else {
+      details?.setAttribute('hidden', '');
+      toggle.classList.remove('expanded');
+    }
+  });
+
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tab = (btn as HTMLElement).dataset.tab;
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.tab-panel').forEach((panel) => {
+        const el = panel as HTMLElement;
+        el.hidden = el.dataset.panel !== tab;
+      });
+    });
+  });
+</script>

@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+
+const INITIAL_COUNT = 3;
+const talks = await getCollection('talks');
+---
+
+<div class="section" id="talks">
+  <h2>Invited talks</h2>
+  <ul class="talks-list" id="talks-list">
+    {
+      talks.map((talk, i) => (
+        <li class:list={{ extra: i >= INITIAL_COUNT, hidden: i >= INITIAL_COUNT }}>
+          {talk.data.title}.
+          {talk.data.slides && (
+            <>
+              {' '}
+              <a href={talk.data.slides}>Slides</a>
+            </>
+          )}
+          {talk.data.video && (
+            <>
+              {' '}
+              <a href={talk.data.video}>Video</a>
+            </>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  {
+    talks.length > INITIAL_COUNT && (
+      <div class="show-more-container">
+        <button id="talks-show-more" class="show-more-btn" type="button">
+          Show more
+        </button>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .talks-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .talks-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .talks-list li:last-child {
+    border-bottom: none;
+  }
+
+  .talks-list li.extra.hidden {
+    display: none;
+  }
+
+  .show-more-container {
+    margin-top: 1.25em;
+  }
+</style>
+
+<script>
+  const button = document.getElementById('talks-show-more');
+  button?.addEventListener('click', () => {
+    const list = document.getElementById('talks-list');
+    const extras = list?.querySelectorAll('li.extra');
+    if (!extras || extras.length === 0) return;
+    const isHidden = extras[0].classList.contains('hidden');
+    extras.forEach((el) => el.classList.toggle('hidden', !isHidden));
+    button.textContent = isHidden ? 'Show less' : 'Show more';
+  });
+</script>

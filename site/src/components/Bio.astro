@@ -1,0 +1,105 @@
+---
+const bioHtml = `I'm a Senior Research Scientist at <a href="https://research.nvidia.com/labs/sil/">NVIDIA Spatial Intelligence Lab (SIL)</a>
+and an Assistant Professor at the
+<a href="https://www.cs.technion.ac.il/people/faculty/#:~:text=of%20visual%20tasks.-,Or%20Litany,-Senior%20Lecturer">Technion</a>,
+specializing in 3D computer vision and generative AI. I'm honored to be a 2023 Azrieli Faculty Fellow
+and a Taub Fellow. Previously, I conducted postdoctoral research at
+<a href="https://geometry.stanford.edu/member/orlitany/">Stanford University</a> under
+<a href="https://geometry.stanford.edu/member/guibas/">Prof. Leonidas Guibas</a>, and at
+<a href="https://research.facebook.com/ai/">FAIR</a>, hosted by
+<a href="https://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a>. My PhD is from Tel-Aviv
+University, advised by <a href="http://www.cs.technion.ac.il/~bron/">Prof. Alex Bronstein</a>. My B.Sc.
+in Physics and Mathematics is from the Hebrew University.`.replace(/\n/g, ' ');
+
+const links = [
+  { href: 'https://www.linkedin.com/in/orlitany/main.html', icon: '/images/linkedin.png', label: 'my linkedin profile page' },
+  { href: 'https://x.com/orlitany', icon: '/images/xlogo.svg', label: 'my X profile page' },
+  {
+    href: 'https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en',
+    icon: '/images/google_scholar.png',
+    label: 'my google scholar page',
+  },
+  { href: 'https://github.com/orlitany/', icon: '/images/github_alt.png', label: 'my github page' },
+];
+---
+
+<div class="section bio" id="bio" itemscope itemtype="https://schema.org/Person">
+  <div class="bio-text">
+    <h1 itemprop="name">Or Litany</h1>
+    <p class="email">orlitany at gmail dot com</p>
+    <p set:html={bioHtml} />
+    <p class="bio-links">
+      <a href="/latex/cv.pdf" aria-label="a pdf with my updated cv" class="pill-link">CV</a>
+      {
+        links.map((link) => (
+          <>
+            {' '}/{' '}
+            <a href={link.href} aria-label={link.label} target={link.href.startsWith('http') ? '_blank' : undefined}>
+              <img src={link.icon} alt="" class="icon" />
+            </a>
+          </>
+        ))
+      }
+    </p>
+  </div>
+
+  <div class="bio-photo">
+    <img
+      class="instructorphoto"
+      id="orlitany"
+      src="/images/or_yosemite_small_jpg.jpg"
+      alt="Or Litany at Yosemite National Park"
+    />
+  </div>
+</div>
+
+<style>
+  .bio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+  }
+
+  .bio-text {
+    flex: 1 1 26rem;
+  }
+
+  .email {
+    color: var(--text-muted);
+    margin-top: -0.5em;
+  }
+
+  .bio-links {
+    margin-top: 1.25em;
+  }
+
+  .icon {
+    height: 18px;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .bio-photo {
+    flex: 0 0 auto;
+  }
+
+  .instructorphoto {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+  }
+
+  @media (max-width: 700px) {
+    .bio {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+  }
+</style>

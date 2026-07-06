@@ -1,0 +1,135 @@
+---
+const links = [
+  { href: '#bio', label: 'About' },
+  { href: '#news', label: 'News' },
+  { href: '#students', label: 'Students' },
+  { href: '#teaching', label: 'Teaching' },
+  { href: '#talks', label: 'Talks' },
+  { href: '#workshops', label: 'Workshops' },
+  { href: '#press', label: 'Press' },
+  { href: '#publications', label: 'Publications' },
+];
+---
+
+<nav class="sticky-nav" id="sticky-nav">
+  <div class="nav-container">
+    <div class="nav-links">
+      {
+        links.map((link) => (
+          <a href={link.href} class="nav-link">
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">
+      <span class="theme-icon theme-icon-light" aria-hidden="true">☀️</span>
+      <span class="theme-icon theme-icon-dark" aria-hidden="true">🌙</span>
+    </button>
+  </div>
+</nav>
+
+<style>
+  .sticky-nav {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    transition: top 0.3s ease;
+    box-shadow: var(--shadow);
+  }
+
+  .sticky-nav.visible {
+    top: 0;
+  }
+
+  .nav-container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0.6em 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    color: var(--text-muted);
+    font-size: 0.85em;
+    padding: 0.4em 0.6em;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--accent);
+    background: var(--accent-soft);
+    text-decoration: none;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 0.95em;
+  }
+
+  .theme-icon-dark {
+    display: none;
+  }
+
+  :global([data-theme='dark']) .theme-icon-light {
+    display: none;
+  }
+
+  :global([data-theme='dark']) .theme-icon-dark {
+    display: inline;
+  }
+
+  @media (max-width: 640px) {
+    .nav-links {
+      gap: 0.4em;
+    }
+
+    .nav-link {
+      font-size: 0.75em;
+      padding: 0.35em 0.5em;
+    }
+  }
+</style>
+
+<script>
+  const nav = document.getElementById('sticky-nav');
+  const scrollThreshold = 200;
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    nav?.classList.toggle('visible', scrollTop > scrollThreshold);
+  });
+
+  const toggle = document.getElementById('theme-toggle');
+  toggle?.addEventListener('click', () => {
+    const current = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+</script>

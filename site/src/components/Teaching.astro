@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+
+const courses = await getCollection('courses');
+---
+
+<div class="section" id="teaching">
+  <h2>Teaching</h2>
+  <ul class="course-list">
+    {
+      courses.map((course) => (
+        <li class="course-item">
+          <strong>{course.data.title}</strong>
+          {course.data.courseNumber && <span class="course-number"> ({course.data.courseNumber})</span>}
+          {course.data.link && course.data.link.trim() && (
+            <>
+              {' '}
+              - <a href={course.data.link} target="_blank">Course Page</a>
+            </>
+          )}
+          <p class="course-description">{course.data.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .course-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .course-item {
+    padding: 0.75em 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .course-item:last-child {
+    border-bottom: none;
+  }
+
+  .course-number {
+    color: var(--text-muted);
+  }
+
+  .course-description {
+    margin: 0.35em 0 0;
+    color: var(--text-muted);
+  }
+</style>

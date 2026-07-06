@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+
+const INITIAL_COUNT = 5;
+const PAGE_SIZE = 5;
+
+const news = await getCollection('news');
+---
+
+<div class="section" id="news">
+  <h2>News</h2>
+  <ul class="news-list" id="news-list" data-page-size={PAGE_SIZE}>
+    {
+      news.map((item, i) => (
+        <li class:list={{ hidden: i >= INITIAL_COUNT }}>
+          {item.data.date && <span class="date">[{item.data.date}]</span>}{' '}
+          <span set:html={item.data.text} />
+        </li>
+      ))
+    }
+  </ul>
+  {
+    news.length > INITIAL_COUNT && (
+      <div class="show-more-container">
+        <button id="news-show-more" class="show-more-btn" type="button">
+          Show more
+        </button>
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .news-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .news-list li:last-child {
+    border-bottom: none;
+  }
+
+  .news-list li.hidden {
+    display: none;
+  }
+
+  .date {
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+
+  .show-more-container {
+    margin-top: 1.25em;
+  }
+</style>
+
+<script>
+  const list = document.getElementById('news-list');
+  const button = document.getElementById('news-show-more');
+  const pageSize = Number(list?.dataset.pageSize ?? '5');
+
+  button?.addEventListener('click', () => {
+    const hiddenItems = list?.querySelectorAll('li.hidden');
+    if (!hiddenItems) return;
+    Array.from(hiddenItems)
+      .slice(0, pageSize)
+      .forEach((el) => el.classList.remove('hidden'));
+    if (list?.querySelectorAll('li.hidden').length === 0) {
+      button.style.display = 'none';
+    }
+  });
+</script>

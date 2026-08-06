@@ -97,7 +97,18 @@ const personJsonLd = {
           recognizedBy: { '@type': 'EducationalOrganization', name: 'Hebrew University of Jerusalem' },
         },
       ],
-      award: ['2023 Azrieli Faculty Fellow', 'Taub Fellow'],
+      // Hand-curated on purpose. The `award` field in publications.bib is
+      // overloaded — most of its values are acceptance tiers (Spotlight,
+      // Oral, Highlight) rather than honors, so deriving this list from the
+      // bib would list presentation formats as awards. Add real wins here.
+      award: [
+        '2023 Azrieli Faculty Fellow',
+        'Taub Fellow',
+        'CVPR 2026 Outstanding Area Chair Award',
+        'ICML 2020 Outstanding Paper Award',
+        'ICLR 2019 LLD Workshop Best Paper Award',
+        'SGP 2016 Best Paper Award',
+      ],
       memberOf: [
         {
           '@type': 'Organization',

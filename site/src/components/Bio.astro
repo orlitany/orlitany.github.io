@@ -11,9 +11,27 @@ and a Taub Fellow. Previously, I conducted postdoctoral research at
 University, advised by <a href="http://www.cs.technion.ac.il/~bron/">Prof. Alex Bronstein</a>. My B.Sc.
 in Physics and Mathematics is from the Hebrew University.`.replace(/\n/g, ' ');
 
-const links = [
+// The X mark is inlined rather than loaded via <img> so it can pick up
+// currentColor; as an external SVG it renders pure black and disappears
+// against the dark-mode background. The other icons are blue and read on
+// both themes.
+type SocialLink = {
+  href: string;
+  label: string;
+  icon?: string;
+  svg?: { viewBox: string; path: string };
+};
+
+const links: SocialLink[] = [
   { href: 'https://www.linkedin.com/in/orlitany/main.html', icon: '/images/linkedin.png', label: 'my linkedin profile page' },
-  { href: 'https://x.com/orlitany', icon: '/images/xlogo.svg', label: 'my X profile page' },
+  {
+    href: 'https://x.com/orlitany',
+    label: 'my X profile page',
+    svg: {
+      viewBox: '0 0 300 271',
+      path: 'm236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z',
+    },
+  },
   {
     href: 'https://scholar.google.co.il/citations?user=Ihs8dwsAAAAJ&hl=en',
     icon: '/images/google_scholar.png',
@@ -35,7 +53,13 @@ const links = [
           <>
             {' '}/{' '}
             <a href={link.href} aria-label={link.label} target={link.href.startsWith('http') ? '_blank' : undefined}>
-              <img src={link.icon} alt="" class="icon" />
+              {link.svg ? (
+                <svg class="icon" viewBox={link.svg.viewBox} fill="currentColor" aria-hidden="true" focusable="false">
+                  <path d={link.svg.path} />
+                </svg>
+              ) : (
+                <img src={link.icon} alt="" class="icon" />
+              )}
             </a>
           </>
         ))

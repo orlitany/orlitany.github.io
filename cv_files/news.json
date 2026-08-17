@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "Aug 17, 2026",
+      "text": "Retrieval-Augmented Gaussian Avatars accepted to the Interactive Social Avatars (ISA) workshop at ECCV 2026!"
+    },
+    {
       "date": "June 18, 2026",
       "text": "Two papers accepted to ECCV 2026!"
     },

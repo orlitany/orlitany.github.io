@@ -1,6 +1,10 @@
 {
   "news": [
     {
+      "date": "Sep 25, 2026",
+      "text": "Two papers accepted to NeurIPS 2026!"
+    },
+    {
       "date": "Aug 17, 2026",
       "text": "Retrieval-Augmented Gaussian Avatars accepted to the Interactive Social Avatars (ISA) workshop at ECCV 2026!"
     },

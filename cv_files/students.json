@@ -50,13 +50,6 @@
       "note": ""
     },  
     {
-      "name": "Junchen Liu",
-      "type": "Intern",
-      "startYear": "2025",
-      "website": "https://junchenliu77.github.io/",
-      "note": ""
-    },    
-    {
       "name": "Ido Raizman",
       "type": "MSc",
       "startYear": "2026",
@@ -137,6 +130,13 @@
       "graduationYear": "2025",
       "currentPosition": "Postdoc at MIT",
       "website": "https://toytiny.github.io/",
+      "note": ""
+    },
+    {
+      "name": "Junchen Liu",
+      "type": "Intern",
+      "graduationYear": "2026",
+      "website": "https://junchenliu77.github.io/",
       "note": ""
     },
     {

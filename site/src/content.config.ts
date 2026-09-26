@@ -10,6 +10,7 @@ const publications = defineCollection({
   loader: bibtexLoader({ filePath: '../cv_files/publications.bib' }),
   schema: z.object({
     citekey: z.string(),
+    order: z.number(),
     entryType: z.string(),
     title: z.string(),
     authors: z.array(

@@ -13,14 +13,13 @@ function displayYear(pub: (typeof rawPublications)[number]['data']) {
   return pub.venue.match(/\d{4}/)?.[0] ?? pub.year;
 }
 
-// Primary: display year, descending. Secondary: venue, so multiple papers at
-// the same venue (e.g. two ECCV 2026 papers) sit next to each other instead
-// of being scattered by curation order. Stable sort preserves curated order
-// as the final tiebreaker within an identical (year, venue) pair.
+// Years are shown newest-first; within a year, papers follow their order in
+// publications.bib, so the display order is controlled by editing the bib.
+// Keep generate_cv.py in sync with this ordering.
 const publications = [...rawPublications].sort((a, b) => {
   const yearDiff = Number(displayYear(b.data)) - Number(displayYear(a.data));
   if (yearDiff !== 0) return yearDiff;
-  return a.data.venue.localeCompare(b.data.venue);
+  return a.data.order - b.data.order;
 });
 
 let previousYear: string | null = null;

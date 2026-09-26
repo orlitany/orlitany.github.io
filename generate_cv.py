@@ -48,12 +48,22 @@ def convert_award(award):
     return r"\textcolor{red}{" + award.replace("%", r"\%") + "}"
 
 
+def display_year(pub):
+    """Year the paper appeared: the year in `venue` (e.g. "CVPR 2026"),
+    falling back to the bib `year`, which is often just the arXiv year."""
+    match = re.search(r"\d{4}", pub.get("venue", ""))
+    return int(match.group(0) if match else pub.get("year", "0") or 0)
+
+
 def generate_publications_tex():
     with open(os.path.join(CV_FILES, "publications.bib")) as f:
         bib_db = bibtexparser.load(f)
 
     pubs = bib_db.entries  # preserved in the curated (newest-first) order
     published = [p for p in pubs if p.get("venue", "") != "Preprint"]
+    # Years newest-first; within a year, keep the bib order (stable sort).
+    # Mirrors the sort in site/src/components/Publications.astro.
+    published.sort(key=lambda p: -display_year(p))
     preprints = [p for p in pubs if p.get("venue", "") == "Preprint"]
 
     def render_entry(pub):

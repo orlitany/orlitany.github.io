@@ -32,7 +32,7 @@ export function bibtexLoader({ filePath }: BibtexLoaderOptions): Loader {
       }
 
       store.clear();
-      for (const entry of result.entries) {
+      for (const [order, entry] of result.entries.entries()) {
         const authorField = entry.fields.author;
         const authorList = Array.isArray(authorField) ? authorField : [];
         const authors = authorList.map((a) => {
@@ -49,6 +49,9 @@ export function bibtexLoader({ filePath }: BibtexLoaderOptions): Loader {
           id: entry.key,
           data: {
             citekey: entry.key,
+            // Position in the .bib file (curated newest-first). The content
+            // store doesn't preserve insertion order, so sorting needs this.
+            order,
             entryType: entry.type,
             title: String(entry.fields.title ?? ''),
             authors,

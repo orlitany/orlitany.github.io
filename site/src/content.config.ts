@@ -18,6 +18,7 @@ const publications = defineCollection({
         firstName: z.string(),
         lastName: z.string(),
         isOrLitany: z.boolean(),
+        equalContrib: z.boolean(),
       }),
     ),
     year: z.string(),

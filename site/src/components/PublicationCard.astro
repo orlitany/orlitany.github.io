@@ -41,6 +41,7 @@ const isVideo = pub.image?.toLowerCase().endsWith('.mp4');
                 {author.firstName} {author.lastName}
               </>
             )}
+            {author.equalContrib && <span title="Equal contribution">*</span>}
           </>
         ))
       }

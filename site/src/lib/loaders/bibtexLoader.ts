@@ -10,7 +10,8 @@ interface BibtexLoaderOptions {
 
 /**
  * Loads cv_files/publications.bib. Each entry's custom fields (image, code,
- * page, poster, slides, talk, video, dataset, tweet, award, venue) are the
+ * page, poster, slides, talk, video, dataset, tweet, award, venue,
+ * equalcontrib) are the
  * ONLY thing an author needs to add alongside a new BibTeX entry to publish
  * a paper on the site.
  */
@@ -35,13 +36,27 @@ export function bibtexLoader({ filePath }: BibtexLoaderOptions): Loader {
       for (const [order, entry] of result.entries.entries()) {
         const authorField = entry.fields.author;
         const authorList = Array.isArray(authorField) ? authorField : [];
-        const authors = authorList.map((a) => {
+        // Custom `equalcontrib` field: 1-based author positions, e.g. {1, 2}.
+        const equalContrib = new Set(
+          String(entry.fields.equalcontrib ?? '')
+            .split(',')
+            .map((n) => Number(n.trim()))
+            .filter((n) => Number.isInteger(n) && n > 0),
+        );
+        const authors = authorList.map((a, i) => {
           const firstName = typeof a === 'object' && a !== null ? (a.firstName ?? '') : '';
-          const lastName = typeof a === 'object' && a !== null ? (a.lastName ?? '') : '';
+          const surname = typeof a === 'object' && a !== null ? (a.lastName ?? '') : '';
+          // Keep the "von" part ("Riccardo de Lutio"), which the parser
+          // splits off into `prefix`.
+          const prefix = typeof a === 'object' && a !== null ? (a.prefix ?? '') : '';
+          // BibTeX's `and others` is the standard way to truncate a long list.
+          const isOthers = !firstName && !prefix && surname.trim() === 'others';
+          const lastName = isOthers ? 'et al.' : [prefix, surname].filter(Boolean).join(' ');
           return {
             firstName,
             lastName,
             isOrLitany: firstName.trim() === 'Or' && lastName.trim() === 'Litany',
+            equalContrib: equalContrib.has(i + 1),
           };
         });
 

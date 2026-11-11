@@ -15,16 +15,26 @@ CV_FILES = os.path.join(ROOT, "cv_files")
 LATEX_DIR = os.path.join(ROOT, "latex")
 
 
-def format_authors_from_bib(author_field):
+def parse_equalcontrib(field):
+    """Parse the custom 'equalcontrib' bib field (1-based author positions, e.g. "1, 2")."""
+    return {int(n) for n in re.findall(r"\d+", field or "")}
+
+
+def format_authors_from_bib(author_field, equal_contrib=frozenset()):
     """Format a BibTeX 'author' field for LaTeX, underlining Or Litany.
 
     Uses bibtexparser's name splitting (handles both 'Last, First' and
     'First Last' BibTeX conventions) rather than naively splitting on
     whitespace, so multi-token first/last names abbreviate correctly.
+    Multi-word surnames must be braced in the bib (e.g. `Avigail {Cohen Rimon}`).
+    `equal_contrib` holds 1-based author positions to mark with an asterisk.
     """
     names = [n.strip() for n in author_field.split(" and ") if n.strip()]
     formatted = []
-    for name in names:
+    for position, name in enumerate(names, start=1):
+        if name == "others":
+            formatted.append("et al.")
+            continue
         parts = splitname(name, strict_mode=False)
         first = " ".join(parts.get("first", [])).strip()
         von = " ".join(parts.get("von", [])).strip()
@@ -38,6 +48,8 @@ def format_authors_from_bib(author_field):
             initial = first[0] if first else ""
             last_hyphen = last_full.replace(" ", "-")
             formatted.append(f"{initial}.{last_hyphen}" if last_hyphen else initial)
+        if position in equal_contrib:
+            formatted[-1] += "*"
     return ", ".join(formatted)
 
 
@@ -68,7 +80,9 @@ def generate_publications_tex():
 
     def render_entry(pub):
         name = pub.get("title", "")
-        authors = format_authors_from_bib(pub.get("author", ""))
+        authors = format_authors_from_bib(
+            pub.get("author", ""), parse_equalcontrib(pub.get("equalcontrib"))
+        )
         venue = pub.get("venue", "")
         award = convert_award(pub.get("award", ""))
 

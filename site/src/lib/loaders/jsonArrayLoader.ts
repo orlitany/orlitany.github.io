@@ -25,7 +25,8 @@ export function jsonArrayLoader({ filePath, unwrap }: JsonArrayLoaderOptions): L
 
       store.clear();
       for (const [index, item] of items.entries()) {
-        const id = String(index);
+        // Zero-padded: the content store returns entries in string-id order, so "10" would sort before "2".
+        const id = String(index).padStart(6, '0');
         const data = await parseData({ id, data: item });
         store.set({ id, data });
       }

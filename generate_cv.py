@@ -14,6 +14,9 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 CV_FILES = os.path.join(ROOT, "cv_files")
 LATEX_DIR = os.path.join(ROOT, "latex")
 
+# Legend for the asterisks that `equalcontrib` adds to author lists.
+EQUAL_CONTRIB_NOTE = r"{\small * Equal contribution.}"
+
 
 def parse_equalcontrib(field):
     """Parse the custom 'equalcontrib' bib field (1-based author positions, e.g. "1, 2")."""
@@ -92,7 +95,10 @@ def generate_publications_tex():
         entry += "."
         return entry
 
-    lines = [r"\begin{enumerate}", ""]
+    lines = []
+    if any(parse_equalcontrib(p.get("equalcontrib")) for p in pubs):
+        lines += [EQUAL_CONTRIB_NOTE, "", r"\vspace*{.05in}", ""]
+    lines += [r"\begin{enumerate}", ""]
     for pub in published:
         lines.append(render_entry(pub))
         lines.append("")
